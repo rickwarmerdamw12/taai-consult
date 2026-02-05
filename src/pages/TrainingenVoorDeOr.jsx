@@ -9,12 +9,18 @@ import CTABlock from '../components/CTABlock';
 
 export default function TrainingenVoorDeOr() {
   const visibleTrainingen = [
-    { title: "OR-start", description: "Basiscursus voor nieuwe OR-leden: taken, bevoegdheden en wetgeving (WOR)." },
-    { title: "Onderhandelen", description: "Effectief onderhandelen met bestuur en management in WOR-context." },
-    { title: "Sociaal plan opstellen", description: "Van nulsituatie tot gedragen sociaal plan met juridische kaders." },
-    { title: "Reorganisatie begeleiden", description: "OR-rol bij fusies, overnames en reorganisaties." },
-    { title: "Arbeidsvoorwaarden", description: "CAO's, beloningssystemen en wat de OR kan beïnvloeden." },
-    { title: "Financiën lezen voor OR", description: "Begrijpen van jaarrekeningen en businesscases." }
+    { title: "Basismodule", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Het fundament van de OR", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "De OR als strategisch adviseur", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "De OR en Werken met Commissies", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Effectief samenwerken binnen de OR", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "OR als Serieuze Gesprekspartner", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." }
+  ];
+
+  const meerTrainingen = [
+    { title: "Professionalisering van de OR", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Teambuilding", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Teambuilding met Roos van Leary", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." }
   ];
 
   const faqs = [
@@ -60,6 +66,14 @@ export default function TrainingenVoorDeOr() {
       <PageSection>
         <h2 className="text-3xl font-bold text-slate-900 mb-8">Ons aanbod</h2>
         <CardGrid items={visibleTrainingen} />
+        
+        <div className="mt-12">
+          <Accordion items={meerTrainingen} title="Meer trainingen" />
+        </div>
+
+        <p className="text-slate-600 mt-8 text-center">
+          Staat jullie onderwerp er niet tussen? We verzorgen ook maatwerk.
+        </p>
       </PageSection>
 
       <PageSection background="gray">
@@ -69,7 +83,10 @@ export default function TrainingenVoorDeOr() {
         </div>
       </PageSection>
 
-      <CTABlock />
+      <CTABlock 
+        title="Klaar om de volgende stap te zetten?"
+        subtitle="Plan een kennismaking of vraag onze brochure aan."
+      />
     </>
   );
 }

@@ -9,17 +9,18 @@ import CTABlock from '../components/CTABlock';
 
 export default function Masterclasses() {
   const visibleMasterclasses = [
-    { title: "Strategisch OR-werk", description: "Van operationeel naar strategisch denken. Langetermijnvisie, lobby en invloed op organisatiestrategie.", duration: "2 dagen" },
-    { title: "Complexe juridische vraagstukken", description: "Verdieping in ingewikkelde WOR-materie: concern-OR, buitenlandse moeder, internationale werknemers.", duration: "2 dagen" },
-    { title: "Bestuurlijke vaardigheden", description: "Voor OR-voorzitters en bestuursleden. Leiderschap, regie en professionele gespreksvoering met top.", duration: "2 dagen" },
-    { title: "OR en governance", description: "Verdieping in corporate governance: RvC, aandeelhouders, toezicht en checks & balances.", duration: "1 dag" },
-    { title: "Change management voor OR", description: "OR als change agent. Hoe begeleid je grote verandering en neem je je achterban mee?", duration: "2 dagen" },
-    { title: "Internationale medezeggenschap", description: "European Works Councils, SE Works Councils en grensoverschrijdende issues. Europese wetgeving en praktijk.", duration: "2 dagen" }
+    { title: "Basiskennis WOR", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Masterclass adviesrecht", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Masterclass artikel 24 vergadering", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Masterclass informatierecht", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Masterclass initiatiefrecht", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Masterclass instemmingsrecht", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." }
   ];
 
   const meerModules = [
-    { title: "OR en financieel beleid", content: "Diepgaande verdieping in financiële sturing, risk management en investeringsbesluiten. Voor gevorderde OR'en." },
-    { title: "Crisismanagement", content: "OR-rol bij acute crises: faillissement dreigt, grote incidenten, reputatieschade. Wat doe je als OR?" }
+    { title: "Masterclass OR versus Vakbond", content: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Masterclass Reglement", content: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Masterclass WOR", content: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." }
   ];
 
   const faqs = [
@@ -90,6 +91,10 @@ export default function Masterclasses() {
 
       <PageSection background="gray">
         <Accordion items={meerModules} title="Meer masterclasses" />
+        
+        <p className="text-slate-600 mt-8 text-center">
+          Staat jullie onderwerp er niet tussen? We verzorgen ook maatwerk.
+        </p>
       </PageSection>
 
       <PageSection>
@@ -128,7 +133,10 @@ export default function Masterclasses() {
         </div>
       </PageSection>
 
-      <CTABlock />
+      <CTABlock 
+        title="Klaar om de volgende stap te zetten?"
+        subtitle="Plan een kennismaking of vraag onze brochure aan."
+      />
     </>
   );
 }

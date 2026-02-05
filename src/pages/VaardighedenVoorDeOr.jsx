@@ -9,12 +9,11 @@ import CTABlock from '../components/CTABlock';
 
 export default function VaardighedenVoorDeOr() {
   const visibleVaardigheden = [
-    { title: "Vergadertechnieken", description: "Effectief vergaderen: agenda opstellen, discussie leiden en besluiten nemen." },
-    { title: "Presenteren & overtuigen", description: "Standpunt helder overbrengen aan bestuur en achterban." },
-    { title: "Lobbyen & beïnvloeden", description: "Strategisch beïnvloeden binnen en buiten de organisatie." },
-    { title: "Netwerken voor OR", description: "Interne en externe netwerken opbouwen en onderhouden." },
-    { title: "Gespreksvaardigheden", description: "Lastige gesprekken voeren met bestuur en management." },
-    { title: "Conflicthantering", description: "Omgaan met tegenstellingen en spanningen in OR." }
+    { title: "Argumenteren", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Conflicthantering", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Maatwerk gesprekstechniek", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Onderhandelen", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "Vergadertechniek", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." }
   ];
 
   const faqs = [
@@ -60,6 +59,10 @@ export default function VaardighedenVoorDeOr() {
       <PageSection>
         <h2 className="text-3xl font-bold text-slate-900 mb-8">Ons aanbod</h2>
         <CardGrid items={visibleVaardigheden} />
+        
+        <p className="text-slate-600 mt-8 text-center">
+          Staat jullie onderwerp er niet tussen? We verzorgen ook maatwerk.
+        </p>
       </PageSection>
 
       <PageSection background="gray">
@@ -69,7 +72,10 @@ export default function VaardighedenVoorDeOr() {
         </div>
       </PageSection>
 
-      <CTABlock />
+      <CTABlock 
+        title="Klaar om de volgende stap te zetten?"
+        subtitle="Plan een kennismaking of vraag onze brochure aan."
+      />
     </>
   );
 }

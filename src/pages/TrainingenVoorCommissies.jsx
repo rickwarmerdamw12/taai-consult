@@ -9,12 +9,13 @@ import CTABlock from '../components/CTABlock';
 
 export default function TrainingenVoorCommissies() {
   const visibleTrainingen = [
-    { title: "VGW(M)-basistraining", description: "Taken, bevoegdheden en verantwoordelijkheden van de VGW(M)-commissie." },
-    { title: "RI&E lezen en beoordelen", description: "Hoe beoordeel je een RI&E kritisch en waar moet je op letten?" },
-    { title: "Arbocatalogus gebruiken", description: "Werken met de arbocatalogus en naleving bewaken." },
-    { title: "PSA en verzuim aanpakken", description: "Psychosociale arbeidsbelasting herkennen en aanpakken." },
-    { title: "PV-commissie training", description: "Training voor personeelsvertegenwoordigingen in de publieke sector." },
-    { title: "Klachtencommissie", description: "Rol en werkwijze van de klachtencommissie." }
+    { title: "Arbo commissie", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "CCA (Commissie Communicatie Achterban)", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "CDB", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "CF (Commissie financiën)", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "CHR", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "COB", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
+    { title: "VC (Verkiezingscommissie)", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." }
   ];
 
   const faqs = [
@@ -60,6 +61,10 @@ export default function TrainingenVoorCommissies() {
       <PageSection>
         <h2 className="text-3xl font-bold text-slate-900 mb-8">Ons aanbod</h2>
         <CardGrid items={visibleTrainingen} />
+        
+        <p className="text-slate-600 mt-8 text-center">
+          Staat jullie onderwerp er niet tussen? We verzorgen ook maatwerk.
+        </p>
       </PageSection>
 
       <PageSection background="gray">
@@ -69,7 +74,10 @@ export default function TrainingenVoorCommissies() {
         </div>
       </PageSection>
 
-      <CTABlock />
+      <CTABlock 
+        title="Klaar om de volgende stap te zetten?"
+        subtitle="Plan een kennismaking of vraag onze brochure aan."
+      />
     </>
   );
 }
