@@ -31,7 +31,7 @@ export default function Diensten() {
               <p className="text-slate-600 mb-4 leading-relaxed">
                 Alles wat je nodig hebt om als OR effectief te functioneren: van OR-start tot onderhandelen over reorganisaties en sociale plannen. Praktisch en juridisch scherp.
               </p>
-              <Link to="/trainingen-voor-de-or" className="text-blue-600 hover:text-blue-700 font-medium">
+              <Link to="/TrainingenVoorDeOr" className="text-blue-600 hover:text-blue-700 font-medium">
                 Bekijk trainingen →
               </Link>
             </div>
@@ -46,7 +46,7 @@ export default function Diensten() {
               <p className="text-slate-600 mb-4 leading-relaxed">
                 Vergadertechnieken, presenteren, lobbyen, netwerken. Vaardigheden die het verschil maken in complexe gesprekken en besluitvorming.
               </p>
-              <Link to="/vaardigheden-voor-de-or" className="text-blue-600 hover:text-blue-700 font-medium">
+              <Link to="/VaardighedenVoorDeOr" className="text-blue-600 hover:text-blue-700 font-medium">
                 Bekijk vaardigheden →
               </Link>
             </div>
@@ -61,7 +61,7 @@ export default function Diensten() {
               <p className="text-slate-600 mb-4 leading-relaxed">
                 VGW(M)-commissies, personeelsvertegenwoordigingen en andere commissies krijgen gerichte trainingen voor hun specifieke taken en bevoegdheden.
               </p>
-              <Link to="/trainingen-voor-commissies" className="text-blue-600 hover:text-blue-700 font-medium">
+              <Link to="/TrainingenVoorCommissies" className="text-blue-600 hover:text-blue-700 font-medium">
                 Bekijk commissietrainingen →
               </Link>
             </div>
@@ -76,7 +76,7 @@ export default function Diensten() {
               <p className="text-slate-600 mb-4 leading-relaxed">
                 Op maat gemaakte interactieve sessies over actuele thema's: van hybride werken tot reorganisatie-aanpak. Direct toepasbaar in jullie situatie.
               </p>
-              <Link to="/workshops" className="text-blue-600 hover:text-blue-700 font-medium">
+              <Link to="/Workshops" className="text-blue-600 hover:text-blue-700 font-medium">
                 Bekijk workshops →
               </Link>
             </div>
@@ -91,7 +91,7 @@ export default function Diensten() {
               <p className="text-slate-600 mb-4 leading-relaxed">
                 Verdiepende sessies voor ervaren OR-leden en commissies. Focus op strategisch denken, complexe juridische vraagstukken en bestuurlijke vaardigheden.
               </p>
-              <Link to="/masterclasses" className="text-blue-600 hover:text-blue-700 font-medium">
+              <Link to="/Masterclasses" className="text-blue-600 hover:text-blue-700 font-medium">
                 Bekijk masterclasses →
               </Link>
             </div>
@@ -106,7 +106,7 @@ export default function Diensten() {
               <p className="text-slate-600 mb-4 leading-relaxed">
                 Advies, interim en coaching voor OR'en die extra ondersteuning nodig hebben bij complexe dossiers, conflict of organisatieverandering.
               </p>
-              <Link to="/orondersteuning" className="text-blue-600 hover:text-blue-700 font-medium">
+              <Link to="/ORondersteuning" className="text-blue-600 hover:text-blue-700 font-medium">
                 Bekijk ondersteuning →
               </Link>
             </div>

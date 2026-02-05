@@ -53,14 +53,14 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row gap-4">
           <Link 
-            to="/contact#plan" 
+            to="/Contact#plan" 
             className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-center"
             data-cta="plan_kennismaking"
           >
             Plan kennismaking
           </Link>
           <Link 
-            to="/contact#brochure" 
+            to="/Contact#brochure" 
             className="px-8 py-3 bg-white text-slate-900 rounded-lg hover:bg-slate-100 transition-colors font-medium text-center"
             data-cta="vraag_brochure"
           >
@@ -84,7 +84,7 @@ export default function Home() {
             <p className="text-slate-600 mb-4">
               Van OR-start tot onderhandelen over een sociaal plan. Alles wat je nodig hebt om effectief mede te beslissen.
             </p>
-            <Link to="/diensten/trainingen-voor-de-or" className="text-blue-600 hover:text-blue-700 font-medium">
+            <Link to="/TrainingenVoorDeOr" className="text-blue-600 hover:text-blue-700 font-medium">
               Bekijk trainingen →
             </Link>
           </div>
@@ -95,7 +95,7 @@ export default function Home() {
             <p className="text-slate-600 mb-4">
               Vergadertechnieken, lobbyen, VGW(M)-training. Vaardigheden die het verschil maken in complexe gesprekken.
             </p>
-            <Link to="/diensten/vaardigheden-voor-de-or" className="text-blue-600 hover:text-blue-700 font-medium">
+            <Link to="/VaardighedenVoorDeOr" className="text-blue-600 hover:text-blue-700 font-medium">
               Bekijk vaardigheden →
             </Link>
           </div>
@@ -106,7 +106,7 @@ export default function Home() {
             <p className="text-slate-600 mb-4">
               Op maat gemaakte workshops en verdiepende masterclasses voor ervaren OR-leden en commissies.
             </p>
-            <Link to="/diensten/workshops" className="text-blue-600 hover:text-blue-700 font-medium">
+            <Link to="/Workshops" className="text-blue-600 hover:text-blue-700 font-medium">
               Bekijk workshops →
             </Link>
           </div>
@@ -123,7 +123,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <Link 
-            to="/themas/medezeggenschap-holdings"
+            to="/MedezeggenschapHoldings"
             className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
           >
             <h3 className="text-lg font-semibold text-slate-900 mb-2">Medezeggenschap in Holdings</h3>
@@ -131,7 +131,7 @@ export default function Home() {
           </Link>
 
           <Link 
-            to="/themas/medezeggenschap-ambtelijke-organisaties"
+            to="/MedezeggenschapAmbtelijk"
             className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
           >
             <h3 className="text-lg font-semibold text-slate-900 mb-2">Ambtelijke Organisaties</h3>
@@ -139,7 +139,7 @@ export default function Home() {
           </Link>
 
           <Link 
-            to="/themas/vernieuwend-medezeggenschap"
+            to="/VernieuwendMedezeggenschap"
             className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
           >
             <h3 className="text-lg font-semibold text-slate-900 mb-2">Vernieuwend Medezeggenschap</h3>

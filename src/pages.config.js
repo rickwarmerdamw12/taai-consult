@@ -47,38 +47,38 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
-import Home from './pages/Home';
-import Diensten from './pages/Diensten';
-import Workshops from './pages/Workshops';
-import Masterclasses from './pages/Masterclasses';
-import ORondersteuning from './pages/ORondersteuning';
-import MedezeggenschapHoldings from './pages/MedezeggenschapHoldings';
-import MedezeggenschapAmbtelijk from './pages/MedezeggenschapAmbtelijk';
-import VernieuwendMedezeggenschap from './pages/VernieuwendMedezeggenschap';
-import OverOns from './pages/OverOns';
 import Contact from './pages/Contact';
+import Diensten from './pages/Diensten';
+import Home from './pages/Home';
 import LandingORTraining from './pages/LandingORTraining';
+import Masterclasses from './pages/Masterclasses';
+import MedezeggenschapAmbtelijk from './pages/MedezeggenschapAmbtelijk';
+import MedezeggenschapHoldings from './pages/MedezeggenschapHoldings';
+import ORondersteuning from './pages/ORondersteuning';
+import OverOns from './pages/OverOns';
+import TrainingenVoorCommissies from './pages/TrainingenVoorCommissies';
 import TrainingenVoorDeOr from './pages/TrainingenVoorDeOr';
 import VaardighedenVoorDeOr from './pages/VaardighedenVoorDeOr';
-import TrainingenVoorCommissies from './pages/TrainingenVoorCommissies';
+import VernieuwendMedezeggenschap from './pages/VernieuwendMedezeggenschap';
+import Workshops from './pages/Workshops';
 import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
-    "Home": Home,
-    "Diensten": Diensten,
-    "Workshops": Workshops,
-    "Masterclasses": Masterclasses,
-    "ORondersteuning": ORondersteuning,
-    "MedezeggenschapHoldings": MedezeggenschapHoldings,
-    "MedezeggenschapAmbtelijk": MedezeggenschapAmbtelijk,
-    "VernieuwendMedezeggenschap": VernieuwendMedezeggenschap,
-    "OverOns": OverOns,
     "Contact": Contact,
+    "Diensten": Diensten,
+    "Home": Home,
     "LandingORTraining": LandingORTraining,
+    "Masterclasses": Masterclasses,
+    "MedezeggenschapAmbtelijk": MedezeggenschapAmbtelijk,
+    "MedezeggenschapHoldings": MedezeggenschapHoldings,
+    "ORondersteuning": ORondersteuning,
+    "OverOns": OverOns,
+    "TrainingenVoorCommissies": TrainingenVoorCommissies,
     "TrainingenVoorDeOr": TrainingenVoorDeOr,
     "VaardighedenVoorDeOr": VaardighedenVoorDeOr,
-    "TrainingenVoorCommissies": TrainingenVoorCommissies,
+    "VernieuwendMedezeggenschap": VernieuwendMedezeggenschap,
+    "Workshops": Workshops,
 }
 
 export const pagesConfig = {
