@@ -58,6 +58,8 @@ import VernieuwendMedezeggenschap from './pages/VernieuwendMedezeggenschap';
 import OverOns from './pages/OverOns';
 import Contact from './pages/Contact';
 import LandingORTraining from './pages/LandingORTraining';
+import TrainingenVoorDeOR from './pages/TrainingenVoorDeOR';
+import VaardighedenVoorDeOR from './pages/VaardighedenVoorDeOR';
 import __Layout from './Layout.jsx';
 
 
@@ -73,6 +75,8 @@ export const PAGES = {
     "OverOns": OverOns,
     "Contact": Contact,
     "LandingORTraining": LandingORTraining,
+    "TrainingenVoorDeOR": TrainingenVoorDeOR,
+    "VaardighedenVoorDeOR": VaardighedenVoorDeOR,
 }
 
 export const pagesConfig = {
