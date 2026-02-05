@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from './utils';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 export default function Header() {
@@ -18,7 +17,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to={createPageUrl('Home')} className="text-2xl font-bold text-slate-900">
+          <Link to="/" className="text-2xl font-bold text-slate-900">
             Taai-Consult
           </Link>
 
@@ -39,22 +38,22 @@ export default function Header() {
                   onMouseEnter={() => setDienstenOpen(true)}
                   onMouseLeave={() => setDienstenOpen(false)}
                 >
-                  <Link to={createPageUrl('TrainingenVoorDeOR')} className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/diensten/trainingen-voor-de-or" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Trainingen OR
                   </Link>
-                  <Link to={createPageUrl('VaardighedenVoorDeOR')} className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/diensten/vaardigheden-voor-de-or" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Vaardigheden OR
                   </Link>
-                  <Link to={createPageUrl('TrainingenVoorCommissies')} className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/diensten/trainingen-voor-commissies" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Commissies
                   </Link>
-                  <Link to={createPageUrl('Workshops')} className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/diensten/workshops" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Workshops
                   </Link>
-                  <Link to={createPageUrl('Masterclasses')} className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/diensten/masterclasses" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Masterclasses
                   </Link>
-                  <Link to={createPageUrl('ORondersteuning')} className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/diensten/or-ondersteuning" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     OR-ondersteuning
                   </Link>
                 </div>
@@ -76,25 +75,25 @@ export default function Header() {
                   onMouseEnter={() => setThemasOpen(true)}
                   onMouseLeave={() => setThemasOpen(false)}
                 >
-                  <Link to={createPageUrl('MedezeggenschapHoldings')} className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/themas/medezeggenschap-holdings" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Medezeggenschap Holdings
                   </Link>
-                  <Link to={createPageUrl('MedezeggenschapAmbtelijk')} className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/themas/medezeggenschap-ambtelijke-organisaties" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Ambtelijke Organisaties
                   </Link>
-                  <Link to={createPageUrl('VernieuwendMedezeggenschap')} className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/themas/vernieuwend-medezeggenschap" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Vernieuwend Medezeggenschap
                   </Link>
                 </div>
               )}
             </div>
 
-            <Link to={createPageUrl('OverOns')} className="px-4 py-2 text-slate-700 hover:text-slate-900">
+            <Link to="/over-ons" className="px-4 py-2 text-slate-700 hover:text-slate-900">
               Over ons
             </Link>
 
             <Link 
-              to={createPageUrl('Contact')} 
+              to="/contact" 
               className="ml-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
             >
               Contact
@@ -115,40 +114,40 @@ export default function Header() {
           <div className="md:hidden py-4 border-t border-slate-200">
             <div className="space-y-2">
               <div className="font-medium text-slate-900 px-4 py-2">Diensten</div>
-              <Link to={createPageUrl('TrainingenVoorDeOR')} className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/diensten/trainingen-voor-de-or" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Trainingen OR
               </Link>
-              <Link to={createPageUrl('VaardighedenVoorDeOR')} className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/diensten/vaardigheden-voor-de-or" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Vaardigheden OR
               </Link>
-              <Link to={createPageUrl('TrainingenVoorCommissies')} className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/diensten/trainingen-voor-commissies" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Commissies
               </Link>
-              <Link to={createPageUrl('Workshops')} className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/diensten/workshops" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Workshops
               </Link>
-              <Link to={createPageUrl('Masterclasses')} className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/diensten/masterclasses" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Masterclasses
               </Link>
-              <Link to={createPageUrl('ORondersteuning')} className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/diensten/or-ondersteuning" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 OR-ondersteuning
               </Link>
               
               <div className="font-medium text-slate-900 px-4 py-2 mt-4">Thema's</div>
-              <Link to={createPageUrl('MedezeggenschapHoldings')} className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/themas/medezeggenschap-holdings" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Medezeggenschap Holdings
               </Link>
-              <Link to={createPageUrl('MedezeggenschapAmbtelijk')} className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/themas/medezeggenschap-ambtelijke-organisaties" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Ambtelijke Organisaties
               </Link>
-              <Link to={createPageUrl('VernieuwendMedezeggenschap')} className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/themas/vernieuwend-medezeggenschap" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Vernieuwend Medezeggenschap
               </Link>
 
-              <Link to={createPageUrl('OverOns')} className="block px-4 py-2 text-slate-700 hover:bg-slate-50 mt-4">
+              <Link to="/over-ons" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 mt-4">
                 Over ons
               </Link>
-              <Link to={createPageUrl('Contact')} className="block px-4 py-2 text-blue-600 font-medium hover:bg-slate-50 mt-2">
+              <Link to="/contact" className="block px-4 py-2 text-blue-600 font-medium hover:bg-slate-50 mt-2">
                 Contact
               </Link>
             </div>

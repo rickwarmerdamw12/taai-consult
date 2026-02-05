@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from './utils';
 
 export default function Footer() {
   return (
@@ -19,12 +18,12 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-3">Diensten</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to={createPageUrl('TrainingenVoorDeOR')} className="hover:text-white">Trainingen OR</Link></li>
-              <li><Link to={createPageUrl('VaardighedenVoorDeOR')} className="hover:text-white">Vaardigheden OR</Link></li>
-              <li><Link to={createPageUrl('TrainingenVoorCommissies')} className="hover:text-white">Commissies</Link></li>
-              <li><Link to={createPageUrl('Workshops')} className="hover:text-white">Workshops</Link></li>
-              <li><Link to={createPageUrl('Masterclasses')} className="hover:text-white">Masterclasses</Link></li>
-              <li><Link to={createPageUrl('ORondersteuning')} className="hover:text-white">OR-ondersteuning</Link></li>
+              <li><Link to="/diensten/trainingen-voor-de-or" className="hover:text-white">Trainingen OR</Link></li>
+              <li><Link to="/diensten/vaardigheden-voor-de-or" className="hover:text-white">Vaardigheden OR</Link></li>
+              <li><Link to="/diensten/trainingen-voor-commissies" className="hover:text-white">Commissies</Link></li>
+              <li><Link to="/diensten/workshops" className="hover:text-white">Workshops</Link></li>
+              <li><Link to="/diensten/masterclasses" className="hover:text-white">Masterclasses</Link></li>
+              <li><Link to="/diensten/or-ondersteuning" className="hover:text-white">OR-ondersteuning</Link></li>
             </ul>
           </div>
 
@@ -32,9 +31,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-3">Thema's</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to={createPageUrl('MedezeggenschapHoldings')} className="hover:text-white">Medezeggenschap Holdings</Link></li>
-              <li><Link to={createPageUrl('MedezeggenschapAmbtelijk')} className="hover:text-white">Ambtelijke Organisaties</Link></li>
-              <li><Link to={createPageUrl('VernieuwendMedezeggenschap')} className="hover:text-white">Vernieuwend Medezeggenschap</Link></li>
+              <li><Link to="/themas/medezeggenschap-holdings" className="hover:text-white">Medezeggenschap Holdings</Link></li>
+              <li><Link to="/themas/medezeggenschap-ambtelijke-organisaties" className="hover:text-white">Ambtelijke Organisaties</Link></li>
+              <li><Link to="/themas/vernieuwend-medezeggenschap" className="hover:text-white">Vernieuwend Medezeggenschap</Link></li>
             </ul>
           </div>
 
@@ -45,7 +44,7 @@ export default function Footer() {
               <li>info@taai-consult.nl</li>
               <li>+31 (0)20 123 4567</li>
               <li className="pt-2">
-                <Link to={createPageUrl('Contact')} className="text-blue-400 hover:text-blue-300">
+                <Link to="/contact" className="text-blue-400 hover:text-blue-300">
                   Neem contact op →
                 </Link>
               </li>
