@@ -44,16 +44,16 @@ export default function Header() {
                   <Link to="/vaardigheden-voor-de-or" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Vaardigheden OR
                   </Link>
-                  <Link to="/diensten/trainingen-voor-commissies" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/trainingen-voor-commissies" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Commissies
                   </Link>
-                  <Link to="/diensten/workshops" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/workshops" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Workshops
                   </Link>
-                  <Link to="/diensten/masterclasses" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/masterclasses" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Masterclasses
                   </Link>
-                  <Link to="/diensten/or-ondersteuning" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/orondersteuning" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     OR-ondersteuning
                   </Link>
                 </div>
@@ -75,13 +75,13 @@ export default function Header() {
                   onMouseEnter={() => setThemasOpen(true)}
                   onMouseLeave={() => setThemasOpen(false)}
                 >
-                  <Link to="/themas/medezeggenschap-holdings" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/medezeggenschap-holdings" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Medezeggenschap Holdings
                   </Link>
-                  <Link to="/themas/medezeggenschap-ambtelijke-organisaties" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/medezeggenschap-ambtelijk" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Ambtelijke Organisaties
                   </Link>
-                  <Link to="/themas/vernieuwend-medezeggenschap" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/vernieuwend-medezeggenschap" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Vernieuwend Medezeggenschap
                   </Link>
                 </div>
@@ -120,27 +120,27 @@ export default function Header() {
               <Link to="/vaardigheden-voor-de-or" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Vaardigheden OR
               </Link>
-              <Link to="/diensten/trainingen-voor-commissies" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/trainingen-voor-commissies" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Commissies
               </Link>
-              <Link to="/diensten/workshops" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/workshops" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Workshops
               </Link>
-              <Link to="/diensten/masterclasses" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/masterclasses" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Masterclasses
               </Link>
-              <Link to="/diensten/or-ondersteuning" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/orondersteuning" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 OR-ondersteuning
               </Link>
               
               <div className="font-medium text-slate-900 px-4 py-2 mt-4">Thema's</div>
-              <Link to="/themas/medezeggenschap-holdings" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/medezeggenschap-holdings" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Medezeggenschap Holdings
               </Link>
-              <Link to="/themas/medezeggenschap-ambtelijke-organisaties" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/medezeggenschap-ambtelijk" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Ambtelijke Organisaties
               </Link>
-              <Link to="/themas/vernieuwend-medezeggenschap" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/vernieuwend-medezeggenschap" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Vernieuwend Medezeggenschap
               </Link>
 
