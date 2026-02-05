@@ -22,7 +22,7 @@ export default function Home() {
               Sterke medezeggenschap wanneer het ertoe doet.
             </h1>
             <p className="text-xl sm:text-2xl text-slate-300 mb-12 leading-relaxed">
-              Voor OR-leden, commissies en bestuurders die grip willen op complexe situaties.
+              Voor OR-leden, commissies en bestuurders die sterker willen worden in het dagelijks overleg — en rust zoeken wanneer de belangen groot zijn.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
