@@ -7,36 +7,36 @@ import CardGrid from '../components/CardGrid';
 import Accordion from '../components/Accordion';
 import CTABlock from '../components/CTABlock';
 
-export default function TrainingenVoorDeOR() {
+export default function TrainingenVoorCommissies() {
   const visibleTrainingen = [
-    { title: "OR-start", description: "Basiscursus voor nieuwe OR-leden: taken, bevoegdheden en wetgeving (WOR)." },
-    { title: "Onderhandelen", description: "Effectief onderhandelen met bestuur en management in WOR-context." },
-    { title: "Sociaal plan opstellen", description: "Van nulsituatie tot gedragen sociaal plan met juridische kaders." },
-    { title: "Reorganisatie begeleiden", description: "OR-rol bij fusies, overnames en reorganisaties." },
-    { title: "Arbeidsvoorwaarden", description: "CAO's, beloningssystemen en wat de OR kan beïnvloeden." },
-    { title: "Financiën lezen voor OR", description: "Begrijpen van jaarrekeningen en businesscases." }
+    { title: "VGW(M)-basistraining", description: "Taken, bevoegdheden en verantwoordelijkheden van de VGW(M)-commissie." },
+    { title: "RI&E lezen en beoordelen", description: "Hoe beoordeel je een RI&E kritisch en waar moet je op letten?" },
+    { title: "Arbocatalogus gebruiken", description: "Werken met de arbocatalogus en naleving bewaken." },
+    { title: "PSA en verzuim aanpakken", description: "Psychosociale arbeidsbelasting herkennen en aanpakken." },
+    { title: "PV-commissie training", description: "Training voor personeelsvertegenwoordigingen in de publieke sector." },
+    { title: "Klachtencommissie", description: "Rol en werkwijze van de klachtencommissie." }
   ];
 
   const faqs = [
-    { title: "Voor wie zijn deze trainingen?", content: "Voor nieuwe en zittende OR-leden in profit, non-profit en publieke sector." },
-    { title: "Hoe lang duren de trainingen?", content: "Meeste trainingen duren 1 tot 2 dagen, ook maatwerktrajecten mogelijk." },
-    { title: "Kunnen trainingen op locatie?", content: "Ja, op jullie locatie, externe locatie of online/hybride." }
+    { title: "Verschil met OR-training?", content: "Commissies hebben specifieke taken en bevoegdheden. Deze trainingen zijn daarop toegespitst." },
+    { title: "Ook voor gecombineerde commissies?", content: "Ja, veel OR'en hebben een VGW(M)-taak. We stemmen de training af op jullie situatie." },
+    { title: "Wat als we weinig tijd hebben?", content: "We bieden ook compacte varianten van 1 dag of modulaire trajecten." }
   ];
 
   return (
     <>
       <SEO 
-        title="Trainingen voor de OR"
-        description="OR-trainingen van basis tot gevorderd: OR-start, onderhandelen, sociaal plan, reorganisatie en meer."
-        canonical="/trainingen-voor-de-or"
+        title="Trainingen voor Commissies"
+        description="Gerichte trainingen voor VGW(M)-commissies, personeelsvertegenwoordigingen en klachtencommissies."
+        canonical="/trainingen-voor-commissies"
       />
 
       <Hero 
-        title="Trainingen voor de OR"
-        subtitle="Van OR-start tot onderhandelen over een sociaal plan"
+        title="Trainingen voor Commissies"
+        subtitle="VGW(M), PV en andere commissies"
       >
         <p className="text-slate-300 mb-8">
-          Nieuwe en zittende OR-leden die hun kennis en vaardigheden willen versterken. Van basiscursus tot verdieping.
+          Leden van VGW(M)-commissies, personeelsvertegenwoordigingen en andere commissies die hun kennis willen versterken.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">

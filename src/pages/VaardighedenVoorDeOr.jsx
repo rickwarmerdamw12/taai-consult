@@ -7,7 +7,7 @@ import CardGrid from '../components/CardGrid';
 import Accordion from '../components/Accordion';
 import CTABlock from '../components/CTABlock';
 
-export default function VaardighedenVoorDeOR() {
+export default function VaardighedenVoorDeOr() {
   const visibleVaardigheden = [
     { title: "Vergadertechnieken", description: "Effectief vergaderen: agenda opstellen, discussie leiden en besluiten nemen." },
     { title: "Presenteren & overtuigen", description: "Standpunt helder overbrengen aan bestuur en achterban." },
