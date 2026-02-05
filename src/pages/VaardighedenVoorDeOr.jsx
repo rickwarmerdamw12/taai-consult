@@ -7,7 +7,7 @@ import CardGrid from '../components/CardGrid';
 import Accordion from '../components/Accordion';
 import CTABlock from '../components/CTABlock';
 
-export default function VaardighedenVoorDeOR() {
+export default function VaardighedenVoorDeOr() {
   const visibleVaardigheden = [
     { title: "Vergadertechnieken", description: "Effectief vergaderen: agenda opstellen, discussie leiden, besluiten nemen en notulen die ertoe doen.", duration: "1 dag" },
     { title: "Presenteren & overtuigen", description: "Je standpunt helder overbrengen aan bestuur, achterban en externe stakeholders. Van structuur tot impact.", duration: "1 dag" },
@@ -33,7 +33,7 @@ export default function VaardighedenVoorDeOR() {
       <SEO 
         title="Vaardigheden voor de OR"
         description="Vaardighedentrainingen voor OR-leden: vergadertechnieken, presenteren, lobbyen, netwerken en gespreksvaardigheden. Direct toepasbaar."
-        canonical="/diensten/vaardigheden-voor-de-or"
+        canonical="/vaardigheden-voor-de-or"
       />
 
       <Hero 

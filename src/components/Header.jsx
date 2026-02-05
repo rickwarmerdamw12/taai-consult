@@ -38,10 +38,10 @@ export default function Header() {
                   onMouseEnter={() => setDienstenOpen(true)}
                   onMouseLeave={() => setDienstenOpen(false)}
                 >
-                  <Link to="/diensten/trainingen-voor-de-or" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/trainingen-voor-de-or" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Trainingen OR
                   </Link>
-                  <Link to="/diensten/vaardigheden-voor-de-or" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/vaardigheden-voor-de-or" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Vaardigheden OR
                   </Link>
                   <Link to="/diensten/trainingen-voor-commissies" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
@@ -114,10 +114,10 @@ export default function Header() {
           <div className="md:hidden py-4 border-t border-slate-200">
             <div className="space-y-2">
               <div className="font-medium text-slate-900 px-4 py-2">Diensten</div>
-              <Link to="/diensten/trainingen-voor-de-or" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/trainingen-voor-de-or" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Trainingen OR
               </Link>
-              <Link to="/diensten/vaardigheden-voor-de-or" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/vaardigheden-voor-de-or" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Vaardigheden OR
               </Link>
               <Link to="/diensten/trainingen-voor-commissies" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">

@@ -18,8 +18,8 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-3">Diensten</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/diensten/trainingen-voor-de-or" className="hover:text-white">Trainingen OR</Link></li>
-              <li><Link to="/diensten/vaardigheden-voor-de-or" className="hover:text-white">Vaardigheden OR</Link></li>
+              <li><Link to="/trainingen-voor-de-or" className="hover:text-white">Trainingen OR</Link></li>
+              <li><Link to="/vaardigheden-voor-de-or" className="hover:text-white">Vaardigheden OR</Link></li>
               <li><Link to="/diensten/trainingen-voor-commissies" className="hover:text-white">Commissies</Link></li>
               <li><Link to="/diensten/workshops" className="hover:text-white">Workshops</Link></li>
               <li><Link to="/diensten/masterclasses" className="hover:text-white">Masterclasses</Link></li>

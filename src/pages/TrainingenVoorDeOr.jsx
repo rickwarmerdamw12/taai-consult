@@ -7,7 +7,7 @@ import CardGrid from '../components/CardGrid';
 import Accordion from '../components/Accordion';
 import CTABlock from '../components/CTABlock';
 
-export default function TrainingenVoorDeOR() {
+export default function TrainingenVoorDeOr() {
   const visibleTrainingen = [
     { title: "OR-start", description: "Basiscursus voor nieuwe OR-leden: taken, bevoegdheden, spelregels en wetgeving (WOR). Praktisch en direct toepasbaar.", duration: "2 dagen" },
     { title: "Onderhandelen", description: "Effectief onderhandelen met bestuur en management. Voorbereiding, tactiek en gespreksvaardigheden in WOR-context.", duration: "2 dagen" },
@@ -34,7 +34,7 @@ export default function TrainingenVoorDeOR() {
       <SEO 
         title="Trainingen voor de OR"
         description="OR-trainingen van basis tot gevorderd: OR-start, onderhandelen, sociaal plan, reorganisatie en meer. Praktisch en juridisch scherp."
-        canonical="/diensten/trainingen-voor-de-or"
+        canonical="/trainingen-voor-de-or"
       />
 
       <Hero 

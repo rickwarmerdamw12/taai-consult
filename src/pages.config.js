@@ -49,8 +49,6 @@
  */
 import Home from './pages/Home';
 import Diensten from './pages/Diensten';
-import TrainingenVoorDeOR from './pages/TrainingenVoorDeOR';
-import VaardighedenVoorDeOR from './pages/VaardighedenVoorDeOR';
 import TrainingenVoorCommissies from './pages/TrainingenVoorCommissies';
 import Workshops from './pages/Workshops';
 import Masterclasses from './pages/Masterclasses';
@@ -61,14 +59,14 @@ import VernieuwendMedezeggenschap from './pages/VernieuwendMedezeggenschap';
 import OverOns from './pages/OverOns';
 import Contact from './pages/Contact';
 import LandingORTraining from './pages/LandingORTraining';
+import TrainingenVoorDeOr from './pages/TrainingenVoorDeOr';
+import VaardighedenVoorDeOr from './pages/VaardighedenVoorDeOr';
 import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
     "Home": Home,
     "Diensten": Diensten,
-    "TrainingenVoorDeOR": TrainingenVoorDeOR,
-    "VaardighedenVoorDeOR": VaardighedenVoorDeOR,
     "TrainingenVoorCommissies": TrainingenVoorCommissies,
     "Workshops": Workshops,
     "Masterclasses": Masterclasses,
@@ -79,6 +77,8 @@ export const PAGES = {
     "OverOns": OverOns,
     "Contact": Contact,
     "LandingORTraining": LandingORTraining,
+    "TrainingenVoorDeOr": TrainingenVoorDeOr,
+    "VaardighedenVoorDeOr": VaardighedenVoorDeOr,
 }
 
 export const pagesConfig = {
