@@ -37,8 +37,8 @@ export default function Workshops() {
       />
 
       <Hero 
-        title="Workshops"
-        subtitle="Interactieve sessies over actuele thema's"
+        title="Workshops voor actuele thema's — interactief en toepasbaar"
+        subtitle="Korte, energieke sessies waarin jullie concrete stappen zetten. Handig als je snel vooruit wilt op een specifiek onderwerp."
       >
         <div className="mb-8">
           <h3 className="text-lg font-semibold mb-3">Voor wie</h3>

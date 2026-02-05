@@ -23,8 +23,8 @@ export default function ORondersteuning() {
       />
 
       <Hero 
-        title="OR-ondersteuning"
-        subtitle="Advies, interim en coaching"
+        title="OR-ondersteuning bij dossiers met hoge druk en grote belangen"
+        subtitle="Als het spannend wordt brengen wij rust, regie en overzicht — en we worden ook vroeg aangehaakt om escalatie te voorkomen."
       >
         <div className="mb-8">
           <h3 className="text-lg font-semibold mb-3">Voor wie</h3>

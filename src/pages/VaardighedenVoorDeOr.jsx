@@ -32,8 +32,8 @@ export default function VaardighedenVoorDeOr() {
       />
 
       <Hero 
-        title="Vaardigheden voor de OR"
-        subtitle="Vergadertechnieken, lobbyen, presenteren en meer"
+        title="Vaardigheden die het verschil maken aan tafel"
+        subtitle="Vergaderen, onderhandelen en communicatie: ontwikkel praktische skills waarmee je als OR-lid effectiever en prettiger samenwerkt."
       >
         <p className="text-slate-300 mb-8">
           OR-leden die hun persoonlijke effectiviteit willen vergroten. Van vergadertechniek tot strategisch beïnvloeden.

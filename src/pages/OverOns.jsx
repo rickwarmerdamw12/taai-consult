@@ -16,7 +16,7 @@ export default function OverOns() {
 
       <Hero 
         title="Over Taai-Consult"
-        subtitle="Vertrouwen bij complexe situaties. Praktisch en juridisch scherp, met oog voor de menselijke kant."
+        subtitle="Praktisch en juridisch scherp, met oog voor de menselijke kant — in het dagelijks overleg én wanneer de belangen groot zijn."
       />
 
       <PageSection>

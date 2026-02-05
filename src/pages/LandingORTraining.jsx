@@ -23,8 +23,8 @@ export default function LandingORTraining() {
       />
 
       <Hero 
-        title="Word een effectief OR-lid"
-        subtitle="Praktisch en juridisch scherp. Start met vertrouwen."
+        title="Word een effectief OR-lid (zonder gedoe)"
+        subtitle="Een praktische start met de basis: rol, invloed en samenwerking — zodat je met vertrouwen aan tafel zit."
       >
         <div className="mb-8">
           <h3 className="text-lg font-semibold mb-3">Voor wie</h3>

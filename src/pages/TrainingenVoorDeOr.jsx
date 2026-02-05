@@ -32,8 +32,8 @@ export default function TrainingenVoorDeOr() {
       />
 
       <Hero 
-        title="Trainingen voor de OR"
-        subtitle="Van OR-start tot onderhandelen over een sociaal plan"
+        title="Trainingen voor de OR die werken in de praktijk"
+        subtitle="Van OR-start tot strategisch overleg: heldere training met veel oefening, zodat jullie met meer vertrouwen en invloed aan tafel zitten."
       >
         <p className="text-slate-300 mb-8">
           Nieuwe en zittende OR-leden die hun kennis en vaardigheden willen versterken. Van basiscursus tot verdieping.

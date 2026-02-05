@@ -16,8 +16,8 @@ export default function Diensten() {
       />
 
       <Hero 
-        title="Onze diensten"
-        subtitle="Van starttraining tot masterclass en strategisch advies"
+        title="Alles om jullie medezeggenschap sterker te maken"
+        subtitle="Van praktische trainingen en workshops tot begeleiding als het spannend wordt. Altijd toepasbaar, altijd met oog voor mensen en verhoudingen."
       />
 
       <PageSection>

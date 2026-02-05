@@ -37,8 +37,8 @@ export default function Masterclasses() {
       />
 
       <Hero 
-        title="Masterclasses"
-        subtitle="Verdieping voor ervaren OR-leden"
+        title="Masterclasses voor verdieping en strategische scherpte"
+        subtitle="Voor ervaren OR-leden en commissies die verder willen kijken: meer context, betere afwegingen en sterker gesprek met de bestuurder."
       >
         <div className="mb-8">
           <h3 className="text-lg font-semibold mb-3">Voor wie</h3>

@@ -32,8 +32,8 @@ export default function TrainingenVoorCommissies() {
       />
 
       <Hero 
-        title="Trainingen voor Commissies"
-        subtitle="VGW(M), PV en andere commissies"
+        title="Trainingen voor commissies: scherp op taak én praktijk"
+        subtitle="Voor VGW(M), PV en andere commissies. Jullie krijgen structuur, taal en werkwijze om sterker te adviseren en samen te werken."
       >
         <p className="text-slate-300 mb-8">
           Leden van VGW(M)-commissies, personeelsvertegenwoordigingen en andere commissies die hun kennis willen versterken.
