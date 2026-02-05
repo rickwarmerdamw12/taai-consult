@@ -33,7 +33,7 @@ export default function TrainingenVoorCommissies() {
       <SEO 
         title="Trainingen voor Commissies"
         description="Gerichte trainingen voor VGW(M)-commissies, personeelsvertegenwoordigingen en klachtencommissies. Praktisch en direct toepasbaar."
-        canonical="/diensten/trainingen-voor-commissies"
+        canonical="/trainingen-voor-commissies"
       />
 
       <Hero 
