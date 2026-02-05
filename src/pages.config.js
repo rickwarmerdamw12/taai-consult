@@ -47,8 +47,42 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
+import Home from './pages/Home';
+import Diensten from './pages/Diensten';
+import TrainingenVoorDeOR from './pages/TrainingenVoorDeOR';
+import VaardighedenVoorDeOR from './pages/VaardighedenVoorDeOR';
+import TrainingenVoorCommissies from './pages/TrainingenVoorCommissies';
+import Workshops from './pages/Workshops';
+import Masterclasses from './pages/Masterclasses';
+import ORondersteuning from './pages/ORondersteuning';
+import MedezeggenschapHoldings from './pages/MedezeggenschapHoldings';
+import MedezeggenschapAmbtelijk from './pages/MedezeggenschapAmbtelijk';
+import VernieuwendMedezeggenschap from './pages/VernieuwendMedezeggenschap';
+import OverOns from './pages/OverOns';
+import Contact from './pages/Contact';
+import LandingORTraining from './pages/LandingORTraining';
+import __Layout from './Layout.jsx';
 
-export const pagesConfig = {
-	Pages: {}
+
+export const PAGES = {
+    "Home": Home,
+    "Diensten": Diensten,
+    "TrainingenVoorDeOR": TrainingenVoorDeOR,
+    "VaardighedenVoorDeOR": VaardighedenVoorDeOR,
+    "TrainingenVoorCommissies": TrainingenVoorCommissies,
+    "Workshops": Workshops,
+    "Masterclasses": Masterclasses,
+    "ORondersteuning": ORondersteuning,
+    "MedezeggenschapHoldings": MedezeggenschapHoldings,
+    "MedezeggenschapAmbtelijk": MedezeggenschapAmbtelijk,
+    "VernieuwendMedezeggenschap": VernieuwendMedezeggenschap,
+    "OverOns": OverOns,
+    "Contact": Contact,
+    "LandingORTraining": LandingORTraining,
 }
 
+export const pagesConfig = {
+    mainPage: "Home",
+    Pages: PAGES,
+    Layout: __Layout,
+};
