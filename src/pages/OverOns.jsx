@@ -11,12 +11,12 @@ export default function OverOns() {
       <SEO 
         title="Over ons"
         description="Taai-Consult helpt OR-leden, commissies en bestuurders om effectiever te worden. Praktisch en juridisch scherp, met oog voor de menselijke kant."
-        canonical="/over-ons"
+        canonical="/OverOns"
       />
 
       <Hero 
         title="Over Taai-Consult"
-        subtitle="Praktisch en juridisch scherp, met oog voor de menselijke kant"
+        subtitle="Vertrouwen bij complexe situaties. Praktisch en juridisch scherp, met oog voor de menselijke kant."
       />
 
       <PageSection>
@@ -24,13 +24,13 @@ export default function OverOns() {
           <h2 className="text-3xl font-bold text-slate-900 mb-6">Wie we zijn</h2>
           <div className="prose prose-lg text-slate-600">
             <p className="mb-4">
-              Taai-Consult is gespecialiseerd in trainingen en ondersteuning voor OR-leden, commissies en bestuurders. We kennen de praktijk van medezeggenschap van binnenuit: complexe dossiers, politiek gevoelige situaties en de spanning tussen formele bevoegdheden en informele invloed.
+              Taai-Consult begeleidt ondernemingsraden bij complexe en gevoelige medezeggenschapsvraagstukken. We combineren ervaring, rust en juridische scherpte om juist in spannende situaties overzicht en richting te bieden—zonder te juridiseren.
             </p>
             <p className="mb-4">
-              Onze trainers en adviseurs hebben jarenlange ervaring in medezeggenschap, arbeidsrecht en organisatieverandering. We combineren juridische kennis met praktische ervaring en oog voor de menselijke kant van verandering.
+              Taai-Consult is opgericht en wordt geleid door Arjan Warmerdam, een ervaren begeleider van ondernemingsraden in situaties met hoge druk, grote belangen en complexe besluitvorming. Jarenlang begeleidde hij OR'en bij reorganisaties, majeure veranderingen en lastige onderhandelingen.
             </p>
             <p>
-              We geloven in medezeggenschap die ertoe doet: OR'en die niet alleen formeel correct opereren, maar ook daadwerkelijk invloed hebben op besluitvorming en de organisatie verbeteren.
+              De afgelopen periode is Rick Warmerdam toegetreden tot het bureau. Hij versterkt Taai-Consult voornamelijk achter de schermen: hij verzorgt marketing, klantcontact en is vaak het eerste aanspreekpunt. De inhoudelijke begeleiding ligt bij Arjan, terwijl Rick de komende jaren steeds meer betrokken raakt. Dit biedt continuïteit en versterking, zonder de basis te veranderen.
             </p>
           </div>
         </div>
@@ -38,15 +38,15 @@ export default function OverOns() {
 
       <PageSection background="gray">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">Onze werkwijze</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">Wat ons kenmerkt</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Target className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Praktisch en scherp</h3>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Onafhankelijke positie</h3>
               <p className="text-slate-600">
-                Juridisch correct én toepasbaar in de praktijk. Geen theorie voor de theorie, maar handvatten die werken.
+                Wij werken los van interne belangen en bieden objectieve, zorgvuldige begeleiding.
               </p>
             </div>
 
@@ -54,9 +54,9 @@ export default function OverOns() {
               <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Maatwerk</h3>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Menselijke aanpak</h3>
               <p className="text-slate-600">
-                Geen standaard programma's, maar trainingen en advies op maat. Afgestemd op jullie situatie en leervragen.
+                Wij combineren juridische kennis met organisatorisch en menselijk inzicht, met aandacht voor verhoudingen en communicatie.
               </p>
             </div>
 
@@ -64,9 +64,9 @@ export default function OverOns() {
               <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Ervaring</h3>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Rust en scherpte</h3>
               <p className="text-slate-600">
-                Jarenlange ervaring in medezeggenschap, profit, non-profit en publieke sector. We weten hoe het werkt.
+                Juist wanneer het spannend wordt, brengen wij rust, helderheid en focus, zonder concessies aan kwaliteit.
               </p>
             </div>
           </div>
@@ -80,13 +80,13 @@ export default function OverOns() {
             <div className="border-l-4 border-blue-600 pl-6">
               <h3 className="text-xl font-semibold text-slate-900 mb-2">OR-leden en commissies</h3>
               <p className="text-slate-600">
-                Van startende OR-leden tot ervaren voorzitters. Van VGW(M)-commissies tot personeelsvertegenwoordigingen. Iedereen die medezeggenschap serieus neemt.
+                Van startende OR-leden tot ervaren voorzitters. Van VGW(M)-commissies tot personeelsvertegenwoordigingen.
               </p>
             </div>
             <div className="border-l-4 border-blue-600 pl-6">
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Holdings en concerns</h3>
               <p className="text-slate-600">
-                Centrale OR'en, groeps-OR'en en decentrale OR'en in complexe concernstructuren. We helpen grip krijgen op mandaten en besluitvormingsprocessen.
+                Centrale OR'en, groeps-OR'en en decentrale OR'en in complexe concernstructuren. Grip op mandaten en besluitvorming.
               </p>
             </div>
             <div className="border-l-4 border-blue-600 pl-6">
@@ -98,7 +98,7 @@ export default function OverOns() {
             <div className="border-l-4 border-blue-600 pl-6">
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Bestuurders en HR</h3>
               <p className="text-slate-600">
-                Ook bestuurders en HR-adviseurs vinden hun weg naar ons. Voor advies over medezeggenschap, OR-ondersteuning en organisatieverandering.
+                Ook bestuurders en HR-adviseurs vinden hun weg naar ons: voor advies, OR-ondersteuning en organisatieverandering.
               </p>
             </div>
           </div>
@@ -106,8 +106,8 @@ export default function OverOns() {
       </PageSection>
 
       <CTABlock 
-        title="Kennismaken?"
-        subtitle="Plan een vrijblijvend gesprek om te bespreken hoe we jullie kunnen helpen"
+        title="Klaar om helderheid te krijgen in een complex dossier?"
+        subtitle="Plan een kennismaking of neem contact op"
       />
     </>
   );
