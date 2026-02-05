@@ -172,7 +172,10 @@ export default function ORondersteuning() {
         </div>
       </PageSection>
 
-      <CTABlock />
+      <CTABlock 
+        title="Klaar om de volgende stap te zetten?"
+        subtitle="Plan een kennismaking of vraag onze brochure aan."
+      />
     </>
   );
 }

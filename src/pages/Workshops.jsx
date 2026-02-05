@@ -8,18 +8,13 @@ import Accordion from '../components/Accordion';
 import CTABlock from '../components/CTABlock';
 
 export default function Workshops() {
-  const visibleWorkshops = [
-    { title: "Hybride werken en medezeggenschap", description: "Nieuwe werkvormen vragen om nieuwe OR-afspraken. Wat zijn de thema's en hoe beïnvloed je het beleid?", duration: "Halve dag" },
-    { title: "OR-strategie bepalen", description: "Interactieve sessie om jullie OR-strategie scherp te krijgen. Missie, doelen, prioriteiten en jaarplan.", duration: "1 dag" },
-    { title: "Reorganisatie-aanpak", description: "Praktische workshop bij aankondiging van reorganisatie. Wat komt er op je af en hoe pak je het aan?", duration: "Halve dag" },
-    { title: "Gesprek met achterban", description: "Hoe organiseer je effectief contact met je achterban? Van peilingen tot werkplekconsultatie.", duration: "Halve dag" },
-    { title: "OR en duurzaamheid", description: "Rol van de OR bij duurzaam ondernemen. Van MVO-beleid tot medewerkersparticipatie.", duration: "Halve dag" },
-    { title: "Diversiteit en inclusie", description: "OR-rol bij D&I-beleid. Hoe bewaak je een inclusieve cultuur en wat zijn de juridische kaders?", duration: "Halve dag" }
-  ];
-
-  const meerModules = [
-    { title: "AI en automatisering", content: "Impact van AI op werk en werknemers. OR-rol bij invoering van nieuwe technologie en algoritmes." },
-    { title: "Teambuilding OR", content: "Interactieve sessie om als OR-team beter samen te werken. Rollen, communicatie en onderlinge verhoudingen." }
+  const voorbeeldThemas = [
+    "Samenwerken in de OR",
+    "Onderhandelen met de bestuurder",
+    "Communicatie met de achterban",
+    "Vergader- en besluitvorming",
+    "Rollen en mandaten",
+    "Mediation/gesprek in gespannen situaties"
   ];
 
   const faqs = [
@@ -85,11 +80,18 @@ export default function Workshops() {
 
       <PageSection>
         <h2 className="text-3xl font-bold text-slate-900 mb-8">Voorbeeldthema's</h2>
-        <CardGrid items={visibleWorkshops} />
-      </PageSection>
-
-      <PageSection background="gray">
-        <Accordion items={meerModules} title="Meer workshops" />
+        <ul className="space-y-3 max-w-3xl">
+          {voorbeeldThemas.map((thema, i) => (
+            <li key={i} className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">•</span>
+              <span className="text-lg text-slate-700">{thema}</span>
+            </li>
+          ))}
+        </ul>
+        
+        <p className="text-slate-600 mt-8">
+          Staat jullie onderwerp er niet tussen? We verzorgen ook maatwerk.
+        </p>
       </PageSection>
 
       <PageSection>
@@ -128,7 +130,10 @@ export default function Workshops() {
         </div>
       </PageSection>
 
-      <CTABlock />
+      <CTABlock 
+        title="Klaar om de volgende stap te zetten?"
+        subtitle="Plan een kennismaking of vraag onze brochure aan."
+      />
     </>
   );
 }

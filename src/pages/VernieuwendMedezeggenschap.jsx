@@ -105,8 +105,8 @@ export default function VernieuwendMedezeggenschap() {
       </PageSection>
 
       <CTABlock 
-        title="Klaar voor vernieuwing?"
-        subtitle="Plan een kennismaking om te bespreken hoe jullie OR kan vernieuwen"
+        title="Klaar om de volgende stap te zetten?"
+        subtitle="Plan een kennismaking of vraag onze brochure aan."
       />
     </>
   );

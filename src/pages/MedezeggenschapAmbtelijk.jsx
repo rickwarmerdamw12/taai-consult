@@ -105,8 +105,8 @@ export default function MedezeggenschapAmbtelijk() {
       </PageSection>
 
       <CTABlock 
-        title="Meer grip in de publieke sector?"
-        subtitle="Plan een kennismaking om te bespreken hoe we jullie PV of GMR kunnen versterken"
+        title="Klaar om de volgende stap te zetten?"
+        subtitle="Plan een kennismaking of vraag onze brochure aan."
       />
     </>
   );
