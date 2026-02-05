@@ -282,6 +282,133 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Voor wie we er zijn */}
+      <section className="bg-slate-50 py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-sm font-semibold text-slate-500 tracking-wider uppercase mb-4">Voor wie we er zijn</p>
+            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
+              Grip houden waar<br />
+              <span className="font-bold">belangen groot zijn.</span>
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Voor ondernemingsraden, ambtelijk secretarissen en organisaties die grip willen houden op besluitvorming, ook wanneer belangen hoog liggen.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200">
+              <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6">
+                <Users className="w-6 h-6 text-slate-700" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Ondernemingsraden</h3>
+              <p className="text-slate-600 leading-relaxed text-sm">
+                Voor OR'en die het nu willen verstaan en het gesprek willen blijven voeren, oprecht nieuwsgierig naar het bedrijf.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200">
+              <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6">
+                <Briefcase className="w-6 h-6 text-slate-700" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Ambtelijk secretarissen</h3>
+              <p className="text-slate-600 leading-relaxed text-sm">
+                Ondersteuning voor secretarissen die OR-processen willen professionaliseren, ondanks complexe besluiten.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200">
+              <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6">
+                <Building2 className="w-6 h-6 text-slate-700" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Publieke organisaties</h3>
+              <p className="text-slate-600 leading-relaxed text-sm">
+                Begeleiding bij medezeggenschap in gemeenten, provincies en waterschappen met transparante en zorgvuldige besluitvorming.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200">
+              <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6">
+                <BookOpen className="w-6 h-6 text-slate-700" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Non-profit & stichtingen</h3>
+              <p className="text-slate-600 leading-relaxed text-sm">
+                Voor organisaties met een maatschappelijke missie, waar medezeggenschap vraagt om zorgvuldige afwegingen tussen waarden, mensen en continuïteit.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 md:col-span-2 lg:col-span-1">
+              <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6">
+                <Target className="w-6 h-6 text-slate-700" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Private organisaties</h3>
+              <p className="text-slate-600 leading-relaxed text-sm">
+                Voor bedrijven waar ondernemingsraad en directie samen werkvormen bouwen die passen bij groei, verandering of reorganisatie.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Onze toegevoegde waarde */}
+      <section className="bg-slate-900 text-white py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-sm font-semibold text-slate-400 tracking-wider uppercase mb-4">Onze toegevoegde waarde</p>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Van vraagstuk naar<br />
+              <span className="font-bold">doordachte besluitvorming.</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700">
+              <div className="w-12 h-12 bg-blue-600/10 rounded-lg flex items-center justify-center mb-6">
+                <CheckCircle className="w-6 h-6 text-blue-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Zorgvuldige besluitvorming</h3>
+              <div className="w-16 h-1 bg-blue-600 mb-4"></div>
+              <p className="text-slate-300 leading-relaxed">
+                Wij brengen structuur en helderheid in besluitvorming die vraagt om overzicht, afweging en timing.
+              </p>
+            </div>
+
+            <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700">
+              <div className="w-12 h-12 bg-blue-600/10 rounded-lg flex items-center justify-center mb-6">
+                <Shield className="w-6 h-6 text-blue-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Wetgeving en organisatie</h3>
+              <div className="w-16 h-1 bg-blue-600 mb-4"></div>
+              <p className="text-slate-300 leading-relaxed">
+                Grondige WOR-kennis gecombineerd met praktische begeleiding, afgestemd op de context van de organisatie.
+              </p>
+            </div>
+
+            <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700">
+              <div className="w-12 h-12 bg-blue-600/10 rounded-lg flex items-center justify-center mb-6">
+                <Eye className="w-6 h-6 text-blue-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Verschillende perspectieven</h3>
+              <div className="w-16 h-1 bg-blue-600 mb-4"></div>
+              <p className="text-slate-300 leading-relaxed">
+                Een onafhankelijke positie en menselijk inzicht om perspectieven te verbinden en het gesprek op niveau te voeren.
+              </p>
+            </div>
+
+            <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700">
+              <div className="w-12 h-12 bg-blue-600/10 rounded-lg flex items-center justify-center mb-6">
+                <Award className="w-6 h-6 text-blue-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Versterking waar nodig</h3>
+              <div className="w-16 h-1 bg-blue-600 mb-4"></div>
+              <p className="text-slate-300 leading-relaxed">
+                Direct inzetbare expertise en ondersteuning om rust, tempo en richting te behouden wanneer dit nodig is.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Specialisaties */}
       <section className="bg-slate-50 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
