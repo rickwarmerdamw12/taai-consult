@@ -33,7 +33,7 @@ export default function Workshops() {
       <SEO 
         title="Workshops"
         description="Op maat gemaakte workshops voor OR en commissies. Van hybride werken tot reorganisatie-aanpak. Interactief en direct toepasbaar."
-        canonical="/diensten/workshops"
+        canonical="/workshops"
       />
 
       <Hero 
