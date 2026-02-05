@@ -52,8 +52,8 @@ export default function Contact() {
       />
 
       <Hero 
-        title="Contact"
-        subtitle="Plan een kennismaking of vraag onze brochure aan"
+        title="Plan een kennismaking"
+        subtitle="Vertel kort waar jullie tegenaan lopen. Dan kijken we samen wat past: training, workshop of ondersteuning."
       />
 
       <PageSection>

@@ -15,8 +15,8 @@ export default function MedezeggenschapHoldings() {
       />
 
       <Hero 
-        title="Medezeggenschap in Holdings"
-        subtitle="Grip op complexe concernstructuren"
+        title="Medezeggenschap in holdings: duidelijkheid in complexe structuren"
+        subtitle="Grip op rollen, mandaten en besluitvorming, zodat medezeggenschap ook in concerns effectief blijft."
       />
 
       <PageSection>

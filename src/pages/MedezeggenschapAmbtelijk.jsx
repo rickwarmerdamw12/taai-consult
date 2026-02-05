@@ -15,8 +15,8 @@ export default function MedezeggenschapAmbtelijk() {
       />
 
       <Hero 
-        title="Medezeggenschap in Ambtelijke Organisaties"
-        subtitle="Eigen dynamiek en spelregels in de publieke sector"
+        title="Medezeggenschap in ambtelijke organisaties: scherpte mét gevoel voor context"
+        subtitle="We kennen de bestuurlijke dynamiek en helpen OR'en en commissies met invloed, helderheid en werkbare afspraken."
       />
 
       <PageSection>

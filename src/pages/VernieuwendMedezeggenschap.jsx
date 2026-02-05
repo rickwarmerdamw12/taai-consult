@@ -15,8 +15,8 @@ export default function VernieuwendMedezeggenschap() {
       />
 
       <Hero 
-        title="Vernieuwend Medezeggenschap"
-        subtitle="Moderne vormen van participatie en invloed"
+        title="Vernieuwend medezeggenschap: modern, menselijk en effectief"
+        subtitle="Nieuwe vormen van participatie vragen om nieuwe spelregels. Wij helpen structuur en impact aan te brengen zonder ruis."
       />
 
       <PageSection>
