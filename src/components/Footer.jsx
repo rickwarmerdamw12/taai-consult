@@ -18,12 +18,12 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-3">Diensten</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/trainingen-voor-de-or" className="hover:text-white">Trainingen OR</Link></li>
-              <li><Link to="/vaardigheden-voor-de-or" className="hover:text-white">Vaardigheden OR</Link></li>
-              <li><Link to="/trainingen-voor-commissies" className="hover:text-white">Commissies</Link></li>
-              <li><Link to="/workshops" className="hover:text-white">Workshops</Link></li>
-              <li><Link to="/masterclasses" className="hover:text-white">Masterclasses</Link></li>
-              <li><Link to="/orondersteuning" className="hover:text-white">OR-ondersteuning</Link></li>
+              <li><Link to="/TrainingenVoorDeOr" className="hover:text-white">Trainingen OR</Link></li>
+              <li><Link to="/VaardighedenVoorDeOr" className="hover:text-white">Vaardigheden OR</Link></li>
+              <li><Link to="/TrainingenVoorCommissies" className="hover:text-white">Commissies</Link></li>
+              <li><Link to="/Workshops" className="hover:text-white">Workshops</Link></li>
+              <li><Link to="/Masterclasses" className="hover:text-white">Masterclasses</Link></li>
+              <li><Link to="/ORondersteuning" className="hover:text-white">OR-ondersteuning</Link></li>
             </ul>
           </div>
 
@@ -31,9 +31,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-3">Thema's</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/medezeggenschap-holdings" className="hover:text-white">Medezeggenschap Holdings</Link></li>
-              <li><Link to="/medezeggenschap-ambtelijk" className="hover:text-white">Ambtelijke Organisaties</Link></li>
-              <li><Link to="/vernieuwend-medezeggenschap" className="hover:text-white">Vernieuwend Medezeggenschap</Link></li>
+              <li><Link to="/MedezeggenschapHoldings" className="hover:text-white">Medezeggenschap Holdings</Link></li>
+              <li><Link to="/MedezeggenschapAmbtelijk" className="hover:text-white">Ambtelijke Organisaties</Link></li>
+              <li><Link to="/VernieuwendMedezeggenschap" className="hover:text-white">Vernieuwend Medezeggenschap</Link></li>
             </ul>
           </div>
 
@@ -44,7 +44,7 @@ export default function Footer() {
               <li>info@taai-consult.nl</li>
               <li>+31 (0)20 123 4567</li>
               <li className="pt-2">
-                <Link to="/contact" className="text-blue-400 hover:text-blue-300">
+                <Link to="/Contact" className="text-blue-400 hover:text-blue-300">
                   Neem contact op →
                 </Link>
               </li>

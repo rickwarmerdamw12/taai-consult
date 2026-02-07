@@ -8,7 +8,7 @@ export default function Header() {
   const [themasOpen, setThemasOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-slate-200">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-sm">
       {/* Tracking placeholder */}
       {/* TODO: Add GA4 / Facebook Pixel / LinkedIn Insight Tag 
       <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>

@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="Home"
-        description="Taai-Consult biedt trainingen en ondersteuning voor OR-leden, commissies en bestuurders. Praktisch, juridisch scherp en gericht op betere gesprekken en besluiten."
+        title="OR ondersteuning bij besluitvorming | Taai-Consult"
+        description="Taai-Consult biedt trainingen en ondersteuning voor OR-leden, commissies en bestuurders. Onafhankelijk, zorgvuldig en ervaren adviseur voor medezeggenschap."
         canonical="/"
       />
 
@@ -19,10 +19,10 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="max-w-4xl">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-              Sterke medezeggenschap wanneer het ertoe doet.
+              Rust en regie in medezeggenschap wanneer belangen hoog zijn.
             </h1>
             <p className="text-xl sm:text-2xl text-slate-300 mb-12 leading-relaxed">
-              Voor OR-leden, commissies en bestuurders die sterker willen worden in het dagelijks overleg — en rust zoeken wanneer de belangen groot zijn.
+              Onafhankelijke begeleiding met ervaring in de bestuurlijke context — zorgvuldig en met gezag.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
@@ -53,11 +53,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Twee smaken */}
+      {/* Wanneer het spannend wordt */}
       <section className="bg-slate-50 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900">Wanneer het spannend wordt</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto mt-4">
+              Herkenbare situaties waarin een doordachte aanpak essentieel is.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="bg-white border border-slate-200 rounded-lg p-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Reorganisatie/Herstructurering</h3>
+              <p className="text-slate-600 text-sm">Begeleiding bij complexe reorganisaties en herstructureringen.</p>
+            </div>
+            <div className="bg-white border border-slate-200 rounded-lg p-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Adviesaanvraag onder tijdsdruk</h3>
+              <p className="text-slate-600 text-sm">Hulp bij het formuleren van een gedegen advies onder strakke deadlines.</p>
+            </div>
+            <div className="bg-white border border-slate-200 rounded-lg p-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Complexe governance/holding-structuur</h3>
+              <p className="text-slate-600 text-sm">Inzicht en strategie bij medezeggenschap in complexe bedrijfsstructuren.</p>
+            </div>
+            <div className="bg-white border border-slate-200 rounded-lg p-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Spanning OR-bestuurder / escalatie voorkomen</h3>
+              <p className="text-slate-600 text-sm">Begeleiding om conflicten te de-escaleren en de relatie te herstellen.</p>
+            </div>
+            <div className="bg-white border border-slate-200 rounded-lg p-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">COR/EOR context</h3>
+              <p className="text-slate-600 text-sm">Medezeggenschap in nationale en internationale groepsverbanden.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Twee smaken */}
+      <section className="bg-white py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-white rounded-xl p-12 border border-slate-200">
+            <div className="bg-slate-50 rounded-xl p-12 border border-slate-200">
               <h3 className="text-3xl font-bold text-slate-900 mb-6">Training & professionalisering</h3>
               <div className="space-y-3">
                 <Link to="/TrainingenVoorDeOr" className="block text-blue-600 hover:text-blue-700 font-medium text-lg">
@@ -86,7 +120,7 @@ export default function Home() {
       </section>
 
       {/* Productlijnen */}
-      <section className="bg-white py-24">
+      <section className="bg-slate-50 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link to="/TrainingenVoorDeOr" className="group bg-white border border-slate-200 rounded-lg p-8 hover:border-blue-600 transition-all">
@@ -128,7 +162,7 @@ export default function Home() {
       </section>
 
       {/* Contexten */}
-      <section className="bg-slate-50 py-24">
+      <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold text-slate-900">Contexten</h2>
@@ -160,7 +194,7 @@ export default function Home() {
       </section>
 
       {/* Werkwijze */}
-      <section className="bg-white py-24">
+      <section className="bg-slate-50 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-slate-900">Van analyse tot resultaat.</h2>
@@ -206,7 +240,7 @@ export default function Home() {
       </section>
 
       {/* Wat ons onderscheidt */}
-      <section className="bg-slate-50 py-24">
+      <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold text-slate-900">Wat ons onderscheidt</h2>
@@ -244,7 +278,7 @@ export default function Home() {
               <div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-3">Onafhankelijk & betrouwbaar</h3>
                 <p className="text-lg text-slate-600 leading-relaxed">
-                  We zijn niet verbonden aan vakbonden of werkgeversorganisaties, en werken altijd in het belang van stevige medezeggenschap.
+                  We zijn niet verbonden aan vakbonden of werkgeversorganisaties, en werken altijd in het belang van zorgvuldige medezeggenschap met gezag.
                 </p>
               </div>
             </div>
@@ -255,7 +289,7 @@ export default function Home() {
 
 
       {/* Final CTA */}
-      <section className="bg-white py-24">
+      <section className="bg-slate-50 py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">Klaar om de volgende stap te zetten?</h2>
           <p className="text-xl text-slate-600 mb-10">

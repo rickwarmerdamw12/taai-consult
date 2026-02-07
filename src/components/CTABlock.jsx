@@ -21,14 +21,14 @@ export default function CTABlock({
         )}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link 
-            to="/Contact#plan" 
+            to="/Contact" 
             className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
             data-cta="plan_kennismaking"
           >
             Plan kennismaking
           </Link>
           <Link 
-            to="/Contact#brochure" 
+            to="/Contact" 
             className={`px-8 py-3 rounded-lg font-medium transition-colors ${
               variant === "dark" 
                 ? "bg-white text-slate-900 hover:bg-slate-100" 

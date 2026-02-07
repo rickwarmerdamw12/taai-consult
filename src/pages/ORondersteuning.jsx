@@ -5,21 +5,23 @@ import Hero from '../components/Hero';
 import PageSection from '../components/PageSection';
 import CTABlock from '../components/CTABlock';
 import Accordion from '../components/Accordion';
-import { Briefcase, Users, Target } from 'lucide-react';
+import { Briefcase, Users, Target, BookOpen } from 'lucide-react';
 
 export default function ORondersteuning() {
   const faqs = [
-    { title: "Wanneer heb je ondersteuning nodig?", content: "Bij complexe dossiers (fusie, reorganisatie), conflict met bestuur, of als de OR tijdelijk versterking nodig heeft." },
-    { title: "Hoe lang duurt ondersteuning?", content: "Advies kan eenmalig zijn, interim en coaching lopen meestal enkele maanden tot een jaar. We stemmen af op jullie behoefte." },
-    { title: "Wat kost OR-ondersteuning?", content: "Dat hangt af van de vraag en omvang. We maken altijd eerst een offerte op maat na het intakegesprek." }
+    { title: "Wanneer heeft een OR externe ondersteuning nodig?", content: "Een OR heeft externe ondersteuning nodig bij complexe dossiers (fusie, reorganisatie), conflict met bestuur, of als de OR tijdelijk versterking nodig heeft. Ook bij tijdgebrek of gebrek aan specifieke kennis kan externe expertise uitkomst bieden." },
+    { title: "Wat doet een externe OR-adviseur concreet?", content: "Een externe OR-adviseur analyseert de situatie, biedt juridisch en strategisch advies, ondersteunt bij onderhandelingen, en coacht de OR in haar rol. Dit kan variëren van een eenmalig advies tot langdurige begeleiding of interim ondersteuning." },
+    { title: "Hoe blijft ondersteuning onafhankelijk?", content: "Taai-Consult werkt volledig onafhankelijk van zowel werkgever als werknemersorganisaties. Onze loyaliteit ligt bij een effectieve en evenwichtige medezeggenschap. Heldere afspraken over rol en scope waarborgen de onafhankelijkheid." },
+    { title: "Wat is het verschil tussen training en begeleiding?", content: "Training richt zich op het aanleren van kennis en vaardigheden in een gestructureerde setting. Begeleiding is een breder concept waarbij wij de OR ondersteunen in lopende processen, bij specifieke dossiers of in de dynamiek met de bestuurder. Het kan trainingselementen bevatten, maar is meer gericht op directe toepassing in de praktijk." },
+    { title: "Wat kan een OR doen onder tijdsdruk?", content: "Onder tijdsdruk is het cruciaal om snel inzicht te krijgen in de essentie van het vraagstuk, de juiste vragen te stellen en efficiënt te werken. Een externe adviseur kan hierbij helpen door snel te schakelen, de belangrijkste punten te identificeren en de OR te ondersteunen bij het formuleren van een snel en effectief standpunt." }
   ];
 
   return (
     <>
       <SEO 
-        title="OR-ondersteuning"
-        description="Advies, interim en coaching voor OR'en die extra ondersteuning nodig hebben bij complexe dossiers, conflict of organisatieverandering."
-        canonical="/diensten/or-ondersteuning"
+        title="OR-ondersteuning bij reorganisatie en complexe besluitvorming | Taai-Consult"
+        description="Onafhankelijke begeleiding voor ondernemingsraden bij reorganisaties, adviesaanvragen en bestuurlijke druk. Discreet, zorgvuldig en ervaren."
+        canonical="/ORondersteuning"
       />
 
       <Hero 
@@ -53,14 +55,14 @@ export default function ORondersteuning() {
 
         <div className="flex flex-col sm:flex-row gap-4">
           <Link 
-            to="/contact#plan" 
+            to="/Contact" 
             className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-center"
             data-cta="plan_kennismaking"
           >
             Plan kennismaking
           </Link>
           <Link 
-            to="/contact#brochure" 
+            to="/Contact" 
             className="px-8 py-3 bg-white text-slate-900 rounded-lg hover:bg-slate-100 transition-colors font-medium text-center"
             data-cta="vraag_brochure"
           >
@@ -70,6 +72,40 @@ export default function ORondersteuning() {
       </Hero>
 
       <PageSection>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">Wanneer het spannend wordt</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white border border-slate-200 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Reorganisatie/Herstructurering</h3>
+              <p className="text-slate-600">Begeleiding bij complexe reorganisaties en herstructureringen.</p>
+            </div>
+            <div className="bg-white border border-slate-200 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Adviesaanvraag onder tijdsdruk</h3>
+              <p className="text-slate-600">Hulp bij het formuleren van een gedegen advies onder strakke deadlines.</p>
+            </div>
+            <div className="bg-white border border-slate-200 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Complexe governance/holding-structuur</h3>
+              <p className="text-slate-600">Inzicht en strategie bij medezeggenschap in complexe bedrijfsstructuren.</p>
+            </div>
+            <div className="bg-white border border-slate-200 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Spanning OR-bestuurder / escalatie voorkomen</h3>
+              <p className="text-slate-600">Begeleiding om conflicten te de-escaleren en de relatie te herstellen.</p>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link 
+              to="/ORondersteuningLongread"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-slate-300 rounded-lg hover:border-blue-600 transition-colors font-medium text-slate-900"
+            >
+              <BookOpen className="w-5 h-5" />
+              Lees het uitgebreide artikel
+            </Link>
+          </div>
+        </div>
+      </PageSection>
+
+      <PageSection background="gray">
         <div className="space-y-12">
           <div className="flex gap-6 items-start">
             <div className="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
@@ -136,7 +172,7 @@ export default function ORondersteuning() {
         </div>
       </PageSection>
 
-      <PageSection background="gray">
+      <PageSection>
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-slate-900 mb-8">Werkwijze</h2>
           <div className="space-y-6">
@@ -165,7 +201,7 @@ export default function ORondersteuning() {
         </div>
       </PageSection>
 
-      <PageSection>
+      <PageSection background="gray">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-slate-900 mb-8">Veelgestelde vragen</h2>
           <Accordion items={faqs} />
