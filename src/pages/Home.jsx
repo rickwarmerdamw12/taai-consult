@@ -130,48 +130,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Productlijnen */}
-      <section className="bg-slate-50 py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link to="/TrainingenVoorDeOr" className="group bg-white border border-slate-200 rounded-lg p-8 hover:border-blue-600 transition-all">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Trainingen voor de OR</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk.
-              </p>
-            </Link>
-
-            <Link to="/VaardighedenVoorDeOr" className="group bg-white border border-slate-200 rounded-lg p-8 hover:border-blue-600 transition-all">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Vaardigheden OR</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk.
-              </p>
-            </Link>
-
-            <Link to="/TrainingenVoorCommissies" className="group bg-white border border-slate-200 rounded-lg p-8 hover:border-blue-600 transition-all">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Trainingen voor commissies</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk.
-              </p>
-            </Link>
-
-            <Link to="/Masterclasses" className="group bg-white border border-slate-200 rounded-lg p-8 hover:border-blue-600 transition-all">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Masterclasses</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk.
-              </p>
-            </Link>
-
-            <Link to="/Workshops" className="group bg-white border border-slate-200 rounded-lg p-8 hover:border-blue-600 transition-all">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Workshops</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk.
-              </p>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Werkwijze */}
       <section className="bg-slate-50 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
