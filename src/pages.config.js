@@ -61,6 +61,7 @@ import TrainingenVoorDeOr from './pages/TrainingenVoorDeOr';
 import VaardighedenVoorDeOr from './pages/VaardighedenVoorDeOr';
 import VernieuwendMedezeggenschap from './pages/VernieuwendMedezeggenschap';
 import Workshops from './pages/Workshops';
+import Vertrouwenspersoon from './pages/Vertrouwenspersoon';
 import __Layout from './Layout.jsx';
 
 
@@ -79,6 +80,7 @@ export const PAGES = {
     "VaardighedenVoorDeOr": VaardighedenVoorDeOr,
     "VernieuwendMedezeggenschap": VernieuwendMedezeggenschap,
     "Workshops": Workshops,
+    "Vertrouwenspersoon": Vertrouwenspersoon,
 }
 
 export const pagesConfig = {
