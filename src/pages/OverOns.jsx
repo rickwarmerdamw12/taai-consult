@@ -22,16 +22,24 @@ export default function OverOns() {
       <PageSection>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-slate-900 mb-6">Wie we zijn</h2>
-          <div className="prose prose-lg text-slate-600">
-            <p className="mb-4">
-              Taai-Consult begeleidt ondernemingsraden bij complexe en gevoelige medezeggenschapsvraagstukken. We combineren ervaring, rust en juridische scherpte om juist in spannende situaties overzicht en richting te bieden—zonder te juridiseren.
-            </p>
-            <p className="mb-4">
-              Taai-Consult is opgericht en wordt geleid door Arjan Warmerdam, een ervaren begeleider van ondernemingsraden in situaties met hoge druk, grote belangen en complexe besluitvorming. Jarenlang begeleidde hij OR'en bij reorganisaties, majeure veranderingen en lastige onderhandelingen.
+          <div className="prose prose-lg text-slate-600 space-y-4">
+            <p>
+              Taai-Consult begeleidt ondernemingsraden en commissies bij complexe en gevoelige medezeggenschapsvraagstukken. Wij brengen overzicht, rust en richting — vooral wanneer het spannend wordt.
             </p>
             <p>
-              De afgelopen periode is Rick Warmerdam toegetreden tot het bureau. Hij versterkt Taai-Consult voornamelijk achter de schermen: hij verzorgt marketing, klantcontact en is vaak het eerste aanspreekpunt. De inhoudelijke begeleiding ligt bij Arjan, terwijl Rick de komende jaren steeds meer betrokken raakt. Dit biedt continuïteit en versterking, zonder de basis te veranderen.
+              Juridische kennis gebruiken we om werkbare oplossingen te vinden binnen het juridische kader, niet om te juridiseren. Dat vraagt om ervaring, scherpte en oog voor de verhoudingen binnen de organisatie.
             </p>
+            <div className="pt-4">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Arjan Warmerdam</h3>
+              <p className="mb-4">
+                Oprichter en inhoudelijk eindverantwoordelijk. Arjan is een ervaren begeleider van OR'en bij reorganisaties, grote veranderingen en complexe besluitvorming. Hij staat bekend om rust, scherpte en gezag zonder escalatie.
+              </p>
+              
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Rick Warmerdam</h3>
+              <p>
+                Toegetreden tot het bureau en verantwoordelijk voor marketing, klantcontact en eerste aanspreekpunt. De inhoudelijke begeleiding ligt bij Arjan; Rick groeit de komende jaren verder in het bureau. Dit biedt continuïteit en versterking.
+              </p>
+            </div>
           </div>
         </div>
       </PageSection>
@@ -56,7 +64,7 @@ export default function OverOns() {
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-3">Menselijke aanpak</h3>
               <p className="text-slate-600">
-                Wij combineren juridische kennis met organisatorisch en menselijk inzicht, met aandacht voor verhoudingen en communicatie.
+                Juridische kennis gecombineerd met organisatie- en menselijk inzicht, met aandacht voor verhoudingen en communicatie.
               </p>
             </div>
 
@@ -66,7 +74,7 @@ export default function OverOns() {
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-3">Rust en scherpte</h3>
               <p className="text-slate-600">
-                Juist wanneer het spannend wordt, brengen wij rust, helderheid en focus, zonder concessies aan kwaliteit.
+                Juist wanneer het spannend wordt, brengen wij overzicht, focus en kwaliteit in het proces.
               </p>
             </div>
           </div>
@@ -80,25 +88,25 @@ export default function OverOns() {
             <div className="border-l-4 border-blue-600 pl-6">
               <h3 className="text-xl font-semibold text-slate-900 mb-2">OR-leden en commissies</h3>
               <p className="text-slate-600">
-                Van startende OR-leden tot ervaren voorzitters. Van VGW(M)-commissies tot personeelsvertegenwoordigingen.
+                Van startende OR-leden tot ervaren voorzitters en VGW(M)-commissies.
               </p>
             </div>
             <div className="border-l-4 border-blue-600 pl-6">
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Holdings en concerns</h3>
               <p className="text-slate-600">
-                Centrale OR'en, groeps-OR'en en decentrale OR'en in complexe concernstructuren. Grip op mandaten en besluitvorming.
+                Centrale OR'en, groeps-OR'en en decentrale OR'en in complexe concernstructuren.
               </p>
             </div>
             <div className="border-l-4 border-blue-600 pl-6">
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Publieke sector</h3>
               <p className="text-slate-600">
-                Gemeenten, provincies, waterschappen en andere publieke organisaties. We kennen de ambtelijke context en politiek-bestuurlijke verhoudingen.
+                Gemeenten, provincies, waterschappen en andere ambtelijke organisaties.
               </p>
             </div>
             <div className="border-l-4 border-blue-600 pl-6">
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Bestuurders en HR</h3>
               <p className="text-slate-600">
-                Ook bestuurders en HR-adviseurs vinden hun weg naar ons: voor advies, OR-ondersteuning en organisatieverandering.
+                Voor advies, OR-ondersteuning en organisatievraagstukken rondom medezeggenschap.
               </p>
             </div>
           </div>
@@ -106,8 +114,8 @@ export default function OverOns() {
       </PageSection>
 
       <CTABlock 
-        title="Klaar om helderheid te krijgen in een complex dossier?"
-        subtitle="Plan een kennismaking of neem contact op"
+        title="Klaar om te starten?"
+        subtitle="Plan een kennismaking of vraag onze brochure aan"
       />
     </>
   );
