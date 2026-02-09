@@ -43,13 +43,7 @@ export default function Workshops() {
           >
             Plan kennismaking
           </Link>
-          <Link 
-            to="/contact#brochure" 
-            className="px-8 py-3 bg-white text-slate-900 rounded-lg hover:bg-slate-100 transition-colors font-medium text-center"
-            data-cta="vraag_brochure"
-          >
-            Vraag brochure
-          </Link>
+
         </div>
       </Hero>
 
