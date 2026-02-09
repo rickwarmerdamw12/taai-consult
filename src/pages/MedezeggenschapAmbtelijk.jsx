@@ -193,30 +193,6 @@ export default function MedezeggenschapAmbtelijk() {
         </div>
       </PageSection>
 
-      <PageSection>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">Relevante diensten</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link to="/trainingen-voor-de-or" className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-lg font-semibold text-slate-900 mb-2">Trainingen PV / GMR / DMR</h3>
-              <p className="text-sm text-slate-600">Basis, verdieping en strategische positionering</p>
-            </Link>
-            <Link to="/vaardigheden-voor-de-or" className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-lg font-semibold text-slate-900 mb-2">Vaardigheidstrainingen</h3>
-              <p className="text-sm text-slate-600">Lobbyen, presenteren, beïnvloeden in bestuurlijke context</p>
-            </Link>
-            <Link to="/or-ondersteuning" className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-lg font-semibold text-slate-900 mb-2">PV-ondersteuning</h3>
-              <p className="text-sm text-slate-600">Advies, interim en coaching bij complexe dossiers</p>
-            </Link>
-            <Link to="/workshops" className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-lg font-semibold text-slate-900 mb-2">Workshops</h3>
-              <p className="text-sm text-slate-600">Reorganisatie-aanpak, stakeholdermanagement, strategie</p>
-            </Link>
-          </div>
-        </div>
-      </PageSection>
-
       <CTABlock 
         title="Vragen over medezeggenschap in jullie organisatie?"
         subtitle="Een kennismaking is vrijblijvend en bedoeld om samen te verkennen hoe medezeggenschap effectiever kan."
