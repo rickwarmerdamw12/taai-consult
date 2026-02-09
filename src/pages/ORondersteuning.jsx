@@ -73,56 +73,27 @@ export default function ORondersteuning() {
 
       <PageSection>
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-slate-900 mb-8">Wanneer het spannend wordt</h2>
-          
-          <div className="prose prose-lg text-slate-600 space-y-6 mb-12">
-            <p className="leading-relaxed text-lg">
-              Medezeggenschap is nooit vrijblijvend. Maar er zijn momenten waarop de druk aanzienlijk toeneemt en het werk van de OR extra zorgvuldig moet worden uitgevoerd. Complexiteit, tijdsdruk en gevoelige belangen kunnen de ruimte voor rust en reflectie beperken, terwijl juist dan scherpe oordeelsvorming nodig is.
-            </p>
-          </div>
-
-          <h3 className="text-2xl font-bold text-slate-900 mb-6">Herkenbare situaties</h3>
-          
-          <div className="space-y-8 mb-12">
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h4 className="text-xl font-bold text-slate-900 mb-3">Reorganisatie en herstructurering</h4>
-              <p className="text-slate-600 leading-relaxed">
-                Een bekend voorbeeld is de situatie van reorganisatie of herstructurering. Besluiten volgen elkaar snel op, de impact op medewerkers is groot en de verwachtingen richting de OR nemen toe. In deze fases moet de OR in korte tijd overzicht creëren, voorstellen doorgronden en zijn positie bepalen, zonder de regie te verliezen.
-              </p>
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">Wanneer het spannend wordt</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white border border-slate-200 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Reorganisatie/Herstructurering</h3>
+              <p className="text-slate-600">Begeleiding bij complexe reorganisaties en herstructureringen.</p>
             </div>
-
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h4 className="text-xl font-bold text-slate-900 mb-3">Adviesaanvragen onder tijdsdruk</h4>
-              <p className="text-slate-600 leading-relaxed">
-                Ook adviesaanvragen onder hoge tijdsdruk vragen om een doordachte aanpak. De druk om snel te reageren mag niet ten koste gaan van inhoudelijke kwaliteit. Het vraagt om structuur, prioritering en het vermogen om de juiste vragen op het juiste moment te stellen.
-              </p>
+            <div className="bg-white border border-slate-200 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Adviesaanvraag onder tijdsdruk</h3>
+              <p className="text-slate-600">Hulp bij het formuleren van een gedegen advies onder strakke deadlines.</p>
             </div>
-
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h4 className="text-xl font-bold text-slate-900 mb-3">Complexe governance en holdingstructuren</h4>
-              <p className="text-slate-600 leading-relaxed">
-                De complexiteit wordt groter in organisaties met uitgebreide governance- en holdingstructuren. Bevoegdheden zijn verdeeld over meerdere lagen en besluitvorming vindt niet altijd plaats waar de formele medezeggenschap is georganiseerd. In COR- en EOR-contexten komen daar vaak nog internationale verhoudingen, culturele verschillen en uiteenlopende belangen bij.
-              </p>
+            <div className="bg-white border border-slate-200 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Complexe governance/holding-structuur</h3>
+              <p className="text-slate-600">Inzicht en strategie bij medezeggenschap in complexe bedrijfsstructuren.</p>
             </div>
-
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h4 className="text-xl font-bold text-slate-900 mb-3">Spanning en escalatierisico</h4>
-              <p className="text-slate-600 leading-relaxed">
-                Wanneer daarnaast de samenwerking tussen OR en bestuurder onder spanning komt te staan, ontstaat het risico op escalatie. Het gesprek verschuift van inhoud naar positie, vertrouwen neemt af en besluitvorming komt onder druk te staan. Dat is vaak niet het gevolg van onwil, maar van onduidelijkheid over rollen, verwachtingen en verantwoordelijkheden.
-              </p>
+            <div className="bg-white border border-slate-200 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Spanning OR-bestuurder / escalatie voorkomen</h3>
+              <p className="text-slate-600">Begeleiding om conflicten te de-escaleren en de relatie te herstellen.</p>
             </div>
           </div>
 
-          <div className="bg-blue-50 border-l-4 border-blue-600 p-8 rounded-r-lg mb-12">
-            <p className="text-lg text-slate-700 leading-relaxed mb-4">
-              In al deze situaties ondersteunen wij OR'en bij het behouden van overzicht en regie. Wij helpen bij het analyseren van complexe vraagstukken, het bepalen van een strategische koers en het zorgvuldig voeren van het gesprek met bestuurders.
-            </p>
-            <p className="text-slate-600 leading-relaxed">
-              Altijd met respect voor de verhoudingen, oog voor de juridische kaders en focus op werkbare oplossingen. Onze ondersteuning is erop gericht de OR sterker te maken in zijn rol – juist wanneer het spannend wordt.
-            </p>
-          </div>
-
-          <div className="text-center">
+          <div className="mt-12 text-center">
             <Link 
               to="/ORondersteuningLongread"
               className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-slate-300 rounded-lg hover:border-blue-600 transition-colors font-medium text-slate-900"
