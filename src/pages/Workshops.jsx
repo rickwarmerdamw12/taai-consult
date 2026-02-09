@@ -9,18 +9,18 @@ import CTABlock from '../components/CTABlock';
 
 export default function Workshops() {
   const voorbeeldThemas = [
-    "Samenwerken in de OR",
+    "Samenwerken binnen de OR",
     "Onderhandelen met de bestuurder",
     "Communicatie met de achterban",
     "Vergader- en besluitvorming",
     "Rollen en mandaten",
-    "Mediation/gesprek in gespannen situaties"
+    "Gesprek voeren in spanningsvolle situaties"
   ];
 
   const faqs = [
-    { title: "Verschil met trainingen?", content: "Workshops zijn korter (halve dag tot 1 dag) en meer gericht op een specifiek actueel thema of vraagstuk." },
-    { title: "Kunnen we zelf een thema voorstellen?", content: "Absoluut. We maken vaak maatwerk workshops op basis van jullie concrete vraagstuk of organisatieverandering." },
-    { title: "Ook online mogelijk?", content: "Ja, workshops kunnen zowel fysiek als online worden gegeven. Hybride is ook mogelijk." }
+    { title: "Verschil met trainingen?", content: "Een workshop is korter en gericht op één actueel thema. Trainingen zijn breder en bedoeld voor structurele ontwikkeling van kennis en vaardigheden." },
+    { title: "Kunnen we zelf een thema voorstellen?", content: "Ja. Workshops worden altijd afgestemd op jullie vraagstuk en organisatie." },
+    { title: "Ook online mogelijk?", content: "Ja, workshops kunnen zowel op locatie als online worden verzorgd." }
   ];
 
   return (
@@ -32,13 +32,17 @@ export default function Workshops() {
       />
 
       <Hero 
-        title="Workshops voor actuele thema's — interactief en toepasbaar"
-        subtitle="Korte, energieke sessies waarin jullie concrete stappen zetten. Handig als je snel vooruit wilt op een specifiek onderwerp."
+        title="Workshops voor actuele OR-vraagstukken"
+        subtitle="Interactieve sessies waarin jullie werken aan een concreet thema dat nú speelt — praktisch, gericht en direct toepasbaar."
       >
+        <p className="text-slate-300 mb-8">
+          Workshops zijn geschikt wanneer jullie snel verdieping willen op een specifiek onderwerp. In korte, interactieve sessies werken we aan inzicht, afstemming en concrete stappen die passen bij jullie situatie.
+        </p>
+
         <div className="mb-8">
           <h3 className="text-lg font-semibold mb-3">Voor wie</h3>
           <p className="text-slate-300">
-            OR'en en commissies die snel en gericht willen verdiepen op een actueel thema of vraagstuk in hun organisatie.
+            Voor OR'en en commissies die gericht willen werken aan een actueel thema of vraagstuk binnen hun organisatie.
           </p>
         </div>
 
@@ -55,7 +59,7 @@ export default function Workshops() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-blue-400 mt-1">✓</span>
-              <span>Concrete handvatten en tools</span>
+              <span>Concrete handvatten, afspraken of vervolgstappen</span>
             </li>
           </ul>
         </div>
@@ -78,8 +82,27 @@ export default function Workshops() {
         </div>
       </Hero>
 
+      <PageSection background="gray">
+        <div className="max-w-3xl mx-auto">
+          <h3 className="text-lg font-semibold text-slate-700 mb-4">Wanneer kies je voor een workshop?</h3>
+          
+          <div className="space-y-4 text-slate-700 leading-relaxed">
+            <p>
+              Een workshop is geen volledige training, maar een gerichte sessie rond één thema. Ideaal wanneer er iets speelt dat om aandacht vraagt, of wanneer jullie als OR of commissie snel tot gezamenlijke inzichten of afspraken willen komen.
+            </p>
+            
+            <p>
+              We stemmen de workshop vooraf af op jullie vraagstuk, zodat de inhoud aansluit bij wat er nodig is in de praktijk.
+            </p>
+          </div>
+        </div>
+      </PageSection>
+
       <PageSection>
         <h2 className="text-3xl font-bold text-slate-900 mb-8">Voorbeeldthema's</h2>
+        <p className="text-slate-600 mb-6 max-w-3xl">
+          Onderstaande thema's geven een beeld van wat mogelijk is. De inhoud stemmen we altijd af op jullie situatie.
+        </p>
         <ul className="space-y-3 max-w-3xl">
           {voorbeeldThemas.map((thema, i) => (
             <li key={i} className="flex items-start gap-3">
@@ -102,21 +125,21 @@ export default function Workshops() {
               <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">1</div>
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">Intakegesprek</h3>
-                <p className="text-slate-600">We bespreken jullie vraagstuk, context en wat jullie willen bereiken met de workshop.</p>
+                <p className="text-slate-600">We bespreken het vraagstuk, de context en wat jullie met de workshop willen bereiken.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">2</div>
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">Interactieve workshop</h3>
-                <p className="text-slate-600">Korte inhoudelijke input, gevolgd door oefeningen, discussie en concrete uitwerking voor jullie situatie.</p>
+                <p className="text-slate-600">Gerichte inhoudelijke input, gecombineerd met oefeningen, discussie en toepassing op jullie eigen situatie.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">3</div>
               <div>
-                <h3 className="font-semibold text-slate-900 mb-2">Concrete output</h3>
-                <p className="text-slate-600">Jullie gaan weg met concrete handvatten, tools of een plan van aanpak dat direct toepasbaar is.</p>
+                <h3 className="font-semibold text-slate-900 mb-2">Concrete opbrengst</h3>
+                <p className="text-slate-600">Jullie gaan naar huis met duidelijke inzichten, afspraken of handvatten die direct toepasbaar zijn.</p>
               </div>
             </div>
           </div>
@@ -131,7 +154,7 @@ export default function Workshops() {
       </PageSection>
 
       <CTABlock 
-        title="Klaar om de volgende stap te zetten?"
+        title="Willen jullie gericht aan de slag met een actueel thema?"
         subtitle="Plan een kennismaking of vraag onze brochure aan."
       />
     </>
