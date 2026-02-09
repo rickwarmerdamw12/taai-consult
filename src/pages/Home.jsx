@@ -165,38 +165,6 @@ In alles wat we doen werken we praktisch en onafhankelijk. We hebben oog voor de
         </div>
       </section>
 
-      {/* Contexten */}
-      <section className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900">Contexten</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <Link to="/MedezeggenschapHoldings" className="group bg-white border border-slate-200 rounded-lg p-8 hover:border-blue-600 transition-all">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Medezeggenschap in een holding</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Inzicht en structuur in rollen, mandaten en besluitvorming binnen concerns.
-              </p>
-            </Link>
-
-            <Link to="/MedezeggenschapAmbtelijk" className="group bg-white border border-slate-200 rounded-lg p-8 hover:border-blue-600 transition-all">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Medezeggenschap in ambtelijke organisaties</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Scherpte met gevoel voor bestuurlijke dynamiek en context.
-              </p>
-            </Link>
-
-            <Link to="/VernieuwendMedezeggenschap" className="group bg-white border border-slate-200 rounded-lg p-8 hover:border-blue-600 transition-all">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Vernieuwend medezeggenschap</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Moderne vormen van medezeggenschap, met heldere spelregels en focus.
-              </p>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Werkwijze */}
       <section className="bg-slate-50 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
