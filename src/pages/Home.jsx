@@ -18,24 +18,20 @@ export default function Home() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="max-w-4xl">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight">Training en ondersteuning voor ondernemingsraden
-
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight">Workshops voor actuele OR-vraagstukken
             </h1>
-            <p className="text-xl sm:text-2xl text-slate-300 mb-12 leading-relaxed">Praktisch, zorgvuldig en onafhankelijk — voor OR'en die hun rol goed willen vervullen, in gewone én complexere situaties.
-
+            <p className="text-xl sm:text-2xl text-slate-300 mb-12 leading-relaxed">Korte, interactieve sessies waarin jullie gericht werken aan een thema dat speelt — praktisch, concreet en direct toepasbaar.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/Contact"
                 className="inline-block px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-center text-lg">
-
-                Plan een vrijblijvend gesprek
+                Plan kennismaking
               </Link>
               <Link
-                to="/Diensten"
+                to="/Contact"
                 className="inline-block px-8 py-4 bg-white text-slate-900 rounded-lg hover:bg-slate-100 transition-colors font-medium text-center text-lg">
-
-                Bekijk onze diensten
+                Vraag brochure
               </Link>
             </div>
           </div>
