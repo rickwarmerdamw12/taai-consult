@@ -63,6 +63,20 @@ export default function TrainingenVoorDeOr() {
         </div>
       </Hero>
 
+      <PageSection background="gray">
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-4 text-slate-700 leading-relaxed">
+            <p>
+              Het werk van een ondernemingsraad vraagt om kennis, inzicht en goede samenwerking. Of je nu net start of al langer meedraait: trainingen helpen om rollen te verduidelijken, vaardigheden te versterken en met meer vertrouwen aan tafel te zitten.
+            </p>
+            
+            <p>
+              Onze trainingen sluiten aan op de dagelijkse OR-praktijk. We werken met herkenbare situaties, veel interactie en ruimte om te oefenen, zodat wat je leert direct toepasbaar is in jullie overleg en samenwerking.
+            </p>
+          </div>
+        </div>
+      </PageSection>
+
       <PageSection>
         <h2 className="text-3xl font-bold text-slate-900 mb-8">Ons aanbod</h2>
         <CardGrid items={visibleTrainingen} />
