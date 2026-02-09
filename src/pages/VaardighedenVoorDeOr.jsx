@@ -9,11 +9,11 @@ import CTABlock from '../components/CTABlock';
 
 export default function VaardighedenVoorDeOr() {
   const visibleVaardigheden = [
-    { title: "Argumenteren", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
-    { title: "Conflicthantering", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
-    { title: "Maatwerk gesprekstechniek", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
-    { title: "Onderhandelen", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
-    { title: "Vergadertechniek", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." }
+    { title: "Argumenteren", description: "Leren hoe je standpunten helder onderbouwt en overtuigend verwoordt, zodat bijdragen beter landen in overleg en besluitvorming." },
+    { title: "Conflicthantering", description: "Inzicht in spanningen en conflicten binnen en rondom de OR, met handvatten om constructief om te gaan met verschillen en lastige gesprekken." },
+    { title: "Maatwerk gesprekstechniek", description: "Gericht oefenen met gesprekken die voor jullie OR relevant zijn, zoals overleg met de bestuurder of interne afstemming binnen de OR." },
+    { title: "Onderhandelen", description: "Praktische training in onderhandelen binnen de OR-context, met aandacht voor voorbereiding, belangen en het voeren van het gesprek." },
+    { title: "Vergadertechniek", description: "Effectiever vergaderen door betere voorbereiding, structuur en rolverdeling, zodat overleg doelgerichter en prettiger verloopt." }
   ];
 
   const faqs = [
@@ -32,10 +32,10 @@ export default function VaardighedenVoorDeOr() {
 
       <Hero 
         title="Vaardigheden die het verschil maken aan tafel"
-        subtitle="Vergaderen, onderhandelen en communicatie: ontwikkel praktische skills waarmee je als OR-lid effectiever en prettiger samenwerkt."
+        subtitle="Vergaderen, onderhandelen en communiceren zijn kernvaardigheden binnen het OR-werk. In deze trainingen ontwikkelen OR-leden praktische skills om effectiever en prettiger samen te werken en hun rol met meer vertrouwen te vervullen."
       >
         <p className="text-slate-300 mb-8">
-          OR-leden die hun persoonlijke effectiviteit willen vergroten. Van vergadertechniek tot strategisch beïnvloeden.
+          Voor OR-leden die hun persoonlijke effectiviteit willen vergroten — van vergadertechniek tot strategisch beïnvloeden.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
@@ -61,7 +61,7 @@ export default function VaardighedenVoorDeOr() {
         <CardGrid items={visibleVaardigheden} />
         
         <p className="text-slate-600 mt-8 text-center">
-          Staat jullie onderwerp er niet tussen? We verzorgen ook maatwerk.
+          Staat jullie onderwerp er niet tussen? We verzorgen ook maatwerk, afgestemd op jullie OR en praktijk.
         </p>
       </PageSection>
 
