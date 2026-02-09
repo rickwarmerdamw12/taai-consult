@@ -49,38 +49,36 @@
  */
 import Contact from './pages/Contact';
 import Diensten from './pages/Diensten';
+import Home from './pages/Home';
 import LandingORTraining from './pages/LandingORTraining';
 import Masterclasses from './pages/Masterclasses';
 import MedezeggenschapAmbtelijk from './pages/MedezeggenschapAmbtelijk';
 import MedezeggenschapHoldings from './pages/MedezeggenschapHoldings';
 import ORondersteuning from './pages/ORondersteuning';
-import ORondersteuningLongread from './pages/ORondersteuningLongread';
 import OverOns from './pages/OverOns';
 import TrainingenVoorCommissies from './pages/TrainingenVoorCommissies';
 import TrainingenVoorDeOr from './pages/TrainingenVoorDeOr';
 import VaardighedenVoorDeOr from './pages/VaardighedenVoorDeOr';
 import VernieuwendMedezeggenschap from './pages/VernieuwendMedezeggenschap';
 import Workshops from './pages/Workshops';
-import Home from './pages/Home';
 import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
     "Contact": Contact,
     "Diensten": Diensten,
+    "Home": Home,
     "LandingORTraining": LandingORTraining,
     "Masterclasses": Masterclasses,
     "MedezeggenschapAmbtelijk": MedezeggenschapAmbtelijk,
     "MedezeggenschapHoldings": MedezeggenschapHoldings,
     "ORondersteuning": ORondersteuning,
-    "ORondersteuningLongread": ORondersteuningLongread,
     "OverOns": OverOns,
     "TrainingenVoorCommissies": TrainingenVoorCommissies,
     "TrainingenVoorDeOr": TrainingenVoorDeOr,
     "VaardighedenVoorDeOr": VaardighedenVoorDeOr,
     "VernieuwendMedezeggenschap": VernieuwendMedezeggenschap,
     "Workshops": Workshops,
-    "Home": Home,
 }
 
 export const pagesConfig = {
