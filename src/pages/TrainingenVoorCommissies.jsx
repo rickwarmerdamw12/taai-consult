@@ -9,50 +9,50 @@ import CTABlock from '../components/CTABlock';
 
 export default function TrainingenVoorCommissies() {
   const visibleTrainingen = [
-    { title: "Arbo-commissie", description: "Training gericht op arbeidsomstandigheden, risico's en preventie. Met aandacht voor rolverdeling, overleg met de bestuurder en samenwerking met andere partijen." },
-    { title: "CCA – Commissie Communicatie Achterban", description: "Gericht op het organiseren van communicatie met de achterban, het ophalen van signalen en het helder terugkoppelen van standpunten en besluiten." },
-    { title: "CDB", description: "Ondersteuning bij dossiers die vragen om analyse, structuur en zorgvuldige afweging, passend bij de rol en verantwoordelijkheid van de commissie." },
-    { title: "CF – Commissie Financiën", description: "Training gericht op het lezen en bespreken van financiële informatie, en het vertalen daarvan naar begrijpelijke en onderbouwde adviezen." },
-    { title: "CHR", description: "Focus op HR-thema's zoals beleid, procedures en personele ontwikkelingen, met aandacht voor samenwerking en advisering binnen de organisatie." },
-    { title: "COB", description: "Gericht op het voorbereiden, volgen en bespreken van organisatiebrede ontwikkelingen, met oog voor samenhang en impact." },
-    { title: "VC – Verkiezingscommissie", description: "Training rondom het organiseren van OR-verkiezingen, rollen en verantwoordelijkheden, en het zorgvuldig uitvoeren van het proces." }
-  ];
+  { title: "Arbo-commissie", description: "Training gericht op arbeidsomstandigheden, risico's en preventie. Met aandacht voor rolverdeling, overleg met de bestuurder en samenwerking met andere partijen." },
+  { title: "CCA – Commissie Communicatie Achterban", description: "Gericht op het organiseren van communicatie met de achterban, het ophalen van signalen en het helder terugkoppelen van standpunten en besluiten." },
+  { title: "CDB", description: "Ondersteuning bij dossiers die vragen om analyse, structuur en zorgvuldige afweging, passend bij de rol en verantwoordelijkheid van de commissie." },
+  { title: "CF – Commissie Financiën", description: "Training gericht op het lezen en bespreken van financiële informatie, en het vertalen daarvan naar begrijpelijke en onderbouwde adviezen." },
+  { title: "CHR", description: "Focus op HR-thema's zoals beleid, procedures en personele ontwikkelingen, met aandacht voor samenwerking en advisering binnen de organisatie." },
+  { title: "COB", description: "Gericht op het voorbereiden, volgen en bespreken van organisatiebrede ontwikkelingen, met oog voor samenhang en impact." },
+  { title: "VC – Verkiezingscommissie", description: "Training rondom het organiseren van OR-verkiezingen, rollen en verantwoordelijkheden, en het zorgvuldig uitvoeren van het proces." }];
+
 
   const faqs = [
-    { title: "Wat is het verschil met een OR-training?", content: "Commissies hebben specifieke taken en bevoegdheden. Deze trainingen zijn daarop toegespitst." },
-    { title: "Zijn deze trainingen ook geschikt voor gecombineerde commissies?", content: "Ja, veel OR'en hebben een VGW(M)-taak. We stemmen de training af op jullie situatie." },
-    { title: "Wat als we weinig tijd hebben?", content: "We bieden ook compacte varianten van 1 dag of modulaire trajecten." }
-  ];
+  { title: "Wat is het verschil met een OR-training?", content: "Commissies hebben specifieke taken en bevoegdheden. Deze trainingen zijn daarop toegespitst." },
+  { title: "Zijn deze trainingen ook geschikt voor gecombineerde commissies?", content: "Ja, veel OR'en hebben een VGW(M)-taak. We stemmen de training af op jullie situatie." },
+  { title: "Wat als we weinig tijd hebben?", content: "We bieden ook compacte varianten van 1 dag of modulaire trajecten." }];
+
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Trainingen voor Commissies"
         description="Gerichte trainingen voor VGW(M)-commissies, personeelsvertegenwoordigingen en klachtencommissies."
-        canonical="/trainingen-voor-commissies"
-      />
+        canonical="/trainingen-voor-commissies" />
 
-      <Hero 
+
+      <Hero
         title="Trainingen voor commissies: scherp op taak én praktijk"
-        subtitle="Voor VGW(M)-, PV- en andere commissies. Trainingen die zorgen voor duidelijkheid over rol en taak, en die helpen om sterker te adviseren en effectief samen te werken binnen de organisatie."
-      >
+        subtitle="Voor VGW(M)-, PV- en andere commissies. Trainingen die zorgen voor duidelijkheid over rol en taak, en die helpen om sterker te adviseren en effectief samen te werken binnen de organisatie.">
+
         <p className="text-slate-300 mb-8">
-          Voor leden van VGW(M)-commissies, personeelsvertegenwoordigingen en andere commissies die hun kennis en werkwijze willen versterken.
+
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
-          <Link 
-            to="/contact#plan" 
+          <Link
+            to="/contact#plan"
             className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-center"
-            data-cta="plan_kennismaking"
-          >
+            data-cta="plan_kennismaking">
+
             Plan kennismaking
           </Link>
-          <Link 
-            to="/contact#brochure" 
+          <Link
+            to="/contact#brochure"
             className="px-8 py-3 bg-white text-slate-900 rounded-lg hover:bg-slate-100 transition-colors font-medium text-center"
-            data-cta="vraag_brochure"
-          >
+            data-cta="vraag_brochure">
+
             Vraag brochure
           </Link>
         </div>
@@ -74,10 +74,10 @@ export default function TrainingenVoorCommissies() {
         </div>
       </PageSection>
 
-      <CTABlock 
+      <CTABlock
         title="Klaar om de volgende stap te zetten?"
-        subtitle="Plan een kennismaking of vraag onze brochure aan."
-      />
-    </>
-  );
+        subtitle="Plan een kennismaking of vraag onze brochure aan." />
+
+    </>);
+
 }
