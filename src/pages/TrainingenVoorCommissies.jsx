@@ -58,6 +58,26 @@ export default function TrainingenVoorCommissies() {
         </div>
       </Hero>
 
+      <PageSection background="gray">
+        <div className="max-w-3xl mx-auto">
+          <h3 className="text-lg font-semibold text-slate-700 mb-4">Trainingen afgestemd op de rol van commissies</h3>
+          
+          <div className="space-y-4 text-slate-700 leading-relaxed">
+            <p>
+              Commissies vervullen binnen de medezeggenschap een specifieke taak. Dat vraagt om duidelijke afbakening van rollen, goede afstemming met de OR en effectieve samenwerking met de bestuurder en andere betrokkenen.
+            </p>
+            
+            <p>
+              Onze trainingen sluiten aan op die praktijk. We helpen commissieleden om hun rol scherp te krijgen, inhoudelijk sterker te worden en met meer vertrouwen te adviseren.
+            </p>
+            
+            <p>
+              De focus ligt altijd op toepasbaarheid: wat betekent dit voor jullie commissie, binnen jullie organisatie en in het dagelijks werk?
+            </p>
+          </div>
+        </div>
+      </PageSection>
+
       <PageSection>
         <h2 className="text-3xl font-bold text-slate-900 mb-8">Ons aanbod</h2>
         <CardGrid items={visibleTrainingen} />
