@@ -9,12 +9,12 @@ import CTABlock from '../components/CTABlock';
 
 export default function TrainingenVoorDeOr() {
   const visibleTrainingen = [
-    { title: "Basismodule", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
-    { title: "Het fundament van de OR", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
-    { title: "De OR als strategisch adviseur", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
-    { title: "De OR en Werken met Commissies", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
-    { title: "Effectief samenwerken binnen de OR", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
-    { title: "OR als Serieuze Gesprekspartner", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." }
+    { title: "Basismodule", description: "Voor nieuwe OR-leden en startende OR'en. Kennismaking met rollen, rechten en het OR-werk in de dagelijkse praktijk." },
+    { title: "Het fundament van de OR", description: "Voor OR'en die hun basis willen verstevigen en effectiever willen samenwerken en overleggen." },
+    { title: "De OR als strategisch adviseur", description: "Voor ervaren OR'en die eerder en inhoudelijker betrokken willen zijn bij besluitvorming." },
+    { title: "De OR en werken met commissies", description: "Voor OR'en die met commissies werken of dit beter willen organiseren en positioneren." },
+    { title: "Effectief samenwerken binnen de OR", description: "Gericht op samenwerking, communicatie en rolverdeling binnen de OR." },
+    { title: "OR als serieuze gesprekspartner", description: "Voor OR'en die hun positie en invloed in het overleg met de bestuurder willen versterken." }
   ];
 
   const meerTrainingen = [
@@ -68,12 +68,12 @@ export default function TrainingenVoorDeOr() {
         <CardGrid items={visibleTrainingen} />
         
         <div className="mt-12">
-          <Accordion items={meerTrainingen} title="Meer trainingen" />
+          <h3 className="text-2xl font-bold text-slate-900 mb-6">Aanvullende trainingen en maatwerk</h3>
+          <p className="text-slate-600 mb-6">
+            Staat jullie onderwerp er niet tussen? Wij verzorgen ook maatwerk, afgestemd op jullie OR en organisatie.
+          </p>
+          <Accordion items={meerTrainingen} />
         </div>
-
-        <p className="text-slate-600 mt-8 text-center">
-          Staat jullie onderwerp er niet tussen? We verzorgen ook maatwerk.
-        </p>
       </PageSection>
 
       <PageSection background="gray">
