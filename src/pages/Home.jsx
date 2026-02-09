@@ -53,45 +53,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Wanneer het spannend wordt */}
+      {/* Twee smaken */}
       <section className="bg-slate-50 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900">Wanneer het spannend wordt</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto mt-4">
-              Herkenbare situaties waarin een doordachte aanpak essentieel is.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div className="bg-white border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Reorganisatie/Herstructurering</h3>
-              <p className="text-slate-600 text-sm">Begeleiding bij complexe reorganisaties en herstructureringen.</p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Adviesaanvraag onder tijdsdruk</h3>
-              <p className="text-slate-600 text-sm">Hulp bij het formuleren van een gedegen advies onder strakke deadlines.</p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Complexe governance/holding-structuur</h3>
-              <p className="text-slate-600 text-sm">Inzicht en strategie bij medezeggenschap in complexe bedrijfsstructuren.</p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Spanning OR-bestuurder / escalatie voorkomen</h3>
-              <p className="text-slate-600 text-sm">Begeleiding om conflicten te de-escaleren en de relatie te herstellen.</p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">COR/EOR context</h3>
-              <p className="text-slate-600 text-sm">Medezeggenschap in nationale en internationale groepsverbanden.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Twee smaken */}
-      <section className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-slate-50 rounded-xl p-12 border border-slate-200">
+            <div className="bg-white rounded-xl p-12 border border-slate-200">
               <h3 className="text-3xl font-bold text-slate-900 mb-6">Training & professionalisering</h3>
               <div className="space-y-3">
                 <Link to="/TrainingenVoorDeOr" className="block text-blue-600 hover:text-blue-700 font-medium text-lg">
@@ -114,6 +80,40 @@ export default function Home() {
               <p className="text-slate-300 leading-relaxed">
                 Rust en regie in spannende dossiers — en ook vroeg aangehaakt om escalatie te voorkomen.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Wanneer het spannend wordt */}
+      <section className="bg-white py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900">Wanneer het spannend wordt</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto mt-4">
+              Herkenbare situaties waarin een doordachte aanpak essentieel is.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Reorganisatie/Herstructurering</h3>
+              <p className="text-slate-600 text-sm">Begeleiding bij complexe reorganisaties en herstructureringen.</p>
+            </div>
+            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Adviesaanvraag onder tijdsdruk</h3>
+              <p className="text-slate-600 text-sm">Hulp bij het formuleren van een gedegen advies onder strakke deadlines.</p>
+            </div>
+            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Complexe governance/holding-structuur</h3>
+              <p className="text-slate-600 text-sm">Inzicht en strategie bij medezeggenschap in complexe bedrijfsstructuren.</p>
+            </div>
+            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Spanning OR-bestuurder / escalatie voorkomen</h3>
+              <p className="text-slate-600 text-sm">Begeleiding om conflicten te de-escaleren en de relatie te herstellen.</p>
+            </div>
+            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">COR/EOR context</h3>
+              <p className="text-slate-600 text-sm">Medezeggenschap in nationale en internationale groepsverbanden.</p>
             </div>
           </div>
         </div>
