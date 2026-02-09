@@ -24,40 +24,85 @@ export default function MedezeggenschapHoldings() {
       </Hero>
 
       <PageSection>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Waarom medezeggenschap in holdings complex is</h2>
-          <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed">
-            <p>
-              In organisaties met meerdere entiteiten, holdings of internationale structuren ontstaat al snel onduidelijkheid over waar besluiten worden genomen en wie daar invloed op heeft. Formele medezeggenschap is vaak georganiseerd op één niveau, terwijl feitelijke zeggenschap elders ligt.
-            </p>
-            <p>
-              Dat roept vragen op over mandaten, rolverdeling en de positie van de OR, COR of EOR. Zonder heldere afspraken ontstaat het risico dat medezeggenschap te laat wordt betrokken of onvoldoende impact heeft.
-            </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Waarom medezeggenschap in holdings complex is</h2>
+              <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed">
+                <p>
+                  In organisaties met meerdere entiteiten, holdings of internationale structuren ontstaat al snel onduidelijkheid over waar besluiten worden genomen en wie daar invloed op heeft. Formele medezeggenschap is vaak georganiseerd op één niveau, terwijl feitelijke zeggenschap elders ligt.
+                </p>
+                <p>
+                  Dat roept vragen op over mandaten, rolverdeling en de positie van de OR, COR of EOR. Zonder heldere afspraken ontstaat het risiko dat medezeggenschap te laat wordt betrokken of onvoldoende impact heeft.
+                </p>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 border border-slate-200">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-lg bg-slate-900 flex items-center justify-center text-white font-bold">1</div>
+                    <div className="flex-1 text-sm text-slate-700">Besluitvorming op meerdere niveaus</div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-lg bg-slate-700 flex items-center justify-center text-white font-bold">2</div>
+                    <div className="flex-1 text-sm text-slate-700">Onduidelijke mandaten en bevoegdheden</div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-lg bg-slate-500 flex items-center justify-center text-white font-bold">3</div>
+                    <div className="flex-1 text-sm text-slate-700">Versnipperde overlegstructuren</div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-lg bg-slate-300 flex items-center justify-center text-slate-900 font-bold">4</div>
+                    <div className="flex-1 text-sm text-slate-700">Risico op late betrokkenheid</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </PageSection>
 
       <PageSection background="gray">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Wat dit betekent voor de OR</h2>
-          <ul className="space-y-3 text-slate-700">
-            <li className="flex items-start gap-3">
-              <span className="text-blue-600 mt-1">•</span>
-              <span>onduidelijkheid over waar invloed effectief kan worden uitgeoefend</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-blue-600 mt-1">•</span>
-              <span>spanning tussen formele bevoegdheden en feitelijke besluitvorming</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-blue-600 mt-1">•</span>
-              <span>afstemming tussen lokale OR'en, COR en EOR</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-blue-600 mt-1">•</span>
-              <span>complexiteit bij reorganisaties, fusies en overnames</span>
-            </li>
-          </ul>
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-slate-900 mb-10 text-center">Wat dit betekent voor de OR</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+              <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+              </div>
+              <p className="text-slate-700 leading-relaxed">onduidelijkheid over waar invloed effectief kan worden uitgeoefend</p>
+            </div>
+            
+            <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+              <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+              </div>
+              <p className="text-slate-700 leading-relaxed">spanning tussen formele bevoegdheden en feitelijke besluitvorming</p>
+            </div>
+            
+            <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+              <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <p className="text-slate-700 leading-relaxed">afstemming tussen lokale OR'en, COR en EOR</p>
+            </div>
+            
+            <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+              <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+                <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </div>
+              <p className="text-slate-700 leading-relaxed">complexiteit bij reorganisaties, fusies en overnames</p>
+            </div>
+          </div>
         </div>
       </PageSection>
 
