@@ -84,6 +84,9 @@ export default function Header() {
                   <Link to="/VernieuwendMedezeggenschap" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
                     Vernieuwend Medezeggenschap
                   </Link>
+                  <Link to="/Vertrouwenspersoon" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                    Vertrouwenspersoon
+                  </Link>
                 </div>
               )}
             </div>
@@ -142,6 +145,9 @@ export default function Header() {
               </Link>
               <Link to="/VernieuwendMedezeggenschap" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
                 Vernieuwend Medezeggenschap
+              </Link>
+              <Link to="/Vertrouwenspersoon" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+                Vertrouwenspersoon
               </Link>
 
               <Link to="/OverOns" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 mt-4">
