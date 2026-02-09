@@ -33,37 +33,8 @@ export default function Workshops() {
 
       <Hero 
         title="Workshops voor actuele OR-vraagstukken"
-        subtitle="Interactieve sessies waarin jullie werken aan een concreet thema dat nú speelt — praktisch, gericht en direct toepasbaar."
+        subtitle="Korte, interactieve sessies waarin jullie gericht werken aan een thema dat speelt — praktisch, concreet en direct toepasbaar."
       >
-        <p className="text-slate-300 mb-8">
-          Workshops zijn geschikt wanneer jullie snel verdieping willen op een specifiek onderwerp. In korte, interactieve sessies werken we aan inzicht, afstemming en concrete stappen die passen bij jullie situatie.
-        </p>
-
-        <div className="mb-8">
-          <h3 className="text-lg font-semibold mb-3">Voor wie</h3>
-          <p className="text-slate-300">
-            Voor OR'en en commissies die gericht willen werken aan een actueel thema of vraagstuk binnen hun organisatie.
-          </p>
-        </div>
-
-        <div className="mb-10">
-          <h3 className="text-lg font-semibold mb-3">Wat het oplevert</h3>
-          <ul className="space-y-2 text-slate-300">
-            <li className="flex items-start gap-2">
-              <span className="text-blue-400 mt-1">✓</span>
-              <span>Direct toepasbaar in jullie situatie</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-400 mt-1">✓</span>
-              <span>Interactief en praktijkgericht</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-400 mt-1">✓</span>
-              <span>Concrete handvatten, afspraken of vervolgstappen</span>
-            </li>
-          </ul>
-        </div>
-
         <div className="flex flex-col sm:flex-row gap-4">
           <Link 
             to="/contact#plan" 
