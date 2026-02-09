@@ -18,9 +18,9 @@ export default function TrainingenVoorDeOr() {
   ];
 
   const meerTrainingen = [
-    { title: "Professionalisering van de OR", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
-    { title: "Teambuilding", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." },
-    { title: "Teambuilding met Roos van Leary", description: "Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk." }
+    { title: "Professionalisering van de OR", content: "Voor OR'en die hun werkwijze willen verbeteren en professioneler willen opereren richting bestuurder en achterban." },
+    { title: "Teambuilding", content: "Gericht op het versterken van de onderlinge samenwerking en het creëren van een sterker OR-team." },
+    { title: "Teambuilding met Roos van Leary", content: "Inzicht in communicatiestijlen en gedragspatronen binnen de OR, met de Roos van Leary als praktisch model." }
   ];
 
   const faqs = [
