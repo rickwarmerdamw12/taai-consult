@@ -21,7 +21,7 @@ export default function Home() {
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight">Training en ondersteuning voor ondernemingsraden
 
             </h1>
-            <p className="text-xl sm:text-2xl text-slate-300 mb-12 leading-relaxed">Praktisch, zorgvuldig en onafhankelijk — voor OR'en die hun rol goed willen vervullen, in gewone én complexere situaties.
+            <p className="text-xl sm:text-2xl text-slate-300 mb-12 leading-relaxed">Praktisch, zorgvuldig en onafhankelijk — voor OR’en die hun rol goed willen vervullen, in gewone én complexere situaties.
 
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -47,23 +47,13 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-semibold text-slate-500 tracking-wider uppercase mb-4">Taai-Consult</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-8">Onze aanpak in de praktijk</h2>
-          <div className="space-y-6">
-            <p className="text-xl text-slate-600 leading-relaxed">
-              Taai-Consult helpt OR'en en commissies om hun rol goed en met vertrouwen te vervullen. Dat doen we door training en ondersteuning te bieden die aansluit bij de praktijk van het OR-werk.
-            </p>
-            
-            <p className="text-xl text-slate-600 leading-relaxed">
-              Training vormt vaak de basis. Gericht op herkenbare situaties, praktische kennis en vaardigheden die direct toepasbaar zijn in het overleg en de samenwerking binnen de organisatie.
-            </p>
-            
-            <p className="text-xl text-slate-600 leading-relaxed">
-              Daarnaast ondersteunen wij OR'en en commissies bij vraagstukken die meer verdieping vragen. We helpen bij het creëren van overzicht en het kiezen van een zorgvuldige aanpak, altijd afgestemd op de specifieke context.
-            </p>
-            
-            <p className="text-xl text-slate-600 leading-relaxed">
-              In alle gevallen werken wij praktisch en onafhankelijk, met oog voor samenwerking en de verhoudingen binnen de organisatie.
-            </p>
-          </div>
+          <p className="text-xl text-slate-600 leading-relaxed">Taai-Consult helpt OR’en en commissies om hun rol goed, zorgvuldig en met vertrouwen te vervullen. Dat doen we door kennis te versterken, vaardigheden te ontwikkelen en ondersteuning te bieden waar dat nodig is — altijd afgestemd op de praktijk van het OR-werk.
+
+In veel gevallen begint dat met training. Trainingen die aansluiten bij het niveau en de samenstelling van de OR, en die gericht zijn op directe toepasbaarheid. Geen abstracte theorie, maar herkenbare situaties, duidelijke uitleg en ruimte voor vragen en gesprek. Zo ontstaat een stevige basis om het OR-werk goed uit te voeren.
+
+Daarnaast ondersteunen wij OR’en en commissies bij vraagstukken die meer aandacht of verdieping vragen. Dat kan gaan om het voorbereiden van overleg, het structureren van een dossier of het meedenken over de juiste aanpak binnen een specifieke context. We helpen om overzicht te creëren en keuzes zorgvuldig af te wegen, zonder het werk over te nemen.
+
+In alles wat we doen werken we praktisch en onafhankelijk. We hebben oog voor de organisatiecontext en voor de samenwerking tussen OR, bestuurder en andere betrokkenen. Ons doel is niet om te sturen op een uitkomst, maar om OR’en te ondersteunen bij het maken van goed onderbouwde en gedragen keuzes.</p>
         </div>
       </section>
 
@@ -101,34 +91,30 @@ export default function Home() {
 
       {/* Wanneer het spannend wordt */}
       <section className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900">Wanneer het spannend wordt</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto mt-4">
-              Herkenbare situaties waarin een doordachte aanpak essentieel is.
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-slate-900 mb-8">Wanneer het spannend wordt</h2>
+          
+          <div className="prose prose-lg text-slate-600 space-y-6">
+            <p className="leading-relaxed">
+              Er zijn situaties waarin medezeggenschap onder druk komt te staan. Niet omdat de OR zijn rol niet serieus neemt, maar omdat de omstandigheden complex zijn, de belangen groot en de tijd beperkt.
+            </p>
+            
+            <p className="leading-relaxed">
+              Dat zien we bij reorganisaties en herstructureringen, bij adviesaanvragen onder hoge tijdsdruk en in organisaties met complexe governance- of holdingstructuren. Ook in COR- en EOR-verband, waar nationale en internationale belangen samenkomen, neemt de complexiteit snel toe.
+            </p>
+            
+            <p className="leading-relaxed">
+              Wanneer daarbij de relatie tussen OR en bestuurder onder spanning komt te staan, ontstaat het risico dat zorgvuldigheid plaatsmaakt voor haast of escalatie. Juist dan maakt ervaring, overzicht en een doordachte aanpak het verschil.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Reorganisatie/Herstructurering</h3>
-              <p className="text-slate-600 text-sm">Begeleiding bij complexe reorganisaties en herstructureringen.</p>
-            </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Adviesaanvraag onder tijdsdruk</h3>
-              <p className="text-slate-600 text-sm">Hulp bij het formuleren van een gedegen advies onder strakke deadlines.</p>
-            </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Complexe governance/holding-structuur</h3>
-              <p className="text-slate-600 text-sm">Inzicht en strategie bij medezeggenschap in complexe bedrijfsstructuren.</p>
-            </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Spanning OR-bestuurder / escalatie voorkomen</h3>
-              <p className="text-slate-600 text-sm">Begeleiding om conflicten te de-escaleren en de relatie te herstellen.</p>
-            </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">COR/EOR context</h3>
-              <p className="text-slate-600 text-sm">Medezeggenschap in nationale en internationale groepsverbanden.</p>
-            </div>
+
+          <div className="mt-10">
+            <Link 
+              to="/ORondersteuning"
+              className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-lg"
+            >
+              Lees meer over OR-ondersteuning wanneer het spannend wordt →
+            </Link>
           </div>
         </div>
       </section>
@@ -169,38 +155,6 @@ export default function Home() {
               <h3 className="text-xl font-bold text-slate-900 mb-3">Workshops</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 Praktisch, interactief en direct toepasbaar in jullie eigen OR-praktijk.
-              </p>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Contexten */}
-      <section className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900">Contexten</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <Link to="/MedezeggenschapHoldings" className="group bg-white border border-slate-200 rounded-lg p-8 hover:border-blue-600 transition-all">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Medezeggenschap in een holding</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Inzicht en structuur in rollen, mandaten en besluitvorming binnen concerns.
-              </p>
-            </Link>
-
-            <Link to="/MedezeggenschapAmbtelijk" className="group bg-white border border-slate-200 rounded-lg p-8 hover:border-blue-600 transition-all">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Medezeggenschap in ambtelijke organisaties</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Scherpte met gevoel voor bestuurlijke dynamiek en context.
-              </p>
-            </Link>
-
-            <Link to="/VernieuwendMedezeggenschap" className="group bg-white border border-slate-200 rounded-lg p-8 hover:border-blue-600 transition-all">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Vernieuwend medezeggenschap</h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Moderne vormen van medezeggenschap, met heldere spelregels en focus.
               </p>
             </Link>
           </div>
@@ -322,4 +276,5 @@ export default function Home() {
         </div>
       </section>
     </>);
+
 }
