@@ -46,10 +46,14 @@ export default function Home() {
       <section className="bg-white py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-semibold text-slate-500 tracking-wider uppercase mb-4">Taai-Consult</p>
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-8">Rust, scherpte en impact.</h2>
-          <p className="text-xl text-slate-600 leading-relaxed">
-            Taai-Consult helpt OR's en commissies om invloed te vergroten — in het dagelijks overleg én wanneer de belangen groot zijn. Soms is een praktische training precies wat nodig is. Soms vraagt een dossier om rust en regie. We combineren ervaring, helderheid en juridische scherpte, zonder te juridiseren.
-          </p>
+          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-8">Onze aanpak in de praktijk</h2>
+          <p className="text-xl text-slate-600 leading-relaxed">Taai-Consult helpt OR’en en commissies om hun rol goed, zorgvuldig en met vertrouwen te vervullen. Dat doen we door kennis te versterken, vaardigheden te ontwikkelen en ondersteuning te bieden waar dat nodig is — altijd afgestemd op de praktijk van het OR-werk.
+
+In veel gevallen begint dat met training. Trainingen die aansluiten bij het niveau en de samenstelling van de OR, en die gericht zijn op directe toepasbaarheid. Geen abstracte theorie, maar herkenbare situaties, duidelijke uitleg en ruimte voor vragen en gesprek. Zo ontstaat een stevige basis om het OR-werk goed uit te voeren.
+
+Daarnaast ondersteunen wij OR’en en commissies bij vraagstukken die meer aandacht of verdieping vragen. Dat kan gaan om het voorbereiden van overleg, het structureren van een dossier of het meedenken over de juiste aanpak binnen een specifieke context. We helpen om overzicht te creëren en keuzes zorgvuldig af te wegen, zonder het werk over te nemen.
+
+In alles wat we doen werken we praktisch en onafhankelijk. We hebben oog voor de organisatiecontext en voor de samenwerking tussen OR, bestuurder en andere betrokkenen. Ons doel is niet om te sturen op een uitkomst, maar om OR’en te ondersteunen bij het maken van goed onderbouwde en gedragen keuzes.</p>
         </div>
       </section>
 
@@ -296,15 +300,11 @@ export default function Home() {
             Plan een kennismaking of vraag onze brochure aan.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/Contact"
-              className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-lg">
+            <Link to="/Contact" className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-lg">
 
               Plan kennismaking
             </Link>
-            <Link
-              to="/Contact"
-              className="px-8 py-4 bg-white text-slate-900 border-2 border-slate-300 rounded-lg hover:border-slate-400 transition-colors font-medium text-lg">
+            <Link to="/Contact" className="px-8 py-4 bg-white text-slate-900 border-2 border-slate-300 rounded-lg hover:border-slate-400 transition-colors font-medium text-lg">
 
               Vraag brochure
             </Link>
