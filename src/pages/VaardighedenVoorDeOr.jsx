@@ -56,6 +56,22 @@ export default function VaardighedenVoorDeOr() {
         </div>
       </Hero>
 
+      <PageSection background="gray">
+        <div className="max-w-3xl mx-auto">
+          <h3 className="text-lg font-semibold text-slate-700 mb-4">Vaardigheden voor het dagelijkse OR-werk</h3>
+          
+          <div className="space-y-4 text-slate-700 leading-relaxed">
+            <p>
+              Effectief OR-werk vraagt niet alleen om kennis, maar ook om vaardigheden in overleg en samenwerking. Hoe je vergadert, communiceert en omgaat met verschillen maakt vaak het verschil aan tafel.
+            </p>
+            
+            <p>
+              Deze trainingen zijn gericht op het ontwikkelen van praktische vaardigheden die OR-leden direct kunnen toepassen in hun eigen praktijk. Met veel oefening en herkenbare situaties, zodat het geleerde meteen helpt in het overleg en de samenwerking.
+            </p>
+          </div>
+        </div>
+      </PageSection>
+
       <PageSection>
         <h2 className="text-3xl font-bold text-slate-900 mb-8">Ons aanbod</h2>
         <CardGrid items={visibleVaardigheden} />
