@@ -21,7 +21,7 @@ export default function Home() {
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight">Training en ondersteuning voor ondernemingsraden
 
             </h1>
-            <p className="text-xl sm:text-2xl text-slate-300 mb-12 leading-relaxed">Praktisch, zorgvuldig en onafhankelijk — voor OR’en die hun rol goed willen vervullen, in gewone én complexere situaties.
+            <p className="text-xl sm:text-2xl text-slate-300 mb-12 leading-relaxed">Praktisch, zorgvuldig en onafhankelijk — voor OR'en die hun rol goed willen vervullen, in gewone én complexere situaties.
 
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -47,13 +47,24 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-semibold text-slate-500 tracking-wider uppercase mb-4">Taai-Consult</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-8">Onze aanpak in de praktijk</h2>
-          <p className="text-xl text-slate-600 leading-relaxed">Taai-Consult helpt OR’en en commissies om hun rol goed, zorgvuldig en met vertrouwen te vervullen. Dat doen we door kennis te versterken, vaardigheden te ontwikkelen en ondersteuning te bieden waar dat nodig is — altijd afgestemd op de praktijk van het OR-werk.
-
-In veel gevallen begint dat met training. Trainingen die aansluiten bij het niveau en de samenstelling van de OR, en die gericht zijn op directe toepasbaarheid. Geen abstracte theorie, maar herkenbare situaties, duidelijke uitleg en ruimte voor vragen en gesprek. Zo ontstaat een stevige basis om het OR-werk goed uit te voeren.
-
-Daarnaast ondersteunen wij OR’en en commissies bij vraagstukken die meer aandacht of verdieping vragen. Dat kan gaan om het voorbereiden van overleg, het structureren van een dossier of het meedenken over de juiste aanpak binnen een specifieke context. We helpen om overzicht te creëren en keuzes zorgvuldig af te wegen, zonder het werk over te nemen.
-
-In alles wat we doen werken we praktisch en onafhankelijk. We hebben oog voor de organisatiecontext en voor de samenwerking tussen OR, bestuurder en andere betrokkenen. Ons doel is niet om te sturen op een uitkomst, maar om OR’en te ondersteunen bij het maken van goed onderbouwde en gedragen keuzes.</p>
+          
+          <div className="prose prose-xl text-slate-600 space-y-6">
+            <p className="leading-relaxed">
+              Taai-Consult helpt OR'en en commissies om hun rol goed en met vertrouwen te vervullen. Dat doen we door training en ondersteuning te bieden die aansluit bij de praktijk van het OR-werk.
+            </p>
+            
+            <p className="leading-relaxed">
+              Training vormt vaak de basis. Gericht op herkenbare situaties, praktische kennis en vaardigheden die direct toepasbaar zijn in het overleg en de samenwerking binnen de organisatie.
+            </p>
+            
+            <p className="leading-relaxed">
+              Daarnaast ondersteunen wij OR'en en commissies bij vraagstukken die meer verdieping vragen. We helpen bij het creëren van overzicht en het kiezen van een zorgvuldige aanpak, altijd afgestemd op de specifieke context.
+            </p>
+            
+            <p className="leading-relaxed">
+              In alle gevallen werken wij praktisch en onafhankelijk, met oog voor samenwerking en de verhoudingen binnen de organisatie.
+            </p>
+          </div>
         </div>
       </section>
 
