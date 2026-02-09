@@ -42,6 +42,9 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Gradient transition */}
+      <div className="h-32 bg-gradient-to-b from-slate-900 to-white"></div>
+
       {/* Verhaalblok */}
       <section className="bg-white py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
