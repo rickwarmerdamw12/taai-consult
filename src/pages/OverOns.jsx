@@ -22,24 +22,65 @@ export default function OverOns() {
       <PageSection>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-slate-900 mb-6">Wie we zijn</h2>
-          <div className="prose prose-lg text-slate-600 space-y-4">
+          <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed">
             <p>
-              Taai-Consult begeleidt ondernemingsraden en commissies bij complexe en gevoelige medezeggenschapsvraagstukken. Wij brengen overzicht, rust en richting — vooral wanneer het spannend wordt.
+              Taai-Consult ondersteunt ondernemingsraden en commissies bij medezeggenschapsvraagstukken die ertoe doen. Situaties waarin belangen groot zijn, de druk hoog is en zorgvuldigheid cruciaal blijft. We brengen overzicht, rust en richting — juist wanneer het spannend wordt.
             </p>
             <p>
-              Juridische kennis gebruiken we om werkbare oplossingen te vinden binnen het juridische kader, niet om te juridiseren. Dat vraagt om ervaring, scherpte en oog voor de verhoudingen binnen de organisatie.
+              Onze kracht zit in de combinatie van inhoudelijke scherpte en gevoel voor de organisatiecontext. Juridische kennis is daarbij geen doel op zich, maar een middel om tot werkbare oplossingen te komen. Oplossingen die recht doen aan wet- en regelgeving én aan de verhoudingen binnen de organisatie. We helpen OR'en om hun positie zorgvuldig én effectief in te nemen, zonder onnodige escalatie of juridisering.
             </p>
-            <div className="pt-4">
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Arjan Warmerdam</h3>
-              <p className="mb-4">
-                Oprichter en inhoudelijk eindverantwoordelijk. Arjan is een ervaren begeleider van OR'en bij reorganisaties, grote veranderingen en complexe besluitvorming. Hij staat bekend om rust, scherpte en gezag zonder escalatie.
-              </p>
-              
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Rick Warmerdam</h3>
-              <p>
-                Toegetreden tot het bureau en verantwoordelijk voor marketing, klantcontact en eerste aanspreekpunt. De inhoudelijke begeleiding ligt bij Arjan; Rick groeit de komende jaren verder in het bureau. Dit biedt continuïteit en versterking.
-              </p>
+          </div>
+        </div>
+      </PageSection>
+
+      <PageSection background="gray">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-sm">
+              <div className="mb-4">
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Arjan Warmerdam</h3>
+                <p className="text-sm text-slate-500 font-medium">Oprichter en inhoudelijk leider</p>
+              </div>
+              <div className="space-y-3 text-slate-600 leading-relaxed">
+                <p>
+                  Arjan is trainer en begeleider met meer dan 25 jaar ervaring in de medezeggenschap. In die jaren heeft hij OR'en en commissies begeleid bij een breed scala aan organisaties — van kleine instellingen tot grote (internationale) ondernemingen en publieke organisaties.
+                </p>
+                <p>
+                  Hij werkte aan reorganisaties, fusies, complexe adviestrajecten en samenwerkingsvraagstukken, vaak onder hoge druk en met grote belangen.
+                </p>
+                <p>
+                  Arjan staat bekend om zijn vermogen om snel tot de kern te komen, overzicht te creëren en het gesprek weer terug te brengen naar de inhoud. Met gezag, maar zonder machtsvertoon. Met scherpte, maar altijd met oog voor de menselijke en bestuurlijke context.
+                </p>
+              </div>
             </div>
+
+            <div className="bg-white rounded-xl p-8 border border-slate-200 shadow-sm">
+              <div className="mb-4">
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Rick Warmerdam</h3>
+                <p className="text-sm text-slate-500 font-medium">Klantcontact en bureau-ontwikkeling</p>
+              </div>
+              <div className="space-y-3 text-slate-600 leading-relaxed">
+                <p>
+                  Rick is voor klanten doorgaans het eerste aanspreekpunt. Hij verzorgt het klantcontact en denkt mee over vragen rondom trainingen, masterclasses en ondersteuningstrajecten, maar ook over inhoudelijke situaties waar OR'en tegenaan lopen.
+                </p>
+                <p>
+                  Klanten kunnen bij Rick altijd terecht om te sparren, vragen te stellen of hun situatie te verkennen. De inhoudelijke begeleiding ligt bij Arjan, terwijl Rick het bureau organisatorisch en in het contact versterkt.
+                </p>
+                <p>
+                  Zo blijft de inhoud stevig verankerd en is er tegelijkertijd ruimte voor continuïteit en doorontwikkeling.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </PageSection>
+
+      <PageSection>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
+            <p className="text-lg text-slate-700 leading-relaxed text-center">
+              Taai-Consult is daarmee een bureau dat rust brengt waar het nodig is, scherpte toevoegt waar het moet, en altijd werkt vanuit zorgvuldigheid en vertrouwen.
+            </p>
           </div>
         </div>
       </PageSection>
