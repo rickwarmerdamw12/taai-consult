@@ -9,48 +9,48 @@ import CTABlock from '../components/CTABlock';
 
 export default function VaardighedenVoorDeOr() {
   const visibleVaardigheden = [
-    { title: "Argumenteren", description: "Leren hoe je standpunten helder onderbouwt en overtuigend verwoordt, zodat bijdragen beter landen in overleg en besluitvorming." },
-    { title: "Conflicthantering", description: "Inzicht in spanningen en conflicten binnen en rondom de OR, met handvatten om constructief om te gaan met verschillen en lastige gesprekken." },
-    { title: "Maatwerk gesprekstechniek", description: "Gericht oefenen met gesprekken die voor jullie OR relevant zijn, zoals overleg met de bestuurder of interne afstemming binnen de OR." },
-    { title: "Onderhandelen", description: "Praktische training in onderhandelen binnen de OR-context, met aandacht voor voorbereiding, belangen en het voeren van het gesprek." },
-    { title: "Vergadertechniek", description: "Effectiever vergaderen door betere voorbereiding, structuur en rolverdeling, zodat overleg doelgerichter en prettiger verloopt." }
-  ];
+  { title: "Argumenteren", description: "Leren hoe je standpunten helder onderbouwt en overtuigend verwoordt, zodat bijdragen beter landen in overleg en besluitvorming." },
+  { title: "Conflicthantering", description: "Inzicht in spanningen en conflicten binnen en rondom de OR, met handvatten om constructief om te gaan met verschillen en lastige gesprekken." },
+  { title: "Maatwerk gesprekstechniek", description: "Gericht oefenen met gesprekken die voor jullie OR relevant zijn, zoals overleg met de bestuurder of interne afstemming binnen de OR." },
+  { title: "Onderhandelen", description: "Praktische training in onderhandelen binnen de OR-context, met aandacht voor voorbereiding, belangen en het voeren van het gesprek." },
+  { title: "Vergadertechniek", description: "Effectiever vergaderen door betere voorbereiding, structuur en rolverdeling, zodat overleg doelgerichter en prettiger verloopt." }];
+
 
   const faqs = [
-    { title: "Kan ik meerdere vaardigheden combineren?", content: "Ja, we stellen vaak maatwerktrajecten samen van 3-5 dagdelen." },
-    { title: "Zijn deze trainingen ook voor commissies?", content: "Absoluut. VGW(M)-commissies en andere commissies hebben vaak dezelfde vaardigheden nodig." },
-    { title: "Krijg ik een certificaat?", content: "Ja, na afloop ontvang je een certificaat van deelname." }
-  ];
+  { title: "Kan ik meerdere vaardigheden combineren?", content: "Ja, we stellen vaak maatwerktrajecten samen van 3-5 dagdelen." },
+  { title: "Zijn deze trainingen ook voor commissies?", content: "Absoluut. VGW(M)-commissies en andere commissies hebben vaak dezelfde vaardigheden nodig." },
+  { title: "Krijg ik een certificaat?", content: "Ja, na afloop ontvang je een certificaat van deelname." }];
+
 
   return (
     <>
-      <SEO 
+      <SEO
         title="Vaardigheden voor de OR"
         description="Vaardighedentrainingen voor OR-leden: vergadertechnieken, presenteren, lobbyen en meer."
-        canonical="/vaardigheden-voor-de-or"
-      />
+        canonical="/vaardigheden-voor-de-or" />
 
-      <Hero 
+
+      <Hero
         title="Vaardigheden die het verschil maken aan tafel"
-        subtitle="Vergaderen, onderhandelen en communiceren zijn kernvaardigheden binnen het OR-werk. In deze trainingen ontwikkelen OR-leden praktische skills om effectiever en prettiger samen te werken en hun rol met meer vertrouwen te vervullen."
-      >
+        subtitle="Vergaderen, onderhandelen en communiceren zijn kernvaardigheden binnen het OR-werk. In deze trainingen ontwikkelen OR-leden praktische skills om effectiever en prettiger samen te werken en hun rol met meer vertrouwen te vervullen.">
+
         <p className="text-slate-300 mb-8">
-          Voor OR-leden die hun persoonlijke effectiviteit willen vergroten — van vergadertechniek tot strategisch beïnvloeden.
+
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
-          <Link 
-            to="/contact#plan" 
+          <Link
+            to="/contact#plan"
             className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-center"
-            data-cta="plan_kennismaking"
-          >
+            data-cta="plan_kennismaking">
+
             Plan kennismaking
           </Link>
-          <Link 
-            to="/contact#brochure" 
+          <Link
+            to="/contact#brochure"
             className="px-8 py-3 bg-white text-slate-900 rounded-lg hover:bg-slate-100 transition-colors font-medium text-center"
-            data-cta="vraag_brochure"
-          >
+            data-cta="vraag_brochure">
+
             Vraag brochure
           </Link>
         </div>
@@ -72,10 +72,10 @@ export default function VaardighedenVoorDeOr() {
         </div>
       </PageSection>
 
-      <CTABlock 
+      <CTABlock
         title="Klaar om de volgende stap te zetten?"
-        subtitle="Plan een kennismaking of vraag onze brochure aan."
-      />
-    </>
-  );
+        subtitle="Plan een kennismaking of vraag onze brochure aan." />
+
+    </>);
+
 }
