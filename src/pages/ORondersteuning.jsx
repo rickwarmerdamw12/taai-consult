@@ -5,7 +5,7 @@ import Hero from '../components/Hero';
 import PageSection from '../components/PageSection';
 import CTABlock from '../components/CTABlock';
 import Accordion from '../components/Accordion';
-import { Briefcase, Users, Target, BookOpen } from 'lucide-react';
+
 
 export default function ORondersteuning() {
   const faqs = [
@@ -25,33 +25,12 @@ export default function ORondersteuning() {
       />
 
       <Hero 
-        title="OR-ondersteuning bij dossiers met hoge druk en grote belangen"
-        subtitle="Als het spannend wordt brengen wij rust, regie en overzicht — en we worden ook vroeg aangehaakt om escalatie te voorkomen."
+        title="OR-ondersteuning wanneer het spannend wordt"
+        subtitle="Onafhankelijke begeleiding voor ondernemingsraden in situaties waarin druk, complexiteit en belangen samenkomen."
       >
-        <div className="mb-8">
-          <h3 className="text-lg font-semibold mb-3">Voor wie</h3>
-          <p className="text-slate-300">
-            OR'en die extra ondersteuning nodig hebben bij complexe dossiers, conflict met bestuur, of tijdelijke versterking zoeken.
-          </p>
-        </div>
-
-        <div className="mb-10">
-          <h3 className="text-lg font-semibold mb-3">Wat het oplevert</h3>
-          <ul className="space-y-2 text-slate-300">
-            <li className="flex items-start gap-2">
-              <span className="text-blue-400 mt-1">✓</span>
-              <span>Rust en regie in complexe situaties</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-400 mt-1">✓</span>
-              <span>Juridische en strategische verdieping</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-blue-400 mt-1">✓</span>
-              <span>Versterking van de OR (tijdelijk of permanent)</span>
-            </li>
-          </ul>
-        </div>
+        <p className="text-lg text-slate-300 mb-8 leading-relaxed max-w-3xl">
+          Soms vraagt medezeggenschap om meer dan training of regulier overleg. Wanneer omstandigheden complex worden en de ruimte voor reflectie kleiner, helpt het om tijdelijk extra overzicht en expertise naast de OR te organiseren.
+        </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
           <Link 
@@ -59,7 +38,7 @@ export default function ORondersteuning() {
             className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-center"
             data-cta="plan_kennismaking"
           >
-            Plan kennismaking
+            Plan een kennismaking
           </Link>
           <Link 
             to="/Contact" 
@@ -73,100 +52,113 @@ export default function ORondersteuning() {
 
       <PageSection>
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">Wanneer het spannend wordt</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white border border-slate-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Reorganisatie/Herstructurering</h3>
-              <p className="text-slate-600">Begeleiding bij complexe reorganisaties en herstructureringen.</p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Adviesaanvraag onder tijdsdruk</h3>
-              <p className="text-slate-600">Hulp bij het formuleren van een gedegen advies onder strakke deadlines.</p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Complexe governance/holding-structuur</h3>
-              <p className="text-slate-600">Inzicht en strategie bij medezeggenschap in complexe bedrijfsstructuren.</p>
-            </div>
-            <div className="bg-white border border-slate-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Spanning OR-bestuurder / escalatie voorkomen</h3>
-              <p className="text-slate-600">Begeleiding om conflicten te de-escaleren en de relatie te herstellen.</p>
-            </div>
-          </div>
-
-          <div className="mt-12 text-center">
-            <Link 
-              to="/ORondersteuningLongread"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-slate-300 rounded-lg hover:border-blue-600 transition-colors font-medium text-slate-900"
-            >
-              <BookOpen className="w-5 h-5" />
-              Lees het uitgebreide artikel
-            </Link>
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Wat maakt medezeggenschap spannend?</h2>
+          <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed">
+            <p>
+              Medezeggenschap staat zelden op zichzelf. Besluiten volgen elkaar op, belangen lopen uiteen en de gevolgen voor medewerkers kunnen groot zijn. In zulke situaties neemt de druk op de OR toe, terwijl zorgvuldigheid juist belangrijker wordt.
+            </p>
+            <p>
+              Spanning ontstaat niet omdat de OR tekortschiet, maar omdat omstandigheden complex zijn. Tijd is beperkt, informatie onvolledig en de verwachtingen vanuit de organisatie hoog. Dat vraagt om een aanpak die helpt om overzicht te behouden en keuzes goed te onderbouwen.
+            </p>
           </div>
         </div>
       </PageSection>
 
       <PageSection background="gray">
-        <div className="space-y-12">
-          <div className="flex gap-6 items-start">
-            <div className="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
-              <Briefcase className="w-8 h-8 text-blue-600" />
-            </div>
-            <div className="flex-1">
-              <h2 className="text-2xl font-bold text-slate-900 mb-3">Advies</h2>
-              <p className="text-slate-600 mb-4 leading-relaxed">
-                Juridisch advies bij complexe dossiers: sociaal plan, fusie, reorganisatie, concern-OR vraagstukken. We helpen je het juridisch kader te begrijpen en een strategie te bepalen.
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">Herkenbare situaties waarin extra ondersteuning helpend is</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">Reorganisaties en herstructureringen</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Wanneer besluiten snel volgen en de impact op medewerkers groot is, moet de OR in korte tijd voorstellen doorgronden en zijn positie bepalen.
               </p>
-              <div className="bg-slate-50 border border-slate-200 rounded-lg p-4 mt-4">
-                <h3 className="font-semibold text-slate-900 mb-2">Voorbeelden</h3>
-                <ul className="text-sm text-slate-600 space-y-1">
-                  <li>• Beoordeling van adviesaanvraag en conceptsociaal plan</li>
-                  <li>• Juridische analyse van reorganisatieplannen</li>
-                  <li>• Advies over concern-OR structuur en mandaten</li>
-                  <li>• Second opinion bij complexe juridische vragen</li>
-                </ul>
-              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">Adviesaanvragen onder hoge tijdsdruk</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Deadlines mogen niet ten koste gaan van inhoudelijke kwaliteit. Structuur en prioritering zijn dan essentieel.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">Complexe governance- en holdingstructuren</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Wanneer besluitvorming zich over meerdere lagen verspreidt, wordt het lastiger om invloed effectief te organiseren.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">COR- en EOR-context</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Internationale verhoudingen en uiteenlopende belangen maken zorgvuldige afstemming extra belangrijk.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">Spanning in de relatie met de bestuurder</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Wanneer vertrouwen onder druk staat, verschuift het gesprek al snel van inhoud naar positie.
+              </p>
             </div>
           </div>
+        </div>
+      </PageSection>
 
-          <div className="flex gap-6 items-start">
-            <div className="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
-              <Users className="w-8 h-8 text-blue-600" />
-            </div>
-            <div className="flex-1">
-              <h2 className="text-2xl font-bold text-slate-900 mb-3">Interim OR-ondersteuning</h2>
-              <p className="text-slate-600 mb-4 leading-relaxed">
-                Tijdelijke versterking van de OR bij ziekte, gebrek aan kennis of te veel werk. We nemen taken over of ondersteunen de OR in hun dagelijkse werk.
-              </p>
-              <div className="bg-slate-50 border border-slate-200 rounded-lg p-4 mt-4">
-                <h3 className="font-semibold text-slate-900 mb-2">Voorbeelden</h3>
-                <ul className="text-sm text-slate-600 space-y-1">
-                  <li>• Invallen als interim OR-lid of OR-secretaris</li>
-                  <li>• Procesondersteuning bij grote reorganisatie</li>
-                  <li>• Tijdelijke versterking bij fusie of overname</li>
-                  <li>• Opzetten van OR-structuur in nieuwe organisatie</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <PageSection>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Wat OR-ondersteuning oplevert</h2>
+          <p className="text-slate-600 leading-relaxed mb-6">
+            OR-ondersteuning is bedoeld om de OR te helpen zijn rol goed te blijven vervullen, juist wanneer het spannend wordt. Dat betekent onder andere:
+          </p>
+          <ul className="space-y-3 text-slate-700">
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">•</span>
+              <span>overzicht aanbrengen in complexe dossiers</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">•</span>
+              <span>helpen bij het analyseren en wegen van voorstellen</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">•</span>
+              <span>ondersteunen bij het bepalen van een strategische koers</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">•</span>
+              <span>voorbereiding en begeleiding van het gesprek met de bestuurder</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-blue-600 mt-1">•</span>
+              <span>bewaken van zorgvuldigheid binnen juridische kaders</span>
+            </li>
+          </ul>
+          <p className="text-slate-600 mt-6 leading-relaxed">
+            Altijd met respect voor de verhoudingen en zonder het werk van de OR over te nemen.
+          </p>
+        </div>
+      </PageSection>
 
-          <div className="flex gap-6 items-start">
-            <div className="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
-              <Target className="w-8 h-8 text-blue-600" />
-            </div>
-            <div className="flex-1">
-              <h2 className="text-2xl font-bold text-slate-900 mb-3">Coaching</h2>
-              <p className="text-slate-600 mb-4 leading-relaxed">
-                Individuele of team-coaching voor OR-voorzitters, OR-leden of hele OR'en. Gericht op persoonlijke ontwikkeling, samenwerking of omgaan met lastige situaties.
+      <PageSection background="gray">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">Vormen van OR-ondersteuning</h2>
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-2xl font-semibold text-slate-900 mb-3">Advies</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Juridische en inhoudelijke ondersteuning bij complexe dossiers, zoals reorganisaties, adviesaanvragen of concernstructuren.
               </p>
-              <div className="bg-slate-50 border border-slate-200 rounded-lg p-4 mt-4">
-                <h3 className="font-semibold text-slate-900 mb-2">Voorbeelden</h3>
-                <ul className="text-sm text-slate-600 space-y-1">
-                  <li>• Coaching van OR-voorzitter bij lastig dossier</li>
-                  <li>• Team-coaching bij conflict binnen OR</li>
-                  <li>• Coaching on the job bij onderhandelingen</li>
-                  <li>• Individuele coaching voor persoonlijke ontwikkeling</li>
-                </ul>
-              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold text-slate-900 mb-3">Interim OR-ondersteuning</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Tijdelijke versterking van de OR bij piekbelasting, uitval of capaciteitsproblemen.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold text-slate-900 mb-3">Coaching</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Individuele of teamcoaching voor OR-leden of voorzitters, gericht op rol, samenwerking en omgaan met lastige situaties.
+              </p>
             </div>
           </div>
         </div>
@@ -174,27 +166,27 @@ export default function ORondersteuning() {
 
       <PageSection>
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">Werkwijze</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">Onze werkwijze</h2>
           <div className="space-y-6">
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">1</div>
               <div>
-                <h3 className="font-semibold text-slate-900 mb-2">Intakegesprek</h3>
-                <p className="text-slate-600">We luisteren naar jullie vraag en situatie. Wat speelt er, wat is de urgentie en wat heeft de OR nodig?</p>
+                <h3 className="font-semibold text-slate-900 mb-2">Kennismaking en verheldering</h3>
+                <p className="text-slate-600">We bespreken wat er speelt, wat de urgentie is en waar de OR behoefte aan heeft.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">2</div>
               <div>
                 <h3 className="font-semibold text-slate-900 mb-2">Voorstel op maat</h3>
-                <p className="text-slate-600">We stellen een aanpak voor: advies, interim of coaching. Met heldere afspraken over inzet, duur en kosten.</p>
+                <p className="text-slate-600">We doen een voorstel dat past bij de situatie: advies, interim of coaching, met duidelijke afspraken over inzet en duur.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">3</div>
               <div>
-                <h3 className="font-semibold text-slate-900 mb-2">Ondersteuning & nazorg</h3>
-                <p className="text-slate-600">We starten met de ondersteuning en evalueren regelmatig. Na afloop optioneel nazorg of verdieping.</p>
+                <h3 className="font-semibold text-slate-900 mb-2">Ondersteuning en afronding</h3>
+                <p className="text-slate-600">We ondersteunen zolang nodig en evalueren samen. Nazorg of verdieping is mogelijk.</p>
               </div>
             </div>
           </div>
@@ -209,8 +201,8 @@ export default function ORondersteuning() {
       </PageSection>
 
       <CTABlock 
-        title="Klaar om de volgende stap te zetten?"
-        subtitle="Plan een kennismaking of vraag onze brochure aan."
+        title="Willen jullie verkennen of OR-ondersteuning past bij jullie situatie?"
+        subtitle="Een kennismaking is vrijblijvend en bedoeld om samen te kijken wat in jullie situatie helpend is."
       />
     </>
   );
