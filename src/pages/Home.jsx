@@ -87,34 +87,30 @@ export default function Home() {
 
       {/* Wanneer het spannend wordt */}
       <section className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900">Wanneer het spannend wordt</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto mt-4">
-              Herkenbare situaties waarin een doordachte aanpak essentieel is.
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-slate-900 mb-8">Wanneer het spannend wordt</h2>
+          
+          <div className="prose prose-lg text-slate-600 space-y-6">
+            <p className="leading-relaxed">
+              Er zijn situaties waarin medezeggenschap onder druk komt te staan. Niet omdat de OR zijn rol niet serieus neemt, maar omdat de omstandigheden complex zijn, de belangen groot en de tijd beperkt.
+            </p>
+            
+            <p className="leading-relaxed">
+              Dat zien we bij reorganisaties en herstructureringen, bij adviesaanvragen onder hoge tijdsdruk en in organisaties met complexe governance- of holdingstructuren. Ook in COR- en EOR-verband, waar nationale en internationale belangen samenkomen, neemt de complexiteit snel toe.
+            </p>
+            
+            <p className="leading-relaxed">
+              Wanneer daarbij de relatie tussen OR en bestuurder onder spanning komt te staan, ontstaat het risico dat zorgvuldigheid plaatsmaakt voor haast of escalatie. Juist dan maakt ervaring, overzicht en een doordachte aanpak het verschil.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Reorganisatie/Herstructurering</h3>
-              <p className="text-slate-600 text-sm">Begeleiding bij complexe reorganisaties en herstructureringen.</p>
-            </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Adviesaanvraag onder tijdsdruk</h3>
-              <p className="text-slate-600 text-sm">Hulp bij het formuleren van een gedegen advies onder strakke deadlines.</p>
-            </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Complexe governance/holding-structuur</h3>
-              <p className="text-slate-600 text-sm">Inzicht en strategie bij medezeggenschap in complexe bedrijfsstructuren.</p>
-            </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Spanning OR-bestuurder / escalatie voorkomen</h3>
-              <p className="text-slate-600 text-sm">Begeleiding om conflicten te de-escaleren en de relatie te herstellen.</p>
-            </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">COR/EOR context</h3>
-              <p className="text-slate-600 text-sm">Medezeggenschap in nationale en internationale groepsverbanden.</p>
-            </div>
+
+          <div className="mt-10">
+            <Link 
+              to="/ORondersteuning"
+              className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-lg"
+            >
+              Lees meer over OR-ondersteuning wanneer het spannend wordt →
+            </Link>
           </div>
         </div>
       </section>
