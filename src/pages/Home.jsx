@@ -47,17 +47,17 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-semibold text-slate-500 tracking-wider uppercase mb-4">Taai-Consult</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-8">Onze aanpak in de praktijk</h2>
-          <p className="text-xl text-slate-600 leading-relaxed">Taai-Consult helpt OR’en en commissies om hun rol goed en met vertrouwen te vervullen — in het dagelijks OR-werk én bij vraagstukken die meer aandacht vragen.
-
-Soms is een praktische training precies wat nodig is om kennis en vaardigheden te versterken. Soms vraagt een vraagstuk om begeleiding, overzicht en een zorgvuldige aanpak.
-
-Taai-Consult helpt OR’en en commissies om hun rol goed en met vertrouwen te vervullen. Dat doen we door training en ondersteuning te bieden die aansluit bij de praktijk van het OR-werk.
+          <p className="text-xl text-slate-600 leading-relaxed">Taai-Consult helpt OR’en en commissies om hun rol goed en met vertrouwen te vervullen. Dat doen we door training en ondersteuning te bieden die aansluit bij de praktijk van het OR-werk.
 
 Training vormt vaak de basis. Gericht op herkenbare situaties, praktische kennis en vaardigheden die direct toepasbaar zijn in het overleg en de samenwerking binnen de organisatie.
 
 Daarnaast ondersteunen wij OR’en en commissies bij vraagstukken die meer verdieping vragen. We helpen bij het creëren van overzicht en het kiezen van een zorgvuldige aanpak, altijd afgestemd op de specifieke context.
 
-In alle gevallen werken wij praktisch en onafhankelijk, met oog voor samenwerking en de verhoudingen binnen de organisatie.</p>
+In alle gevallen werken wij praktisch en onafhankelijk, met oog voor samenwerking en de verhoudingen binnen de organisatie.
+
+
+
+          </p>
         </div>
       </section>
 
