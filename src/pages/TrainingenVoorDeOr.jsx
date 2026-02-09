@@ -65,6 +65,8 @@ export default function TrainingenVoorDeOr() {
 
       <PageSection background="gray">
         <div className="max-w-3xl mx-auto">
+          <h3 className="text-lg font-semibold text-slate-700 mb-4">Trainingen afgestemd op het OR-werk</h3>
+          
           <div className="space-y-4 text-slate-700 leading-relaxed">
             <p>
               Het werk van een ondernemingsraad vraagt om kennis, inzicht en goede samenwerking. Of je nu net start of al langer meedraait: trainingen helpen om rollen te verduidelijken, vaardigheden te versterken en met meer vertrouwen aan tafel te zitten.
