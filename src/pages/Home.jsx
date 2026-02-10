@@ -47,26 +47,40 @@ export default function Home() {
 
       {/* Verhaalblok */}
       <section className="bg-white py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold text-slate-500 tracking-wider uppercase mb-4">Taai-Consult</p>
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-8">Onze aanpak in de praktijk</h2>
-          
-          <div className="prose prose-xl text-slate-600 space-y-6">
-            <p className="leading-relaxed">
-              Taai-Consult helpt OR'en en commissies om hun rol goed en met vertrouwen te vervullen. Dat doen we door training en ondersteuning te bieden die aansluit bij de praktijk van het OR-werk.
-            </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-sm font-semibold text-slate-500 tracking-wider uppercase mb-4">Taai-Consult</p>
+              <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-8">Onze aanpak in de praktijk</h2>
+              
+              <div className="prose prose-xl text-slate-600 space-y-6">
+                <p className="leading-relaxed">
+                  Taai-Consult helpt OR'en en commissies om hun rol goed en met vertrouwen te vervullen. Dat doen we door training en ondersteuning te bieden die aansluit bij de praktijk van het OR-werk.
+                </p>
+                
+                <p className="leading-relaxed">
+                  Training vormt vaak de basis. Gericht op herkenbare situaties, praktische kennis en vaardigheden die direct toepasbaar zijn in het overleg en de samenwerking binnen de organisatie.
+                </p>
+                
+                <p className="leading-relaxed">
+                  Daarnaast ondersteunen wij OR'en en commissies bij vraagstukken die meer verdieping vragen. We helpen bij het creëren van overzicht en het kiezen van een zorgvuldige aanpak, altijd afgestemd op de specifieke context.
+                </p>
+                
+                <p className="leading-relaxed">
+                  In alle gevallen werken wij praktisch en onafhankelijk, met oog voor samenwerking en de verhoudingen binnen de organisatie.
+                </p>
+              </div>
+            </div>
             
-            <p className="leading-relaxed">
-              Training vormt vaak de basis. Gericht op herkenbare situaties, praktische kennis en vaardigheden die direct toepasbaar zijn in het overleg en de samenwerking binnen de organisatie.
-            </p>
-            
-            <p className="leading-relaxed">
-              Daarnaast ondersteunen wij OR'en en commissies bij vraagstukken die meer verdieping vragen. We helpen bij het creëren van overzicht en het kiezen van een zorgvuldige aanpak, altijd afgestemd op de specifieke context.
-            </p>
-            
-            <p className="leading-relaxed">
-              In alle gevallen werken wij praktisch en onafhankelijk, met oog voor samenwerking en de verhoudingen binnen de organisatie.
-            </p>
+            <div className="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop" 
+                alt="Professionele vergadering" 
+                className="rounded-xl shadow-2xl"
+              />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-600 rounded-lg opacity-10"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-slate-900 rounded-lg opacity-10"></div>
+            </div>
           </div>
         </div>
       </section>
