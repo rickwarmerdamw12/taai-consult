@@ -59,21 +59,35 @@ export default function TrainingenVoorCommissies() {
       </Hero>
 
       <PageSection background="gray">
-        <div className="max-w-3xl mx-auto">
-          <h3 className="text-lg font-semibold text-slate-700 mb-4">Trainingen afgestemd op de rol van commissies</h3>
-          
-          <div className="space-y-4 text-slate-700 leading-relaxed">
-            <p>
-              Commissies vervullen binnen de medezeggenschap een specifieke taak. Dat vraagt om duidelijke afbakening van rollen, goede afstemming met de OR en effectieve samenwerking met de bestuurder en andere betrokkenen.
-            </p>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-lg font-semibold text-slate-700 mb-4">Trainingen afgestemd op de rol van commissies</h3>
+              
+              <div className="space-y-4 text-slate-700 leading-relaxed">
+                <p>
+                  Commissies vervullen binnen de medezeggenschap een specifieke taak. Dat vraagt om duidelijke afbakening van rollen, goede afstemming met de OR en effectieve samenwerking met de bestuurder en andere betrokkenen.
+                </p>
+                
+                <p>
+                  Onze trainingen sluiten aan op die praktijk. We helpen commissieleden om hun rol scherp te krijgen, inhoudelijk sterker te worden en met meer vertrouwen te adviseren.
+                </p>
+                
+                <p>
+                  De focus ligt altijd op toepasbaarheid: wat betekent dit voor jullie commissie, binnen jullie organisatie en in het dagelijks werk?
+                </p>
+              </div>
+            </div>
             
-            <p>
-              Onze trainingen sluiten aan op die praktijk. We helpen commissieleden om hun rol scherp te krijgen, inhoudelijk sterker te worden en met meer vertrouwen te adviseren.
-            </p>
-            
-            <p>
-              De focus ligt altijd op toepasbaarheid: wat betekent dit voor jullie commissie, binnen jullie organisatie en in het dagelijks werk?
-            </p>
+            <div className="relative">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/8d9c9ae4a_DSCF0592.jpg" 
+                alt="Commissie training in de praktijk" 
+                className="rounded-xl shadow-2xl"
+              />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-600 rounded-lg opacity-10"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-slate-900 rounded-lg opacity-10"></div>
+            </div>
           </div>
         </div>
       </PageSection>
