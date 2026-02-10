@@ -64,17 +64,31 @@ export default function TrainingenVoorDeOr() {
       </Hero>
 
       <PageSection background="gray">
-        <div className="max-w-3xl mx-auto">
-          <h3 className="text-lg font-semibold text-slate-700 mb-4">Trainingen afgestemd op het OR-werk</h3>
-          
-          <div className="space-y-4 text-slate-700 leading-relaxed">
-            <p>
-              Het werk van een ondernemingsraad vraagt om kennis, inzicht en goede samenwerking. Of je nu net start of al langer meedraait: trainingen helpen om rollen te verduidelijken, vaardigheden te versterken en met meer vertrouwen aan tafel te zitten.
-            </p>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-lg font-semibold text-slate-700 mb-4">Trainingen afgestemd op het OR-werk</h3>
+              
+              <div className="space-y-4 text-slate-700 leading-relaxed">
+                <p>
+                  Het werk van een ondernemingsraad vraagt om kennis, inzicht en goede samenwerking. Of je nu net start of al langer meedraait: trainingen helpen om rollen te verduidelijken, vaardigheden te versterken en met meer vertrouwen aan tafel te zitten.
+                </p>
+                
+                <p>
+                  Onze trainingen sluiten aan op de dagelijkse OR-praktijk. We werken met herkenbare situaties, veel interactie en ruimte om te oefenen, zodat wat je leert direct toepasbaar is in jullie overleg en samenwerking.
+                </p>
+              </div>
+            </div>
             
-            <p>
-              Onze trainingen sluiten aan op de dagelijkse OR-praktijk. We werken met herkenbare situaties, veel interactie en ruimte om te oefenen, zodat wat je leert direct toepasbaar is in jullie overleg en samenwerking.
-            </p>
+            <div className="relative">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/1a83b4dfd_ortrainingortraining.jpg" 
+                alt="OR training in de praktijk" 
+                className="rounded-xl shadow-2xl"
+              />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-600 rounded-lg opacity-10"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-slate-900 rounded-lg opacity-10"></div>
+            </div>
           </div>
         </div>
       </PageSection>
