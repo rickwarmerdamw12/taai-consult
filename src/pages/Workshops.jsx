@@ -48,17 +48,31 @@ export default function Workshops() {
       </Hero>
 
       <PageSection background="gray">
-        <div className="max-w-3xl mx-auto">
-          <h3 className="text-lg font-semibold text-slate-700 mb-4">Wanneer kies je voor een workshop?</h3>
-          
-          <div className="space-y-4 text-slate-700 leading-relaxed">
-            <p>
-              Een workshop is geen volledige training, maar een gerichte sessie rond één thema. Ideaal wanneer er iets speelt dat om aandacht vraagt, of wanneer jullie als OR of commissie snel tot gezamenlijke inzichten of afspraken willen komen.
-            </p>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-lg font-semibold text-slate-700 mb-4">Wanneer kies je voor een workshop?</h3>
+              
+              <div className="space-y-4 text-slate-700 leading-relaxed">
+                <p>
+                  Een workshop is geen volledige training, maar een gerichte sessie rond één thema. Ideaal wanneer er iets speelt dat om aandacht vraagt, of wanneer jullie als OR of commissie snel tot gezamenlijke inzichten of afspraken willen komen.
+                </p>
+                
+                <p>
+                  We stemmen de workshop vooraf af op jullie vraagstuk, zodat de inhoud aansluit bij wat er nodig is in de praktijk.
+                </p>
+              </div>
+            </div>
             
-            <p>
-              We stemmen de workshop vooraf af op jullie vraagstuk, zodat de inhoud aansluit bij wat er nodig is in de praktijk.
-            </p>
+            <div className="relative">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/9d32d0089_DSCF0270.jpg" 
+                alt="Workshop in de praktijk" 
+                className="rounded-xl shadow-2xl"
+              />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-600 rounded-lg opacity-10"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-slate-900 rounded-lg opacity-10"></div>
+            </div>
           </div>
         </div>
       </PageSection>
