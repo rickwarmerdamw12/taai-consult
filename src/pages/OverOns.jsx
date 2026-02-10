@@ -20,15 +20,29 @@ export default function OverOns() {
       />
 
       <PageSection>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Wie we zijn</h2>
-          <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed">
-            <p>
-              Taai-Consult ondersteunt ondernemingsraden en commissies bij medezeggenschapsvraagstukken die ertoe doen. Situaties waarin belangen groot zijn, de druk hoog is en zorgvuldigheid cruciaal blijft. We brengen overzicht, rust en richting — juist wanneer het spannend wordt.
-            </p>
-            <p>
-              Onze kracht zit in de combinatie van inhoudelijke scherpte en gevoel voor de organisatiecontext. Juridische kennis is daarbij geen doel op zich, maar een middel om tot werkbare oplossingen te komen. Oplossingen die recht doen aan wet- en regelgeving én aan de verhoudingen binnen de organisatie. We helpen OR'en om hun positie zorgvuldig én effectief in te nemen, zonder onnodige escalatie of juridisering.
-            </p>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Wie we zijn</h2>
+              <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed">
+                <p>
+                  Taai-Consult ondersteunt ondernemingsraden en commissies bij medezeggenschapsvraagstukken die ertoe doen. Situaties waarin belangen groot zijn, de druk hoog is en zorgvuldigheid cruciaal blijft. We brengen overzicht, rust en richting — juist wanneer het spannend wordt.
+                </p>
+                <p>
+                  Onze kracht zit in de combinatie van inhoudelijke scherpte en gevoel voor de organisatiecontext. Juridische kennis is daarbij geen doel op zich, maar een middel om tot werkbare oplossingen te komen. Oplossingen die recht doen aan wet- en regelgeving én aan de verhoudingen binnen de organisatie. We helpen OR'en om hun positie zorgvuldig én effectief in te nemen, zonder onnodige escalatie of juridisering.
+                </p>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/08e6693ff_DSCF1042.jpg" 
+                alt="Taai-Consult team" 
+                className="rounded-xl shadow-2xl"
+              />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-600 rounded-lg opacity-10"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-slate-900 rounded-lg opacity-10"></div>
+            </div>
           </div>
         </div>
       </PageSection>
