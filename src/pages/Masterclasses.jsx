@@ -64,15 +64,29 @@ export default function Masterclasses() {
       </Hero>
 
       <PageSection>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Wanneer is een masterclass passend?</h2>
-          <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed mb-12">
-            <p>
-              Een masterclass is geen basistraining. Het is een verdiepende sessie voor OR-leden en commissies die hun rol al goed kennen en behoefte hebben aan meer context, scherpe afwegingen en inhoudelijke verdieping.
-            </p>
-            <p>
-              Masterclasses zijn geschikt wanneer onderwerpen juridisch of strategisch complexer worden, of wanneer de OR zich wil voorbereiden op gesprekken waarin meer van hem wordt verwacht.
-            </p>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Wanneer is een masterclass passend?</h2>
+              <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed">
+                <p>
+                  Een masterclass is geen basistraining. Het is een verdiepende sessie voor OR-leden en commissies die hun rol al goed kennen en behoefte hebben aan meer context, scherpe afwegingen en inhoudelijke verdieping.
+                </p>
+                <p>
+                  Masterclasses zijn geschikt wanneer onderwerpen juridisch of strategisch complexer worden, of wanneer de OR zich wil voorbereiden op gesprekken waarin meer van hem wordt verwacht.
+                </p>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/2d9b0ad42_DSCF0023.jpg" 
+                alt="Masterclass in de praktijk" 
+                className="rounded-xl shadow-2xl"
+              />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-600 rounded-lg opacity-10"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-slate-900 rounded-lg opacity-10"></div>
+            </div>
           </div>
         </div>
       </PageSection>
