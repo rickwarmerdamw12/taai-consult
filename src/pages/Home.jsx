@@ -74,8 +74,8 @@ export default function Home() {
             
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop" 
-                alt="Professionele vergadering" 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/4b7797aed_DSCF0500.jpg" 
+                alt="Training in de praktijk" 
                 className="rounded-xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-600 rounded-lg opacity-10"></div>
