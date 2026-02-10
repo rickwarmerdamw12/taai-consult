@@ -19,14 +19,28 @@ export default function Vertrouwenspersoon() {
       />
 
       <PageSection>
-        <div className="max-w-4xl mx-auto">
-          <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed">
-            <p>
-              De vertrouwenspersoon vervult een bijzondere rol binnen organisaties. Als laagdrempelig aanspreekpunt biedt hij of zij ruimte aan ervaringen die vaak niet direct een oplossing vragen, maar wel zorgvuldige aandacht en duiding.
-            </p>
-            <p>
-              Die rol vraagt meer dan betrokkenheid of goede bedoelingen. Zij vraagt kennis van grenzen, inzicht in organisatiecontext en het vermogen om professioneel nabij te zijn zonder verantwoordelijkheden over te nemen. Juist door die zorgvuldige positionering kan de vertrouwenspersoon bijdragen aan sociale veiligheid en vertrouwen binnen de organisatie.
-            </p>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed">
+                <p>
+                  De vertrouwenspersoon vervult een bijzondere rol binnen organisaties. Als laagdrempelig aanspreekpunt biedt hij of zij ruimte aan ervaringen die vaak niet direct een oplossing vragen, maar wel zorgvuldige aandacht en duiding.
+                </p>
+                <p>
+                  Die rol vraagt meer dan betrokkenheid of goede bedoelingen. Zij vraagt kennis van grenzen, inzicht in organisatiecontext en het vermogen om professioneel nabij te zijn zonder verantwoordelijkheden over te nemen. Juist door die zorgvuldige positionering kan de vertrouwenspersoon bijdragen aan sociale veiligheid en vertrouwen binnen de organisatie.
+                </p>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/36c726a61_DSCF1019.jpg" 
+                alt="Vertrouwenspersoon training" 
+                className="rounded-xl shadow-2xl"
+              />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-600 rounded-lg opacity-10"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-slate-900 rounded-lg opacity-10"></div>
+            </div>
           </div>
         </div>
       </PageSection>
