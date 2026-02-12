@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { base44 } from '@/api/base44Client';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -21,6 +22,7 @@ export default function Contact() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     const hash = window.location.hash;
@@ -36,11 +38,29 @@ export default function Contact() {
     }
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    setIsSubmitting(true);
+    
+    try {
+      await base44.entities.ContactSubmission.create(formData);
+      setSubmitted(true);
+      setFormData({
+        naam: '',
+        email: '',
+        organisatie: '',
+        rol: '',
+        onderwerp: '',
+        bericht: '',
+        telefoon: ''
+      });
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Er is iets misgegaan. Probeer het opnieuw.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -220,8 +240,9 @@ export default function Contact() {
                   className="w-full md:w-auto px-8 py-3 text-white"
                   style={{ background: 'linear-gradient(90deg, #2F5B4C 0%, #1C3A30 100%)' }}
                   data-cta="contact_form_submit"
+                  disabled={isSubmitting}
                 >
-                  Verstuur bericht
+                  {isSubmitting ? 'Bezig met verzenden...' : 'Verstuur bericht'}
                 </Button>
               </form>
             </div>
