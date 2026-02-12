@@ -1,111 +1,266 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { CheckCircle } from 'lucide-react';
 import SEO from '../components/SEO';
 import Hero from '../components/Hero';
 import PageSection from '../components/PageSection';
-import CardGrid from '../components/CardGrid';
 import Accordion from '../components/Accordion';
-import CTABlock from '../components/CTABlock';
 
 export default function VaardighedenVoorDeOr() {
-  const visibleVaardigheden = [
-  { title: "Argumenteren", description: "Leren hoe je standpunten helder onderbouwt en overtuigend verwoordt, zodat bijdragen beter landen in overleg en besluitvorming." },
-  { title: "Conflicthantering", description: "Inzicht in spanningen en conflicten binnen en rondom de OR, met handvatten om constructief om te gaan met verschillen en lastige gesprekken." },
-  { title: "Maatwerk gesprekstechniek", description: "Gericht oefenen met gesprekken die voor jullie OR relevant zijn, zoals overleg met de bestuurder of interne afstemming binnen de OR." },
-  { title: "Onderhandelen", description: "Praktische training in onderhandelen binnen de OR-context, met aandacht voor voorbereiding, belangen en het voeren van het gesprek." },
-  { title: "Vergadertechniek", description: "Effectiever vergaderen door betere voorbereiding, structuur en rolverdeling, zodat overleg doelgerichter en prettiger verloopt." }];
-
-
   const faqs = [
-  { title: "Kan ik meerdere vaardigheden combineren?", content: "Ja, we stellen vaak maatwerktrajecten samen van 3-5 dagdelen." },
-  { title: "Zijn deze trainingen ook voor commissies?", content: "Absoluut. VGW(M)-commissies en andere commissies hebben vaak dezelfde vaardigheden nodig." },
-  { title: "Krijg ik een certificaat?", content: "Ja, na afloop ontvang je een certificaat van deelname." }];
-
+    { title: "Kan ik meerdere vaardigheden combineren?", content: "Ja, we stellen vaak maatwerktrajecten samen van 3-5 dagdelen." },
+    { title: "Zijn deze trainingen ook voor commissies?", content: "Absoluut. VGW(M)-commissies en andere commissies hebben vaak dezelfde vaardigheden nodig." },
+    { title: "Krijg ik een certificaat?", content: "Ja, na afloop ontvang je een certificaat van deelname." }
+  ];
 
   return (
     <>
       <SEO
         title="Vaardigheden voor de OR"
-        description="Vaardighedentrainingen voor OR-leden: vergadertechnieken, presenteren, lobbyen en meer."
+        description="Vaardighedentrainingen die het verschil maken aan tafel. Van vergadertechniek tot onderhandelen."
         canonical="/vaardigheden-voor-de-or" />
 
-
+      {/* 1. HERO */}
       <Hero
         title="Vaardigheden die het verschil maken aan tafel"
-        subtitle="Vergaderen, onderhandelen en communiceren zijn kernvaardigheden binnen het OR-werk. In deze trainingen ontwikkelen OR-leden praktische skills om effectiever en prettiger samen te werken en hun rol met meer vertrouwen te vervullen.">
-
-        <p className="text-slate-300 mb-8">
-
-        </p>
-
+        subtitle="Vergaderen, onderhandelen en communiceren zijn kernvaardigheden binnen het OR-werk. Wij helpen OR-leden om effectiever samen te werken en steviger hun rol te vervullen.">
+        
         <div className="flex flex-col sm:flex-row gap-4">
           <Link
-            to="/contact#plan"
-            className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-center"
+            to="/Contact"
+            className="px-8 py-3 text-white rounded-lg transition-colors font-medium text-center"
+            style={{ background: 'linear-gradient(90deg, #2F5B4C 0%, #1C3A30 100%)' }}
             data-cta="plan_kennismaking">
-
-            Plan kennismaking
+            Plan een vrijblijvend gesprek
           </Link>
           <Link
-            to="/contact#brochure"
-            className="px-8 py-3 bg-white text-slate-900 rounded-lg hover:bg-slate-100 transition-colors font-medium text-center"
-            data-cta="vraag_brochure">
-
-            Vraag brochure
+            to="/Contact"
+            className="px-8 py-3 bg-white rounded-lg transition-colors font-medium text-center"
+            style={{ color: '#2E2E2E' }}
+            data-cta="vraag_voorstel">
+            Vraag een voorstel aan
           </Link>
         </div>
       </Hero>
 
-      <PageSection background="gray">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-lg font-semibold text-slate-700 mb-4">Vaardigheden voor het dagelijkse OR-werk</h3>
-              
-              <div className="space-y-4 text-slate-700 leading-relaxed">
-                <p>
-                  Effectief OR-werk vraagt niet alleen om kennis, maar ook om vaardigheden in overleg en samenwerking. Hoe je vergadert, communiceert en omgaat met verschillen maakt vaak het verschil aan tafel.
-                </p>
-                
-                <p>
-                  Deze trainingen zijn gericht op het ontwikkelen van praktische vaardigheden die OR-leden direct kunnen toepassen in hun eigen praktijk. Met veel oefening en herkenbare situaties, zodat het geleerde meteen helpt in het overleg en de samenwerking.
-                </p>
-              </div>
-            </div>
+      {/* 2. POSITIONERING */}
+      <PageSection>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
+            Niet alleen kennis. Ook gedrag en vaardigheden.
+          </h2>
+          
+          <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
+            <p>
+              Effectief OR-werk vraagt meer dan inhoudelijke kennis. Hoe je vergadert, communiceert en omgaat met verschillen bepaalt vaak de kwaliteit van het overleg.
+            </p>
             
-            <div className="relative">
-              <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/9c01ba5f8_ChatGPTImage10feb202610_08_59.png" 
-                alt="OR vaardigheden in de praktijk" 
-                className="rounded-xl shadow-2xl"
-              />
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-600 rounded-lg opacity-10"></div>
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-slate-900 rounded-lg opacity-10"></div>
+            <p>
+              Daarom richten deze trainingen zich op praktische vaardigheden die direct toepasbaar zijn in jullie eigen OR-praktijk.
+            </p>
+            
+            <p className="font-medium">
+              Met veel oefening, herkenbare situaties en concrete feedback.
+            </p>
+          </div>
+        </div>
+      </PageSection>
+
+      {/* 3. HERKENNING */}
+      <PageSection background="gray">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1F3F35' }}>
+            Veel OR'en lopen in de praktijk tegen dit soort situaties aan:
+          </h2>
+          
+          <div className="space-y-4">
+            {[
+              'Discussies blijven hangen zonder duidelijke besluiten.',
+              'Standpunten worden niet helder of overtuigend verwoord.',
+              'Overleg met de bestuurder voelt stroef of ongelijkwaardig.',
+              'Vergaderingen kosten veel energie en leveren weinig op.',
+              'Spanningen binnen de OR beïnvloeden de samenwerking.',
+              'Leden vinden het lastig om stevig en constructief het gesprek te voeren.'
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-lg" style={{ border: '1px solid #AFC1B7' }}>
+                <CheckCircle className="w-6 h-6 flex-shrink-0 mt-0.5" style={{ color: '#6F8F80' }} />
+                <p className="text-lg" style={{ color: '#2E2E2E' }}>{item}</p>
+              </div>
+            ))}
+          </div>
+          
+          <p className="text-lg font-medium mt-8" style={{ color: '#1F3F35' }}>
+            Herkenbaar? Dan is het tijd om gericht te werken aan vaardigheden.
+          </p>
+        </div>
+      </PageSection>
+
+      {/* 4. VOORBEELDEN */}
+      <PageSection>
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center" style={{ color: '#1F3F35' }}>
+            Voorbeelden van veelgevraagde vaardigheidstrainingen
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Communicatie & gesprek */}
+            <div className="p-8 rounded-xl" style={{ backgroundColor: '#DCE5E0' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#1F3F35' }}>Communicatie & gesprek</h3>
+              <ul className="space-y-3" style={{ color: '#2E2E2E' }}>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg">•</span>
+                  <span>Argumenteren en standpunten helder formuleren</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg">•</span>
+                  <span>Maatwerk gesprekstechniek binnen de OR-context</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg">•</span>
+                  <span>Omgaan met weerstand en lastige gesprekken</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Onderhandelen & invloed */}
+            <div className="p-8 rounded-xl" style={{ backgroundColor: '#DCE5E0' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#1F3F35' }}>Onderhandelen & invloed</h3>
+              <ul className="space-y-3" style={{ color: '#2E2E2E' }}>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg">•</span>
+                  <span>Onderhandelen binnen de OR-context</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg">•</span>
+                  <span>Belangen scherp krijgen en benoemen</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg">•</span>
+                  <span>Effectiever invloed uitoefenen in overleg</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Vergaderen & structuur */}
+            <div className="p-8 rounded-xl" style={{ backgroundColor: '#DCE5E0' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#1F3F35' }}>Vergaderen & structuur</h3>
+              <ul className="space-y-3" style={{ color: '#2E2E2E' }}>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg">•</span>
+                  <span>Vergadertechniek</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg">•</span>
+                  <span>Rol- en taakverdeling binnen de OR</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg">•</span>
+                  <span>Besluitvorming verbeteren</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Samenwerking & spanningen */}
+            <div className="p-8 rounded-xl" style={{ backgroundColor: '#DCE5E0' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#1F3F35' }}>Samenwerking & spanningen</h3>
+              <ul className="space-y-3" style={{ color: '#2E2E2E' }}>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg">•</span>
+                  <span>Conflicthantering</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg">•</span>
+                  <span>Omgaan met verschillen binnen de OR</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg">•</span>
+                  <span>Constructieve samenwerking versterken</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </PageSection>
 
-      <PageSection>
-        <h2 className="text-3xl font-bold text-slate-900 mb-8">Ons aanbod</h2>
-        <CardGrid items={visibleVaardigheden} />
-        
-        <p className="text-slate-600 mt-8 text-center">
-          Staat jullie onderwerp er niet tussen? We verzorgen ook maatwerk, afgestemd op jullie OR en praktijk.
-        </p>
+      {/* 5. MAATWERK */}
+      <PageSection background="gray">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
+            Staat jullie vraag hier niet tussen?
+          </h2>
+          
+          <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
+            <p>
+              Vaardigheidstrainingen worden altijd afgestemd op jullie praktijk. Dat kan als zelfstandige training, maar ook geïntegreerd in een breder traject of gekoppeld aan een lopend dossier.
+            </p>
+            
+            <p>
+              We werken met bestaande concepten én met maatwerk.
+            </p>
+            
+            <p className="font-medium">
+              Geen standaard trainingsdag, maar oefenen met situaties die voor jullie OR daadwerkelijk relevant zijn.
+            </p>
+          </div>
+        </div>
       </PageSection>
 
+      {/* 6. AANPAK */}
+      <PageSection>
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center" style={{ color: '#1F3F35' }}>
+            Zo werken wij
+          </h2>
+          
+          <div className="grid md:grid-cols-4 gap-6">
+            {[
+              { num: '01', text: 'Verkenning van jullie praktijk en dynamiek' },
+              { num: '02', text: 'Analyse van specifieke ontwikkelpunten' },
+              { num: '03', text: 'Voorstel op maat (inhoud, vorm en duur)' },
+              { num: '04', text: 'Praktische training met directe toepasbaarheid' }
+            ].map((step) => (
+              <div key={step.num} className="text-center">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl font-bold" style={{ backgroundColor: '#1F3F35', color: 'white' }}>
+                  {step.num}
+                </div>
+                <p className="text-lg" style={{ color: '#2E2E2E' }}>{step.text}</p>
+              </div>
+            ))}
+          </div>
+          
+          <p className="text-lg font-medium text-center mt-12" style={{ color: '#1F3F35' }}>
+            Doel: effectiever overleg, duidelijkere besluitvorming en steviger optreden aan tafel.
+          </p>
+        </div>
+      </PageSection>
+
+      {/* FAQ */}
       <PageSection background="gray">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">Veelgestelde vragen</h2>
+          <h2 className="text-3xl font-bold mb-8" style={{ color: '#1F3F35' }}>Veelgestelde vragen</h2>
           <Accordion items={faqs} />
         </div>
       </PageSection>
 
-      <CTABlock
-        title="Klaar om de volgende stap te zetten?"
-        subtitle="Plan een kennismaking of vraag onze brochure aan." />
-
-    </>);
-
+      {/* 7. AFSLUITENDE CTA */}
+      <section className="py-20" style={{ background: 'linear-gradient(90deg, #2F5B4C 0%, #1C3A30 100%)' }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            Klaar om het verschil te maken in jullie overleg?
+          </h2>
+          <p className="text-xl mb-10" style={{ color: '#DCE5E0' }}>
+            Een voorstel of programma wordt altijd in overleg en geheel vrijblijvend opgesteld.
+          </p>
+          <Link 
+            to="/Contact" 
+            className="inline-block px-10 py-4 bg-white rounded-lg transition-colors font-medium text-lg hover:bg-gray-50"
+            style={{ color: '#1F3F35' }}
+            data-cta="plan_kennismaking_bottom"
+          >
+            Plan een kennismaking
+          </Link>
+        </div>
+      </section>
+    </>
+  );
 }
