@@ -61,33 +61,33 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact info */}
             <div className="lg:col-span-1">
-              <h2 className="text-2xl font-bold text-slate-900 mb-6">Contactgegevens</h2>
+              <h2 className="text-2xl font-bold mb-6" style={{ color: '#1F3F35' }}>Contactgegevens</h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <Mail className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#6F8F80' }} />
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
-                    <a href="mailto:info@taai-consult.nl" className="text-slate-600 hover:text-blue-600">
+                    <h3 className="font-semibold mb-1" style={{ color: '#1F3F35' }}>Email</h3>
+                    <a href="mailto:info@taai-consult.nl" style={{ color: '#2E2E2E' }}>
                       info@taai-consult.nl
                     </a>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
-                  <Phone className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#6F8F80' }} />
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">Telefoon</h3>
-                    <a href="tel:+31201234567" className="text-slate-600 hover:text-blue-600">
+                    <h3 className="font-semibold mb-1" style={{ color: '#1F3F35' }}>Telefoon</h3>
+                    <a href="tel:+31201234567" style={{ color: '#2E2E2E' }}>
                       +31 (0)20 123 4567
                     </a>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
-                  <MapPin className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#6F8F80' }} />
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">Bezoekadres</h3>
-                    <p className="text-slate-600">
+                    <h3 className="font-semibold mb-1" style={{ color: '#1F3F35' }}>Bezoekadres</h3>
+                    <p style={{ color: '#2E2E2E' }}>
                       Amsterdam<br />
                       Nederland
                     </p>
@@ -95,9 +95,9 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="mt-8 p-6 bg-blue-50 rounded-lg">
-                <h3 className="font-semibold text-slate-900 mb-2">Responstijd</h3>
-                <p className="text-slate-600 text-sm">
+              <div className="mt-8 p-6 rounded-lg" style={{ backgroundColor: '#DCE5E0' }}>
+                <h3 className="font-semibold mb-2" style={{ color: '#1F3F35' }}>Responstijd</h3>
+                <p className="text-sm" style={{ color: '#2E2E2E' }}>
                   We streven ernaar om binnen 1 werkdag te reageren op je bericht.
                 </p>
               </div>
@@ -106,11 +106,11 @@ export default function Contact() {
             {/* Contact form */}
             <div className="lg:col-span-2">
               <div id="plan" className="scroll-mt-20">
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">Stuur ons een bericht</h2>
+                <h2 className="text-2xl font-bold mb-6" style={{ color: '#1F3F35' }}>Stuur ons een bericht</h2>
               </div>
 
               {submitted && (
-                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
+                <div className="mb-6 p-4 rounded-lg" style={{ backgroundColor: '#DCE5E0', border: '1px solid #6F8F80', color: '#1F3F35' }}>
                   Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.
                 </div>
               )}
@@ -217,7 +217,8 @@ export default function Contact() {
 
                 <Button 
                   type="submit" 
-                  className="w-full md:w-auto px-8 py-3 bg-blue-600 hover:bg-blue-700"
+                  className="w-full md:w-auto px-8 py-3 text-white"
+                  style={{ background: 'linear-gradient(90deg, #2F5B4C 0%, #1C3A30 100%)' }}
                   data-cta="contact_form_submit"
                 >
                   Verstuur bericht
