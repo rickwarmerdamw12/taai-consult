@@ -106,7 +106,7 @@ export default function Masterclasses() {
           
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              'Verdieping in juridische en strategische thema's',
+              "Verdieping in juridische en strategische thema's",
               'Meer inzicht in handelingsruimte en afwegingen',
               'Reflectie op rol en positionering',
               'Sparren met andere ervaren OR-leden',
