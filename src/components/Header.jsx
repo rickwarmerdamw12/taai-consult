@@ -8,7 +8,7 @@ export default function Header() {
   const [themasOpen, setThemasOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-sm">
+    <header className="sticky top-0 z-50 backdrop-blur-sm border-b shadow-sm" style={{ backgroundColor: '#6F8F80', borderColor: '#1F3F35' }}>
       {/* Tracking placeholder */}
       {/* TODO: Add GA4 / Facebook Pixel / LinkedIn Insight Tag 
       <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -17,7 +17,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-slate-900">
+          <Link to="/" className="text-2xl font-bold text-white">
             Taai-Consult
           </Link>
 
@@ -26,7 +26,7 @@ export default function Header() {
             {/* Diensten dropdown */}
             <div className="relative group">
               <button 
-                className="px-4 py-2 text-slate-700 hover:text-slate-900 flex items-center gap-1"
+                className="px-4 py-2 text-white hover:text-[#DCE5E0] flex items-center gap-1"
                 onMouseEnter={() => setDienstenOpen(true)}
                 onMouseLeave={() => setDienstenOpen(false)}
               >
@@ -34,26 +34,27 @@ export default function Header() {
               </button>
               {dienstenOpen && (
                 <div 
-                  className="absolute left-0 mt-0 w-64 bg-white border border-slate-200 rounded-lg shadow-lg py-2"
+                  className="absolute left-0 mt-0 w-64 rounded-lg shadow-lg py-2" 
+                  style={{ backgroundColor: '#DCE5E0', borderColor: '#AFC1B7' }}
                   onMouseEnter={() => setDienstenOpen(true)}
                   onMouseLeave={() => setDienstenOpen(false)}
                 >
-                  <Link to="/TrainingenVoorDeOr" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/TrainingenVoorDeOr" className="block px-4 py-2 hover:bg-[#AFC1B7]" style={{ color: '#2E2E2E' }}>
                     Trainingen OR
                   </Link>
-                  <Link to="/VaardighedenVoorDeOr" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/VaardighedenVoorDeOr" className="block px-4 py-2 hover:bg-[#AFC1B7]" style={{ color: '#2E2E2E' }}>
                     Vaardigheden OR
                   </Link>
-                  <Link to="/TrainingenVoorCommissies" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/TrainingenVoorCommissies" className="block px-4 py-2 hover:bg-[#AFC1B7]" style={{ color: '#2E2E2E' }}>
                     Commissies
                   </Link>
-                  <Link to="/Workshops" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/Workshops" className="block px-4 py-2 hover:bg-[#AFC1B7]" style={{ color: '#2E2E2E' }}>
                     Workshops
                   </Link>
-                  <Link to="/Masterclasses" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/Masterclasses" className="block px-4 py-2 hover:bg-[#AFC1B7]" style={{ color: '#2E2E2E' }}>
                     Masterclasses
                   </Link>
-                  <Link to="/ORondersteuning" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/ORondersteuning" className="block px-4 py-2 hover:bg-[#AFC1B7]" style={{ color: '#2E2E2E' }}>
                     OR-ondersteuning
                   </Link>
                 </div>
@@ -63,7 +64,7 @@ export default function Header() {
             {/* Themas dropdown */}
             <div className="relative group">
               <button 
-                className="px-4 py-2 text-slate-700 hover:text-slate-900 flex items-center gap-1"
+                className="px-4 py-2 text-white hover:text-[#DCE5E0] flex items-center gap-1"
                 onMouseEnter={() => setThemasOpen(true)}
                 onMouseLeave={() => setThemasOpen(false)}
               >
@@ -71,33 +72,37 @@ export default function Header() {
               </button>
               {themasOpen && (
                 <div 
-                  className="absolute left-0 mt-0 w-72 bg-white border border-slate-200 rounded-lg shadow-lg py-2"
+                  className="absolute left-0 mt-0 w-72 rounded-lg shadow-lg py-2"
+                  style={{ backgroundColor: '#DCE5E0', borderColor: '#AFC1B7' }}
                   onMouseEnter={() => setThemasOpen(true)}
                   onMouseLeave={() => setThemasOpen(false)}
                 >
-                  <Link to="/MedezeggenschapHoldings" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/MedezeggenschapHoldings" className="block px-4 py-2 hover:bg-[#AFC1B7]" style={{ color: '#2E2E2E' }}>
                     Medezeggenschap Holdings
                   </Link>
-                  <Link to="/MedezeggenschapAmbtelijk" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/MedezeggenschapAmbtelijk" className="block px-4 py-2 hover:bg-[#AFC1B7]" style={{ color: '#2E2E2E' }}>
                     Ambtelijke Organisaties
                   </Link>
-                  <Link to="/VernieuwendMedezeggenschap" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/VernieuwendMedezeggenschap" className="block px-4 py-2 hover:bg-[#AFC1B7]" style={{ color: '#2E2E2E' }}>
                     Vernieuwend Medezeggenschap
                   </Link>
-                  <Link to="/Vertrouwenspersoon" className="block px-4 py-2 text-slate-700 hover:bg-slate-50">
+                  <Link to="/Vertrouwenspersoon" className="block px-4 py-2 hover:bg-[#AFC1B7]" style={{ color: '#2E2E2E' }}>
                     Vertrouwenspersoon
                   </Link>
                 </div>
               )}
             </div>
 
-            <Link to="/OverOns" className="px-4 py-2 text-slate-700 hover:text-slate-900">
+            <Link to="/OverOns" className="px-4 py-2 text-white hover:text-[#DCE5E0]">
               Over ons
             </Link>
 
             <Link 
               to="/Contact" 
-              className="ml-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="ml-4 px-6 py-2 text-white rounded-lg transition-colors"
+              style={{ background: 'linear-gradient(90deg, #2F5B4C 0%, #1C3A30 100%)' }}
+              onMouseEnter={(e) => e.target.style.background = 'linear-gradient(90deg, #1F3F35 0%, #1C3A30 100%)'}
+              onMouseLeave={(e) => e.target.style.background = 'linear-gradient(90deg, #2F5B4C 0%, #1C3A30 100%)'}
             >
               Contact
             </Link>
@@ -105,7 +110,7 @@ export default function Header() {
 
           {/* Mobile menu button */}
           <button 
-            className="md:hidden p-2 text-slate-700"
+            className="md:hidden p-2 text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -114,46 +119,46 @@ export default function Header() {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-slate-200">
+          <div className="md:hidden py-4" style={{ borderTop: '1px solid #1F3F35' }}>
             <div className="space-y-2">
-              <div className="font-medium text-slate-900 px-4 py-2">Diensten</div>
-              <Link to="/TrainingenVoorDeOr" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <div className="font-medium text-white px-4 py-2">Diensten</div>
+              <Link to="/TrainingenVoorDeOr" className="block px-6 py-2 text-white hover:bg-[#1F3F35]">
                 Trainingen OR
               </Link>
-              <Link to="/VaardighedenVoorDeOr" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/VaardighedenVoorDeOr" className="block px-6 py-2 text-white hover:bg-[#1F3F35]">
                 Vaardigheden OR
               </Link>
-              <Link to="/TrainingenVoorCommissies" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/TrainingenVoorCommissies" className="block px-6 py-2 text-white hover:bg-[#1F3F35]">
                 Commissies
               </Link>
-              <Link to="/Workshops" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/Workshops" className="block px-6 py-2 text-white hover:bg-[#1F3F35]">
                 Workshops
               </Link>
-              <Link to="/Masterclasses" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/Masterclasses" className="block px-6 py-2 text-white hover:bg-[#1F3F35]">
                 Masterclasses
               </Link>
-              <Link to="/ORondersteuning" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/ORondersteuning" className="block px-6 py-2 text-white hover:bg-[#1F3F35]">
                 OR-ondersteuning
               </Link>
               
-              <div className="font-medium text-slate-900 px-4 py-2 mt-4">Thema's</div>
-              <Link to="/MedezeggenschapHoldings" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <div className="font-medium text-white px-4 py-2 mt-4">Thema's</div>
+              <Link to="/MedezeggenschapHoldings" className="block px-6 py-2 text-white hover:bg-[#1F3F35]">
                 Medezeggenschap Holdings
               </Link>
-              <Link to="/MedezeggenschapAmbtelijk" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/MedezeggenschapAmbtelijk" className="block px-6 py-2 text-white hover:bg-[#1F3F35]">
                 Ambtelijke Organisaties
               </Link>
-              <Link to="/VernieuwendMedezeggenschap" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/VernieuwendMedezeggenschap" className="block px-6 py-2 text-white hover:bg-[#1F3F35]">
                 Vernieuwend Medezeggenschap
               </Link>
-              <Link to="/Vertrouwenspersoon" className="block px-6 py-2 text-slate-700 hover:bg-slate-50">
+              <Link to="/Vertrouwenspersoon" className="block px-6 py-2 text-white hover:bg-[#1F3F35]">
                 Vertrouwenspersoon
               </Link>
 
-              <Link to="/OverOns" className="block px-4 py-2 text-slate-700 hover:bg-slate-50 mt-4">
+              <Link to="/OverOns" className="block px-4 py-2 text-white hover:bg-[#1F3F35] mt-4">
                 Over ons
               </Link>
-              <Link to="/Contact" className="block px-4 py-2 text-blue-600 font-medium hover:bg-slate-50 mt-2">
+              <Link to="/Contact" className="block px-4 py-2 text-[#DCE5E0] font-medium hover:bg-[#1F3F35] mt-2">
                 Contact
               </Link>
             </div>

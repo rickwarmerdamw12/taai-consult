@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300">
+    <footer className="text-slate-300" style={{ backgroundColor: '#1F3F35' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Column 1: Logo + tagline */}
@@ -44,7 +44,7 @@ export default function Footer() {
               <li>info@taai-consult.nl</li>
               <li>+31 (0)20 123 4567</li>
               <li className="pt-2">
-                <Link to="/Contact" className="text-blue-400 hover:text-blue-300">
+                <Link to="/Contact" className="hover:text-white" style={{ color: '#AFC1B7' }}>
                   Neem contact op →
                 </Link>
               </li>
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-slate-800 mt-8 pt-8 text-sm text-slate-400 text-center">
+        <div className="mt-8 pt-8 text-sm text-slate-400 text-center" style={{ borderTop: '1px solid #2E2E2E' }}>
           <p>&copy; {new Date().getFullYear()} Taai-Consult. Alle rechten voorbehouden.</p>
         </div>
       </div>
