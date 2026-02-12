@@ -42,7 +42,7 @@ export default function Footer() {
             <h4 className="font-semibold text-white mb-3">Contact</h4>
             <ul className="space-y-2 text-sm">
               <li>info@taai-consult.nl</li>
-              <li>+31 (0)20 123 4567</li>
+              <li>+31 6 50 74 26 73</li>
               <li className="pt-2">
                 <Link to="/Contact" className="hover:text-white" style={{ color: '#AFC1B7' }}>
                   Neem contact op →

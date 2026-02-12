@@ -77,8 +77,8 @@ export default function Contact() {
                   <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#6F8F80' }} />
                   <div>
                     <h3 className="font-semibold mb-1" style={{ color: '#1F3F35' }}>Telefoon</h3>
-                    <a href="tel:+31201234567" style={{ color: '#2E2E2E' }}>
-                      +31 (0)20 123 4567
+                    <a href="tel:+31650742673" style={{ color: '#2E2E2E' }}>
+                      +31 6 50 74 26 73
                     </a>
                   </div>
                 </div>
