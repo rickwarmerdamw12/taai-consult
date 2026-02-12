@@ -38,34 +38,48 @@ export default function TrainingenVoorDeOr() {
 
       {/* 2. POSITIONERING */}
       <PageSection>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
-            Geen standaard lesdagen. Wel trainingen die werken in jullie praktijk.
-          </h2>
-          
-          <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
-            <p>
-              Elke OR is anders. Samenstelling, dynamiek, relatie met de bestuurder en de fase waarin jullie zitten bepalen wat nodig is.
-            </p>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
+                Geen standaard lesdagen. Wel trainingen die werken in jullie praktijk.
+              </h2>
+              
+              <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
+                <p>
+                  Elke OR is anders. Samenstelling, dynamiek, relatie met de bestuurder en de fase waarin jullie zitten bepalen wat nodig is.
+                </p>
+                
+                <p>
+                  Daarom werken wij niet met een vaste catalogus. We kijken eerst naar jullie situatie en stellen vervolgens een programma samen dat past.
+                </p>
+                
+                <ul className="space-y-2 ml-6">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: '#6F8F80' }} />
+                    <span>Soms vanuit een bestaand trainingsconcept.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: '#6F8F80' }} />
+                    <span>Soms volledig op maat.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: '#6F8F80' }} />
+                    <span>Altijd praktisch, interactief en toepasbaar.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
             
-            <p>
-              Daarom werken wij niet met een vaste catalogus. We kijken eerst naar jullie situatie en stellen vervolgens een programma samen dat past.
-            </p>
-            
-            <ul className="space-y-2 ml-6">
-              <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: '#6F8F80' }} />
-                <span>Soms vanuit een bestaand trainingsconcept.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: '#6F8F80' }} />
-                <span>Soms volledig op maat.</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: '#6F8F80' }} />
-                <span>Altijd praktisch, interactief en toepasbaar.</span>
-              </li>
-            </ul>
+            <div className="relative">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/f99489151_ortrainingortraining.jpg" 
+                alt="OR training in de praktijk" 
+                className="rounded-xl shadow-2xl"
+              />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 rounded-lg opacity-10" style={{ backgroundColor: '#6F8F80' }}></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 rounded-lg opacity-10" style={{ backgroundColor: '#1F3F35' }}></div>
+            </div>
           </div>
         </div>
       </PageSection>
