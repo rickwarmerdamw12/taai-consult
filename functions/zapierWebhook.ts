@@ -28,11 +28,8 @@ Deno.serve(async (req) => {
         }
 
         // Haal Zapier webhook URL uit secrets
-        const zapierWebhookUrl = Deno.env.get("ZAPIER_WEBHOOK_URL");
+        const zapierWebhookUrl = "https://hooks.zapier.com/hooks/catch/26394284/uexg6kr/";
 
-        if (!zapierWebhookUrl) {
-            return Response.json({ error: 'Zapier webhook URL not configured' }, { status: 500 });
-        }
 
         // Stuur data naar Zapier
         const zapierResponse = await fetch(zapierWebhookUrl, {
