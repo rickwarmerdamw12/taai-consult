@@ -5,12 +5,19 @@ Deno.serve(async (req) => {
         const base44 = createClientFromRequest(req);
         const payload = await req.json();
 
+        // Debug logging om te zien wat we ontvangen
+        console.log('Received payload:', JSON.stringify(payload, null, 2));
+
         // Entity automation stuurt: { event: { entity_id, ... }, data: {...} }
-        const contactSubmissionId = payload.event?.entity_id || payload.contactSubmissionId;
+        const contactSubmissionId = payload.event?.entity_id || payload.entity_id || payload.contactSubmissionId;
         const submission = payload.data || null;
 
         if (!contactSubmissionId) {
-            return Response.json({ error: 'contactSubmissionId is required' }, { status: 400 });
+            console.error('No contactSubmissionId found. Payload keys:', Object.keys(payload));
+            return Response.json({ 
+                error: 'contactSubmissionId is required',
+                receivedKeys: Object.keys(payload)
+            }, { status: 400 });
         }
 
         // Als we de data al hebben uit de automation, gebruik die, anders ophalen
