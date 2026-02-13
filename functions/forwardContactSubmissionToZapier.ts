@@ -34,7 +34,7 @@ Deno.serve(async (req) => {
         console.log('ContactSubmission found:', contactSubmission.id);
 
         // Zapier webhook URL (direct in code voor nu)
-        const zapierWebhookUrl = 'https://hooks.zapier.com/hooks/catch/26394284/uexg6kr/';
+        const zapierWebhookUrl = 'https://hooks.zapier.com/hooks/catch/26394284/uexmsv4/';
 
         // Stuur data naar Zapier (platte structuur)
         console.log('Sending to Zapier:', zapierWebhookUrl);
