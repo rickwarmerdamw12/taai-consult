@@ -4,7 +4,7 @@ import Hero from '../components/Hero';
 import PageSection from '../components/PageSection';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Mail, Phone, MapPin } from 'lucide-react';
@@ -175,40 +175,26 @@ export default function Contact() {
 
                   <div>
                     <Label htmlFor="rol">Rol *</Label>
-                    <Select value={formData.rol} onValueChange={(value) => setFormData({...formData, rol: value})}>
-                      <SelectTrigger id="rol">
-                        <SelectValue placeholder="Selecteer je rol" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="or-lid">OR-lid</SelectItem>
-                        <SelectItem value="commissie">Commissielid</SelectItem>
-                        <SelectItem value="bestuur">Bestuurder</SelectItem>
-                        <SelectItem value="hr">HR</SelectItem>
-                        <SelectItem value="anders">Anders</SelectItem>
-                      </SelectContent>
-                    </Select>
+                    <Input 
+                      id="rol"
+                      value={formData.rol}
+                      onChange={(e) => setFormData({...formData, rol: e.target.value})}
+                      required
+                      placeholder="OR-lid"
+                    />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div id="brochure" className="scroll-mt-20">
                     <Label htmlFor="onderwerp">Onderwerp *</Label>
-                    <Select value={formData.onderwerp} onValueChange={(value) => setFormData({...formData, onderwerp: value})}>
-                      <SelectTrigger id="onderwerp">
-                        <SelectValue placeholder="Waar kunnen we je mee helpen?" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="training-or">Training OR</SelectItem>
-                        <SelectItem value="vaardigheden-or">Vaardigheden OR</SelectItem>
-                        <SelectItem value="commissies">Commissies</SelectItem>
-                        <SelectItem value="workshop">Workshop</SelectItem>
-                        <SelectItem value="masterclass">Masterclass</SelectItem>
-                        <SelectItem value="or-ondersteuning">OR-ondersteuning</SelectItem>
-                        <SelectItem value="thema">Thema (holdings/ambtelijk/vernieuwend)</SelectItem>
-                        <SelectItem value="brochure">Brochure aanvragen</SelectItem>
-                        <SelectItem value="anders">Anders</SelectItem>
-                      </SelectContent>
-                    </Select>
+                    <Input 
+                      id="onderwerp"
+                      value={formData.onderwerp}
+                      onChange={(e) => setFormData({...formData, onderwerp: e.target.value})}
+                      required
+                      placeholder="Training OR"
+                    />
                   </div>
 
                   <div>
