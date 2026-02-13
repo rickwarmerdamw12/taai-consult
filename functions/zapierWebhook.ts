@@ -3,16 +3,20 @@ import { createClientFromRequest } from 'npm:@base44/sdk@0.8.6';
 Deno.serve(async (req) => {
     try {
         const base44 = createClientFromRequest(req);
-        const { contactSubmissionId } = await req.json();
+        const payload = await req.json();
+
+        // Entity automation stuurt: { event: { entity_id, ... }, data: {...} }
+        const contactSubmissionId = payload.event?.entity_id || payload.contactSubmissionId;
+        const submission = payload.data || null;
 
         if (!contactSubmissionId) {
             return Response.json({ error: 'contactSubmissionId is required' }, { status: 400 });
         }
 
-        // Haal de contactsubmissie op
-        const submission = await base44.asServiceRole.entities.ContactSubmission.get(contactSubmissionId);
+        // Als we de data al hebben uit de automation, gebruik die, anders ophalen
+        const contactSubmission = submission || await base44.asServiceRole.entities.ContactSubmission.get(contactSubmissionId);
 
-        if (!submission) {
+        if (!contactSubmission) {
             return Response.json({ error: 'Contact submission not found' }, { status: 404 });
         }
 
@@ -30,16 +34,16 @@ Deno.serve(async (req) => {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                naam: submission.naam,
-                email: submission.email,
-                organisatie: submission.organisatie,
-                rol: submission.rol,
-                onderwerp: submission.onderwerp,
-                bericht: submission.bericht,
-                telefoon: submission.telefoon,
-                status: submission.status,
-                created_date: submission.created_date,
-                id: submission.id
+                naam: contactSubmission.naam,
+                email: contactSubmission.email,
+                organisatie: contactSubmission.organisatie,
+                rol: contactSubmission.rol,
+                onderwerp: contactSubmission.onderwerp,
+                bericht: contactSubmission.bericht,
+                telefoon: contactSubmission.telefoon,
+                status: contactSubmission.status,
+                created_date: contactSubmission.created_date,
+                id: contactSubmission.id
             })
         });
 
