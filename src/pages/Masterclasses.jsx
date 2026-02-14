@@ -48,23 +48,35 @@ export default function Masterclasses() {
 
       {/* 2. POSITIONERING */}
       <PageSection>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
-            Geen basistraining. Wel verdieping.
-          </h2>
-          
-          <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
-            <p>
-              Een masterclass is geen introductie of herhaling van de basis. Het is een verdiepende sessie voor OR-leden die hun rol al goed kennen en behoefte hebben aan scherpere afwegingen en meer context.
-            </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
+                Geen basistraining. Wel verdieping.
+              </h2>
+              
+              <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
+                <p>
+                  Een masterclass is geen introductie of herhaling van de basis. Het is een verdiepende sessie voor OR-leden die hun rol al goed kennen en behoefte hebben aan scherpere afwegingen en meer context.
+                </p>
+                
+                <p>
+                  In kleine groepen werken we aan complexe vraagstukken die in de praktijk spelen.
+                </p>
+                
+                <p className="font-medium">
+                  De nadruk ligt op analyse, reflectie en strategische positionering.
+                </p>
+              </div>
+            </div>
             
-            <p>
-              In kleine groepen werken we aan complexe vraagstukken die in de praktijk spelen.
-            </p>
-            
-            <p className="font-medium">
-              De nadruk ligt op analyse, reflectie en strategische positionering.
-            </p>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/12038e694_missie.jpg" 
+                alt="Masterclass verdieping" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </PageSection>
