@@ -48,24 +48,36 @@ export default function Workshops() {
 
       {/* 2. POSITIONERING */}
       <PageSection>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
-            Wanneer kies je voor een workshop?
-          </h2>
-          
-          <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
-            <p>
-              Een workshop is geen volledige training, maar een gerichte interventie rond één actueel thema.
-            </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
+                Wanneer kies je voor een workshop?
+              </h2>
+              
+              <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
+                <p>
+                  Een workshop is geen volledige training, maar een gerichte interventie rond één actueel thema.
+                </p>
+                
+                <p>
+                  Ideaal wanneer er iets speelt dat om aandacht vraagt.<br />
+                  Of wanneer jullie als OR of commissie snel tot gezamenlijke inzichten, afspraken of richting willen komen.
+                </p>
+                
+                <p className="font-medium">
+                  De inhoud wordt vooraf afgestemd op jullie vraagstuk, zodat de sessie direct aansluit bij wat in de praktijk nodig is.
+                </p>
+              </div>
+            </div>
             
-            <p>
-              Ideaal wanneer er iets speelt dat om aandacht vraagt.<br />
-              Of wanneer jullie als OR of commissie snel tot gezamenlijke inzichten, afspraken of richting willen komen.
-            </p>
-            
-            <p className="font-medium">
-              De inhoud wordt vooraf afgestemd op jullie vraagstuk, zodat de sessie direct aansluit bij wat in de praktijk nodig is.
-            </p>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/a847d4a98_kernwaarden2.jpg" 
+                alt="Workshop in actie" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </PageSection>
