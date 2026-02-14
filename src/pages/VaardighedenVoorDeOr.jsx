@@ -45,23 +45,35 @@ export default function VaardighedenVoorDeOr() {
 
       {/* 2. POSITIONERING */}
       <PageSection>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
-            Niet alleen kennis. Ook gedrag en vaardigheden.
-          </h2>
-          
-          <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
-            <p>
-              Effectief OR-werk vraagt meer dan inhoudelijke kennis. Hoe je vergadert, communiceert en omgaat met verschillen bepaalt vaak de kwaliteit van het overleg.
-            </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
+                Niet alleen kennis. Ook gedrag en vaardigheden.
+              </h2>
+              
+              <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
+                <p>
+                  Effectief OR-werk vraagt meer dan inhoudelijke kennis. Hoe je vergadert, communiceert en omgaat met verschillen bepaalt vaak de kwaliteit van het overleg.
+                </p>
+                
+                <p>
+                  Daarom richten deze trainingen zich op praktische vaardigheden die direct toepasbaar zijn in jullie eigen OR-praktijk.
+                </p>
+                
+                <p className="font-medium">
+                  Met veel oefening, herkenbare situaties en concrete feedback.
+                </p>
+              </div>
+            </div>
             
-            <p>
-              Daarom richten deze trainingen zich op praktische vaardigheden die direct toepasbaar zijn in jullie eigen OR-praktijk.
-            </p>
-            
-            <p className="font-medium">
-              Met veel oefening, herkenbare situaties en concrete feedback.
-            </p>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/809306010_procesbegeleiding.jpg" 
+                alt="Procesbegeleiding in de praktijk" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </PageSection>
