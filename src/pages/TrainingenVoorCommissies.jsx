@@ -45,23 +45,35 @@ export default function TrainingenVoorCommissies() {
 
       {/* 2. POSITIONERING */}
       <PageSection>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
-            Een commissie heeft een eigen verantwoordelijkheid
-          </h2>
-          
-          <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
-            <p>
-              Commissies vervullen binnen de medezeggenschap een specifieke taak. Dat vraagt om duidelijke rolafbakening, goede afstemming met de OR en zorgvuldige samenwerking met de bestuurder en andere betrokkenen.
-            </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
+                Een commissie heeft een eigen verantwoordelijkheid
+              </h2>
+              
+              <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
+                <p>
+                  Commissies vervullen binnen de medezeggenschap een specifieke taak. Dat vraagt om duidelijke rolafbakening, goede afstemming met de OR en zorgvuldige samenwerking met de bestuurder en andere betrokkenen.
+                </p>
+                
+                <p>
+                  Onze trainingen sluiten aan op die praktijk. We helpen commissieleden om hun rol scherper te krijgen, inhoudelijk sterker te worden en met meer vertrouwen te adviseren.
+                </p>
+                
+                <p className="font-medium">
+                  De focus ligt altijd op toepasbaarheid: wat betekent dit concreet voor jullie commissie en organisatie?
+                </p>
+              </div>
+            </div>
             
-            <p>
-              Onze trainingen sluiten aan op die praktijk. We helpen commissieleden om hun rol scherper te krijgen, inhoudelijk sterker te worden en met meer vertrouwen te adviseren.
-            </p>
-            
-            <p className="font-medium">
-              De focus ligt altijd op toepasbaarheid: wat betekent dit concreet voor jullie commissie en organisatie?
-            </p>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/44c828713_ChatGPTImage14feb202614_45_41.png" 
+                alt="Commissie training in de praktijk" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </PageSection>
