@@ -17,8 +17,12 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-white">
-            Taai-Consult
+          <Link to="/" className="flex items-center">
+            <img 
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/dca8f0310_Ontwerpzondertitel2.png" 
+              alt="Taai-Consult logo" 
+              className="h-12"
+            />
           </Link>
 
           {/* Desktop menu */}
