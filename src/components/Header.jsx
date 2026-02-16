@@ -19,7 +19,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/d372a04d2_Ontwerpzondertitel3.png" 
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/b16ceea63_Ontwerpzondertitel1.png" 
               alt="Taai-Consult" 
               className="h-10"
             />
