@@ -18,7 +18,7 @@ export default function Home() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="max-w-4xl">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-tight"><span className="font-normal">Training en ondersteuning</span> voor ondernemingsraden
+            <h1 className="mb-8 text-base font-medium leading-tight sm:text-6xl lg:text-7xl">Medezeggenschap professioneel ondersteund.
 
             </h1>
             <p className="text-xl sm:text-2xl mb-12 leading-relaxed" style={{ color: '#DCE5E0' }}>Praktisch, zorgvuldig en onafhankelijk — voor OR'en die hun rol goed willen vervullen, in gewone én complexere situaties.
@@ -75,11 +75,11 @@ export default function Home() {
             </div>
             
             <div className="relative">
-              <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/4b7797aed_DSCF0500.jpg" 
-                alt="Training in de praktijk" 
-                className="rounded-xl shadow-2xl"
-              />
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69846ad3327fab0348385a7d/4b7797aed_DSCF0500.jpg"
+                alt="Training in de praktijk"
+                className="rounded-xl shadow-2xl" />
+
               <div className="absolute -bottom-6 -left-6 w-32 h-32 rounded-lg opacity-10" style={{ backgroundColor: '#6F8F80' }}></div>
               <div className="absolute -top-6 -right-6 w-24 h-24 rounded-lg opacity-10" style={{ backgroundColor: '#1F3F35' }}></div>
             </div>
@@ -139,11 +139,11 @@ export default function Home() {
           </div>
 
           <div className="mt-10">
-            <Link 
+            <Link
               to="/ORondersteuning"
               className="inline-flex items-center gap-2 font-medium text-lg"
-              style={{ color: '#2F5B4C' }}
-            >
+              style={{ color: '#2F5B4C' }}>
+
               Lees meer over OR-ondersteuning wanneer het spannend wordt →
             </Link>
           </div>
