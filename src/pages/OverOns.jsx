@@ -59,7 +59,7 @@ export default function OverOns() {
             </p>
             
             <div className="mt-8 pt-6 border-t border-slate-300">
-              <h3 className="text-lg font-semibold text-slate-700 mb-3">Versterking van het bureau</h3>
+              <h2 className="text-lg font-semibold text-slate-700 mb-3">Versterking van het bureau</h3>
               <p>
                 De afgelopen periode is Rick Warmerdam toegetreden tot Taai-Consult. Rick is voor klanten doorgaans het eerste aanspreekpunt. Hij verzorgt het klantcontact en denkt mee over vragen rondom trainingen, masterclasses en ondersteuningstrajecten, maar ook over inhoudelijke situaties waar OR'en tegenaan lopen. Klanten kunnen bij Rick altijd terecht om te sparren, vragen te stellen of hun situatie te verkennen. De inhoudelijke begeleiding ligt bij Arjan, terwijl Rick het bureau organisatorisch en in het contact versterkt. Zo blijft de inhoud stevig verankerd en is er tegelijkertijd ruimte voor continuïteit en doorontwikkeling.
               </p>
