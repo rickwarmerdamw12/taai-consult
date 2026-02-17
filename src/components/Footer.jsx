@@ -34,6 +34,7 @@ export default function Footer() {
               <li><Link to="/MedezeggenschapHoldings" className="hover:text-white">Medezeggenschap Holdings</Link></li>
               <li><Link to="/MedezeggenschapAmbtelijk" className="hover:text-white">Ambtelijke Organisaties</Link></li>
               <li><Link to="/VernieuwendMedezeggenschap" className="hover:text-white">Vernieuwend Medezeggenschap</Link></li>
+              <li><Link to="/OverOns" className="hover:text-white">Over ons</Link></li>
             </ul>
           </div>
 
