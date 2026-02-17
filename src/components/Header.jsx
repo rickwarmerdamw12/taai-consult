@@ -72,7 +72,7 @@ export default function Header() {
                 onMouseEnter={() => setThemasOpen(true)}
                 onMouseLeave={() => setThemasOpen(false)}
               >
-                Thema's <ChevronDown className="w-4 h-4" />
+                Expertise <ChevronDown className="w-4 h-4" />
               </button>
               {themasOpen && (
                 <div 
@@ -145,7 +145,7 @@ export default function Header() {
                 OR-ondersteuning
               </Link>
               
-              <div className="font-medium text-white px-4 py-2 mt-4">Thema's</div>
+              <div className="font-medium text-white px-4 py-2 mt-4">Expertise</div>
               <Link to="/MedezeggenschapHoldings" className="block px-6 py-2 text-white hover:bg-[#1F3F35]">
                 Medezeggenschap Holdings
               </Link>
