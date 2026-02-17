@@ -56,20 +56,20 @@ export default function Home() {
               <h2 className="text-4xl sm:text-5xl font-bold mb-8" style={{ color: '#1F3F35' }}>Onze aanpak in de praktijk</h2>
               
               <div className="prose prose-xl space-y-6" style={{ color: '#2E2E2E' }}>
-                <p className="leading-relaxed">
-                  Taai-Consult helpt OR'en en commissies om hun rol goed en met vertrouwen te vervullen. Dat doen we door training en ondersteuning te bieden die aansluit bij de praktijk van het OR-werk.
+                <p className="leading-relaxed">TAAI-Consult ondersteunt ondernemingsraden en commissies bij het professioneel invullen van hun rol. Dat doen wij met een combinatie van training, inhoudelijke begeleiding en strategische ondersteuning, afgestemd op de fase waarin de organisatie zich bevindt.
+
                 </p>
                 
-                <p className="leading-relaxed">
-                  Training vormt vaak de basis. Gericht op herkenbare situaties, praktische kennis en vaardigheden die direct toepasbaar zijn in het overleg en de samenwerking binnen de organisatie.
+                <p className="leading-relaxed">Training vormt vaak het vertrekpunt. Gericht op herkenbare situaties, praktische kennis en vaardigheden die direct toepasbaar zijn in overleg en besluitvorming. Niet als losstaand programma, maar als onderdeel van versterking van de kwaliteit van medezeggenschap.
+
                 </p>
                 
-                <p className="leading-relaxed">
-                  Daarnaast ondersteunen wij OR'en en commissies bij vraagstukken die meer verdieping vragen. We helpen bij het creëren van overzicht en het kiezen van een zorgvuldige aanpak, altijd afgestemd op de specifieke context.
+                <p className="leading-relaxed">Wanneer vraagstukken complexer worden, verschuift de inzet. Wij begeleiden ondernemingsraden bij reorganisaties, strategische keuzes en situaties waarin zorgvuldigheid, timing en positionering bepalend zijn voor de uitkomst.
+
                 </p>
                 
-                <p className="leading-relaxed">
-                  In alle gevallen werken wij praktisch en onafhankelijk, met oog voor samenwerking en de verhoudingen binnen de organisatie.
+                <p className="leading-relaxed">In alle gevallen werken wij praktisch, onafhankelijk en met oog voor de verhoudingen binnen de organisatie. Altijd met als doel dat de OR zijn rol met vertrouwen, kwaliteit en gezag kan vervullen.
+
                 </p>
               </div>
             </div>
