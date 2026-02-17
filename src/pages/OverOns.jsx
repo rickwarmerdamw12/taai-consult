@@ -16,7 +16,7 @@ export default function OverOns() {
 
       <Hero 
         title="Over Taai-Consult"
-        subtitle="Zorgvuldig en juridisch onderbouwd, met oog voor bestuurlijke verhoudingen én de menselijke kant van medezeggenschap."
+        subtitle="Praktisch en juridisch scherp, met oog voor de menselijke kant — in het dagelijks overleg én wanneer de belangen groot zijn."
       />
 
       <PageSection>
@@ -26,13 +26,10 @@ export default function OverOns() {
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Wie we zijn</h2>
               <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed">
                 <p>
-                  TAAI-Consult ondersteunt ondernemingsraden en commissies bij medezeggenschapsvraagstukken die ertoe doen. Dat kan gaan om het dagelijkse overleg en reguliere adviestrajecten, maar ook om situaties waarin belangen groot zijn, de druk toeneemt en zorgvuldigheid bepalend is. Wij brengen overzicht, rust en richting wanneer het proces daarom vraagt.
+                  Taai-Consult ondersteunt ondernemingsraden en commissies bij medezeggenschapsvraagstukken die ertoe doen. Situaties waarin belangen groot zijn, de druk hoog is en zorgvuldigheid cruciaal blijft. We brengen overzicht, rust en richting — juist wanneer het spannend wordt.
                 </p>
                 <p>
-                  Onze kracht ligt in de combinatie van inhoudelijke scherpte en gevoel voor de organisatorische en bestuurlijke context. Juridische kennis is daarbij geen doel op zich, maar een middel om tot werkbare oplossingen te komen die recht doen aan wet- en regelgeving én aan de verhoudingen binnen de organisatie.
-                </p>
-                <p>
-                  Wij helpen ondernemingsraden hun rol zorgvuldig en met gezag te vervullen, met oog voor de menselijke kant van besluitvorming en samenwerking.
+                  Onze kracht zit in de combinatie van inhoudelijke scherpte en gevoel voor de organisatiecontext. Juridische kennis is daarbij geen doel op zich, maar een middel om tot werkbare oplossingen te komen. Oplossingen die recht doen aan wet- en regelgeving én aan de verhoudingen binnen de organisatie. We helpen OR'en om hun positie zorgvuldig én effectief in te nemen, zonder onnodige escalatie of juridisering.
                 </p>
               </div>
             </div>
@@ -55,34 +52,18 @@ export default function OverOns() {
           <h2 className="text-3xl font-bold text-slate-900 mb-6">Arjan Warmerdam</h2>
           <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed">
             <p>
-              TAAI-Consult is opgericht en wordt inhoudelijk geleid door Arjan Warmerdam. Met meer dan 25 jaar ervaring in de medezeggenschap begeleidt hij ondernemingsraden en commissies binnen een breed scala aan organisaties: van kleinere instellingen tot grote (internationale) ondernemingen en publieke organisaties.
+              Taai-Consult is opgericht en wordt inhoudelijk geleid door Arjan Warmerdam. Arjan is trainer en begeleider met meer dan 25 jaar ervaring in de medezeggenschap. In die jaren heeft hij OR'en en commissies begeleid bij een breed scala aan organisaties — van kleine instellingen tot grote (internationale) ondernemingen en publieke organisaties. Hij werkte aan reorganisaties, fusies, complexe adviestrajecten en samenwerkingsvraagstukken, vaak onder hoge druk en met grote belangen.
             </p>
             <p>
-              Hij werkte aan reorganisaties, fusies, complexe adviestrajecten en samenwerkingsvraagstukken, vaak onder hoge druk en met uiteenlopende belangen.
+              Arjan staat bekend om zijn vermogen om snel tot de kern te komen, overzicht te creëren en het gesprek weer terug te brengen naar de inhoud. Met gezag, maar zonder machtsvertoon. Met scherpte, maar altijd met oog voor de menselijke en bestuurlijke context. Dat maakt hem een stevige sparringpartner voor OR'en én een betrouwbare gesprekspartner richting bestuurders.
             </p>
-            <p>
-              Arjan staat bekend om zijn vermogen om snel tot de kern te komen, overzicht te creëren en het gesprek terug te brengen naar inhoud en proces. Met gezag, zonder machtsvertoon. Met scherpte, en altijd met oog voor de menselijke en bestuurlijke context.
-            </p>
-            <p>
-              Dat maakt hem voor ondernemingsraden een stevige sparringpartner en voor bestuurders een betrouwbare gesprekspartner.
-            </p>
-          </div>
-        </div>
-      </PageSection>
-
-      <PageSection>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Versterking van het bureau</h2>
-          <div className="prose prose-lg text-slate-600 space-y-4 leading-relaxed">
-            <p>
-              Rick Warmerdam is toegetreden tot TAAI-Consult en vormt samen met Arjan de volgende generatie binnen het bureau. Hij is voor veel klanten het eerste aanspreekpunt en verzorgt de afstemming rondom trainingen en ondersteuningstrajecten.
-            </p>
-            <p>
-              Rick denkt inhoudelijk mee over opzet, programma's en leerdoelen en bouwt zich stap voor stap op in het vak van medezeggenschapsbegeleiding. De komende jaren zal hij naast zijn rol in organisatie en klantcontact ook steeds actiever betrokken zijn bij trainingen en trajecten.
-            </p>
-            <p>
-              Zo combineert TAAI-Consult ervaring en continuïteit met ontwikkeling en vernieuwing. De inhoudelijke kwaliteit blijft stevig verankerd, terwijl er bewust wordt gebouwd aan de toekomst van het bureau.
-            </p>
+            
+            <div className="mt-8 pt-6 border-t border-slate-300">
+              <h2 className="text-lg font-semibold text-slate-700 mb-3">Versterking van het bureau</h3>
+              <p>
+                De afgelopen periode is Rick Warmerdam toegetreden tot Taai-Consult. Rick is voor klanten doorgaans het eerste aanspreekpunt. Hij verzorgt het klantcontact en denkt mee over vragen rondom trainingen, masterclasses en ondersteuningstrajecten, maar ook over inhoudelijke situaties waar OR'en tegenaan lopen. Klanten kunnen bij Rick altijd terecht om te sparren, vragen te stellen of hun situatie te verkennen. De inhoudelijke begeleiding ligt bij Arjan, terwijl Rick het bureau organisatorisch en in het contact versterkt. Zo blijft de inhoud stevig verankerd en is er tegelijkertijd ruimte voor continuïteit en doorontwikkeling.
+              </p>
+            </div>
           </div>
         </div>
       </PageSection>
@@ -91,7 +72,7 @@ export default function OverOns() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
             <p className="text-lg text-slate-700 leading-relaxed text-center">
-              TAAI-Consult brengt rust waar nodig, scherpte waar het moet en werkt altijd vanuit zorgvuldigheid en vertrouwen.
+              Taai-Consult is daarmee een bureau dat rust brengt waar het nodig is, scherpte toevoegt waar het moet, en altijd werkt vanuit zorgvuldigheid en vertrouwen.
             </p>
           </div>
         </div>
@@ -107,7 +88,7 @@ export default function OverOns() {
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-3">Onafhankelijke positie</h3>
               <p className="text-slate-600">
-                Wij adviseren vanuit professionele autonomie en zorg voor de kwaliteit van medezeggenschap.
+                Wij werken los van interne belangen en bieden objectieve, zorgvuldige begeleiding.
               </p>
             </div>
 
@@ -115,9 +96,9 @@ export default function OverOns() {
               <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Menselijke benadering</h3>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Menselijke aanpak</h3>
               <p className="text-slate-600">
-                Wij combineren juridische en strategische kennis met oog voor mensen, organisatie en verhoudingen.
+                Juridische kennis gecombineerd met organisatie- en menselijk inzicht, met aandacht voor verhoudingen en communicatie.
               </p>
             </div>
 
@@ -127,7 +108,7 @@ export default function OverOns() {
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-3">Rust en scherpte</h3>
               <p className="text-slate-600">
-                Wanneer het complex wordt, brengen wij overzicht, focus en zorgvuldigheid in het proces.
+                Juist wanneer het spannend wordt, brengen wij overzicht, focus en kwaliteit in het proces.
               </p>
             </div>
           </div>
@@ -136,30 +117,30 @@ export default function OverOns() {
 
       <PageSection>
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Waar wij actief zijn</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">Voor wie we werken</h2>
           <div className="space-y-6">
             <div className="border-l-4 border-blue-600 pl-6">
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Medezeggenschapsorganen</h3>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">OR-leden en commissies</h3>
               <p className="text-slate-600">
-                OR, GOR, COR en EOR binnen het bedrijfsleven en de publieke sector.
+                Van startende OR-leden tot ervaren voorzitters en VGW(M)-commissies.
               </p>
             </div>
             <div className="border-l-4 border-blue-600 pl-6">
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Commissies van ondernemingsraden</h3>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">Holdings en concerns</h3>
               <p className="text-slate-600">
-                VGW(M), financieel-economisch, reorganisatiecommissies en andere thematische werkgroepen.
+                Centrale OR'en, groeps-OR'en en decentrale OR'en in complexe concernstructuren.
               </p>
             </div>
             <div className="border-l-4 border-blue-600 pl-6">
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Individuele OR-leden en het dagelijks bestuur</h3>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">Publieke sector</h3>
               <p className="text-slate-600">
-                Voor persoonlijke begeleiding, positionering en reflectie.
+                Gemeenten, provincies, waterschappen en andere ambtelijke organisaties.
               </p>
             </div>
             <div className="border-l-4 border-blue-600 pl-6">
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">Bestuurlijke en HR-context</h3>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">Bestuurders en HR</h3>
               <p className="text-slate-600">
-                Bij vraagstukken rond governance, besluitvorming en de inrichting van medezeggenschap.
+                Voor advies, OR-ondersteuning en organisatievraagstukken rondom medezeggenschap.
               </p>
             </div>
           </div>
@@ -168,7 +149,7 @@ export default function OverOns() {
 
       <CTABlock 
         title="Klaar om te starten?"
-        subtitle="In gesprek over wat passend is? Wij verkennen graag welke ondersteuning aansluit bij jullie organisatie."
+        subtitle="Plan een kennismaking of vraag onze brochure aan"
       />
     </>
   );
