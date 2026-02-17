@@ -94,25 +94,25 @@ export default function Home() {
             <div className="bg-white rounded-xl p-12" style={{ border: '1px solid #AFC1B7' }}>
               <h3 className="text-3xl font-bold mb-6" style={{ color: '#1F3F35' }}>Training & professionalisering</h3>
               <div className="space-y-3">
-                <Link to="/TrainingenVoorDeOr" className="block font-medium text-lg" style={{ color: '#2F5B4C' }}>
-                  Trainingen voor de OR →
+                <Link to="/TrainingenVoorDeOr" className="block font-medium text-lg" style={{ color: '#2F5B4C' }}>Trainingen voor ondernemingsraden 
+
                 </Link>
-                <Link to="/VaardighedenVoorDeOr" className="block font-medium text-lg" style={{ color: '#2F5B4C' }}>
-                  Vaardigheden OR →
+                <Link to="/VaardighedenVoorDeOr" className="block font-medium text-lg" style={{ color: '#2F5B4C' }}>Vaardigheidsontwikkeling
+
                 </Link>
-                <Link to="/TrainingenVoorCommissies" className="block font-medium text-lg" style={{ color: '#2F5B4C' }}>
-                  Trainingen voor commissies →
+                <Link to="/TrainingenVoorCommissies" className="block font-medium text-lg" style={{ color: '#2F5B4C' }}>Commissietrainingen
+
                 </Link>
               </div>
             </div>
 
             <div className="text-white rounded-xl p-12" style={{ backgroundColor: '#1F3F35' }}>
               <h3 className="text-3xl font-bold mb-6">Hoge belangen & begeleiding</h3>
-              <Link to="/ORondersteuning" className="block font-medium text-lg mb-6" style={{ color: '#AFC1B7' }}>
-                OR-ondersteuning →
+              <Link to="/ORondersteuning" className="block font-medium text-lg mb-6" style={{ color: '#AFC1B7' }}>OR-ondersteuning
+
               </Link>
-              <p className="leading-relaxed" style={{ color: '#DCE5E0' }}>
-                Rust en regie in spannende dossiers — en ook vroeg aangehaakt om escalatie te voorkomen.
+              <p className="leading-relaxed" style={{ color: '#DCE5E0' }}>Begeleiding bij complexe besluitvorming, reorganisaties en bestuurlijk gevoelige dossiers. Rust, overzicht en scherpe positionering wanneer het ertoe doet.
+
               </p>
             </div>
           </div>
