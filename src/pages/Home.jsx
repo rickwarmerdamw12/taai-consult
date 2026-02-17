@@ -209,9 +209,9 @@ export default function Home() {
                 <Award className="w-7 h-7" style={{ color: '#6F8F80' }} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3" style={{ color: '#1F3F35' }}>Ervaring & kennis</h3>
-                <p className="text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
-                  Jarenlange ervaring met medezeggenschap in holdings, ambtelijke organisaties en complexe verandertrajecten.
+                <h3 className="text-2xl font-bold mb-3" style={{ color: '#1F3F35' }}>Ervaring in complexe verhoudingen</h3>
+                <p className="text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>Jarenlange begeleiding van ondernemingsraden in holdings, ambtelijke organisaties en verandertrajecten met bestuurlijke gevoeligheid.
+
                 </p>
               </div>
             </div>
@@ -221,9 +221,9 @@ export default function Home() {
                 <Eye className="w-7 h-7" style={{ color: '#6F8F80' }} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3" style={{ color: '#1F3F35' }}>Breed perspectief</h3>
-                <p className="text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
-                  We begrijpen zowel de OR-kant als de bestuurlijke dynamiek, en weten wat er nodig is voor goede samenwerking.
+                <h3 className="text-2xl font-bold mb-3" style={{ color: '#1F3F35' }}>Strategisch en juridisch onderbouwd</h3>
+                <p className="text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>Wij combineren kennis van medezeggenschap met inzicht in veranderprocessen, arbeidsrechtelijke kaders en bedrijfseconomische afwegingen.
+
                 </p>
               </div>
             </div>
@@ -233,9 +233,9 @@ export default function Home() {
                 <Shield className="w-7 h-7" style={{ color: '#6F8F80' }} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3" style={{ color: '#1F3F35' }}>Onafhankelijk & betrouwbaar</h3>
-                <p className="text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
-                  We zijn niet verbonden aan vakbonden of werkgeversorganisaties, en werken altijd in het belang van zorgvuldige medezeggenschap met gezag.
+                <h3 className="text-2xl font-bold mb-3" style={{ color: '#1F3F35' }}>Onafhankelijk en zorgvuldig</h3>
+                <p className="text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>Wij adviseren vanuit professionele autonomie en zorg voor de kwaliteit van medezeggenschap.
+
                 </p>
               </div>
             </div>
@@ -249,17 +249,17 @@ export default function Home() {
       <section className="py-24" style={{ backgroundColor: '#DCE5E0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#1F3F35' }}>Klaar om de volgende stap te zetten?</h2>
-          <p className="text-xl mb-10" style={{ color: '#2E2E2E' }}>
-            Plan een kennismaking of vraag onze brochure aan.
+          <p className="text-xl mb-10" style={{ color: '#2E2E2E' }}>Wij verkennen graag welke ondersteuning aansluit bij jullie organisatie.
+
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/Contact" className="px-8 py-4 text-white rounded-lg transition-colors font-medium text-lg" style={{ background: 'linear-gradient(90deg, #2F5B4C 0%, #1C3A30 100%)' }}>
 
               Plan kennismaking
             </Link>
-            <Link to="/Contact" className="px-8 py-4 bg-white rounded-lg transition-colors font-medium text-lg" style={{ color: '#2E2E2E', border: '2px solid #6F8F80' }}>
+            <Link to="/Contact" className="px-8 py-4 bg-white rounded-lg transition-colors font-medium text-lg" style={{ color: '#2E2E2E', border: '2px solid #6F8F80' }}>Ontvang informatie
 
-              Vraag brochure
+
             </Link>
           </div>
         </div>
