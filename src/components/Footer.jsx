@@ -29,12 +29,11 @@ export default function Footer() {
 
           {/* Column 3: Themas */}
           <div>
-            <h4 className="font-semibold text-white mb-3">Thema's</h4>
+            <h4 className="font-semibold text-white mb-3">Governance en complexe besluitvorming</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/MedezeggenschapHoldings" className="hover:text-white">Medezeggenschap Holdings</Link></li>
               <li><Link to="/MedezeggenschapAmbtelijk" className="hover:text-white">Ambtelijke Organisaties</Link></li>
               <li><Link to="/VernieuwendMedezeggenschap" className="hover:text-white">Vernieuwend Medezeggenschap</Link></li>
-              <li><Link to="/OverOns" className="hover:text-white">Over ons</Link></li>
             </ul>
           </div>
 
@@ -58,6 +57,6 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} Taai-Consult. Alle rechten voorbehouden.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 }
