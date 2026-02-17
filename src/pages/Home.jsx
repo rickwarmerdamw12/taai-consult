@@ -125,26 +125,26 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-8" style={{ color: '#1F3F35' }}>Wanneer het spannend wordt</h2>
           
           <div className="prose prose-lg space-y-6" style={{ color: '#2E2E2E' }}>
-            <p className="leading-relaxed">
-              Er zijn situaties waarin medezeggenschap onder druk komt te staan. Niet omdat de OR zijn rol niet serieus neemt, maar omdat de omstandigheden complex zijn, de belangen groot en de tijd beperkt.
+            <p className="leading-relaxed">Er zijn momenten waarop medezeggenschap onder druk komt te staan. Niet omdat de OR zijn rol niet serieus neemt, maar omdat besluitvorming complex wordt, belangen uiteenlopen en de tijd beperkt is.
+
             </p>
             
-            <p className="leading-relaxed">
-              Dat zien we bij reorganisaties en herstructureringen, bij adviesaanvragen onder hoge tijdsdruk en in organisaties met complexe governance- of holdingstructuren. Ook in COR- en EOR-verband, waar nationale en internationale belangen samenkomen, neemt de complexiteit snel toe.
+            <p className="leading-relaxed">Dat zien we bij reorganisaties en herstructureringen, bij adviesaanvragen onder hoge tijdsdruk en in organisaties met complexe governance- of holdingsstructuren. Ook in COR- en EOR-verband, waar nationale en internationale belangen samenkomen, neemt de complexiteit snel toe.
+
             </p>
             
-            <p className="leading-relaxed">
-              Wanneer daarbij de relatie tussen OR en bestuurder onder spanning komt te staan, ontstaat het risico dat zorgvuldigheid plaatsmaakt voor haast of escalatie. Juist dan maakt ervaring, overzicht en een doordachte aanpak het verschil.
+            <p className="leading-relaxed">Bij complexe dossiers, toenemende tijdsdruk en uiteenlopende belangen vraagt het proces om extra zorgvuldigheid. Juist dan zijn overzicht, rust en strategische scherpte van doorslaggevend belang en maakt ervaring het verschil.
+
             </p>
           </div>
 
           <div className="mt-10">
             <Link
-              to="/ORondersteuning"
-              className="inline-flex items-center gap-2 font-medium text-lg"
-              style={{ color: '#2F5B4C' }}>
+              to="/ORondersteuning" className="inline-flex items-center gap-2 font-medium text-lg"
 
-              Lees meer over OR-ondersteuning wanneer het spannend wordt →
+              style={{ color: '#2F5B4C' }}>Lees meer over OR-ondersteuning bij complexe dossiers →
+
+
             </Link>
           </div>
         </div>
