@@ -15,6 +15,9 @@ export default function Hero({ title, subtitle, children }) {
               {subtitle}
             </p>
           )}
+          <p className="text-xl sm:text-2xl mb-8" style={{ color: '#DCE5E0' }}>
+            Zorgvuldig en juridisch onderbouwd, met oog voor bestuurlijke verhoudingen én de menselijke kant van medezeggenschap.
+          </p>
           {children}
         </div>
       </div>
