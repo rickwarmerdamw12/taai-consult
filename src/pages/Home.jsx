@@ -21,7 +21,7 @@ export default function Home() {
             <h1 className="mb-8 text-base font-medium leading-tight sm:text-6xl lg:text-7xl">Medezeggenschap professioneel ondersteund.
 
             </h1>
-            <p className="text-xl sm:text-2xl mb-12 leading-relaxed" style={{ color: '#DCE5E0' }}>Praktisch, zorgvuldig en onafhankelijk — voor OR'en die hun rol goed willen vervullen, in gewone én complexere situaties.
+            <p className="text-xl sm:text-2xl mb-12 leading-relaxed" style={{ color: '#DCE5E0' }}>Wij begeleiden ondernemingsraden bij ontwikkeling, besluitvorming en complexe verandertrajecten. Zorgvuldig, onafhankelijk en met oog voor verhoudingen.
 
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
