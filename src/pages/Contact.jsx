@@ -59,9 +59,9 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#6F8F80' }} />
                   <div>
                     <h3 className="font-semibold mb-1" style={{ color: '#1F3F35' }}>Bezoekadres</h3>
-                    <p style={{ color: '#2E2E2E' }}>
-                      Amsterdam<br />
-                      Nederland
+                    <p style={{ color: '#2E2E2E' }} className="">Erichem
+
+
                     </p>
                   </div>
                 </div>
