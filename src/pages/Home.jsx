@@ -167,8 +167,8 @@ export default function Home() {
                   01
                 </div>
                 <h3 className="text-2xl font-bold mb-4" style={{ color: '#1F3F35' }}>Analyse</h3>
-                <p className="leading-relaxed" style={{ color: '#2E2E2E' }}>
-                  We brengen de situatie zorgvuldig in kaart en stellen de juiste vragen.
+                <p className="leading-relaxed" style={{ color: '#2E2E2E' }}>Helder zicht op vraagstuk en verhoudingen.
+
                 </p>
               </div>
 
@@ -177,8 +177,8 @@ export default function Home() {
                   02
                 </div>
                 <h3 className="text-2xl font-bold mb-4" style={{ color: '#1F3F35' }}>Maatwerk</h3>
-                <p className="leading-relaxed" style={{ color: '#2E2E2E' }}>
-                  Geen standaardoplossingen, maar begeleiding die aansluit bij jullie vraagstuk, context en ambities.
+                <p className="leading-relaxed" style={{ color: '#2E2E2E' }}>Begeleiding die past bij situatie en context.
+
                 </p>
               </div>
 
@@ -187,8 +187,8 @@ export default function Home() {
                   03
                 </div>
                 <h3 className="text-2xl font-bold mb-4" style={{ color: '#1F3F35' }}>Impact</h3>
-                <p className="leading-relaxed" style={{ color: '#2E2E2E' }}>
-                  Een versterkte rol van de OR en medezeggenschap die merkbaar bijdraagt aan besluitvorming.
+                <p className="leading-relaxed" style={{ color: '#2E2E2E' }}>Rust en scherpte in besluitvorming.
+
                 </p>
               </div>
             </div>
