@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="OR ondersteuning bij besluitvorming | Taai-Consult"
-        description="Taai-Consult biedt trainingen en ondersteuning voor OR-leden, commissies en bestuurders. Onafhankelijk, zorgvuldig en ervaren adviseur voor medezeggenschap."
+        title="Training en ondersteuning voor ondernemingsraden | Taai-Consult"
+        description="Medezeggenschap professioneel ondersteund. Wij begeleiden ondernemingsraden bij ontwikkeling, besluitvorming en complexe verandertrajecten."
         canonical="/" />
 
 
@@ -92,28 +92,33 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl p-12" style={{ border: '1px solid #AFC1B7' }}>
-              <h3 className="text-3xl font-bold mb-6" style={{ color: '#1F3F35' }}>Training & professionalisering</h3>
-              <div className="space-y-3">
-                <Link to="/TrainingenVoorDeOr" className="block font-medium text-lg" style={{ color: '#2F5B4C' }}>Trainingen voor ondernemingsraden 
-
-                </Link>
-                <Link to="/VaardighedenVoorDeOr" className="block font-medium text-lg" style={{ color: '#2F5B4C' }}>Vaardigheidsontwikkeling
-
-                </Link>
-                <Link to="/TrainingenVoorCommissies" className="block font-medium text-lg" style={{ color: '#2F5B4C' }}>Commissietrainingen
-
-                </Link>
-              </div>
+              <h3 className="text-3xl font-bold mb-6" style={{ color: '#1F3F35' }}>Training & Professionalisering</h3>
+              <ul className="space-y-3 list-none">
+                <li className="flex items-start gap-2">
+                  <span className="text-lg" style={{ color: '#2F5B4C' }}>·</span>
+                  <Link to="/TrainingenVoorDeOr" className="font-medium text-lg" style={{ color: '#2F5B4C' }}>Trainingen voor ondernemingsraden</Link>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg" style={{ color: '#2F5B4C' }}>·</span>
+                  <Link to="/VaardighedenVoorDeOr" className="font-medium text-lg" style={{ color: '#2F5B4C' }}>Vaardigheidsontwikkeling</Link>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-lg" style={{ color: '#2F5B4C' }}>·</span>
+                  <Link to="/TrainingenVoorCommissies" className="font-medium text-lg" style={{ color: '#2F5B4C' }}>Commissietrainingen</Link>
+                </li>
+              </ul>
+              <p className="mt-6 leading-relaxed" style={{ color: '#2E2E2E' }}>Gericht op kwaliteit, samenwerking en professionele invulling van de OR-rol.</p>
             </div>
 
             <div className="text-white rounded-xl p-12" style={{ backgroundColor: '#1F3F35' }}>
-              <h3 className="text-3xl font-bold mb-6">Hoge belangen & begeleiding</h3>
-              <Link to="/ORondersteuning" className="block font-medium text-lg mb-6" style={{ color: '#AFC1B7' }}>OR-ondersteuning
-
-              </Link>
-              <p className="leading-relaxed" style={{ color: '#DCE5E0' }}>Begeleiding bij complexe besluitvorming, reorganisaties en bestuurlijk gevoelige dossiers. Rust, overzicht en scherpe positionering wanneer het ertoe doet.
-
-              </p>
+              <h3 className="text-3xl font-bold mb-6">Hoge belangen & Strategische Ondersteuning</h3>
+              <ul className="space-y-3 list-none mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="text-lg" style={{ color: '#AFC1B7' }}>·</span>
+                  <Link to="/ORondersteuning" className="font-medium text-lg" style={{ color: '#AFC1B7' }}>OR-ondersteuning</Link>
+                </li>
+              </ul>
+              <p className="leading-relaxed" style={{ color: '#DCE5E0' }}>Begeleiding bij complexe besluitvorming, reorganisaties en bestuurlijk gevoelige dossiers. Rust, overzicht en scherpe positionering wanneer het ertoe doet.</p>
             </div>
           </div>
         </div>
@@ -160,7 +165,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
               {/* Connecting line */}
-              <div className="hidden md:block absolute top-16 left-0 right-0 h-px" style={{ backgroundColor: '#6F8F80', width: 'calc(100% - 8rem)', left: '4rem' }}></div>
+              <div className="hidden md:block absolute top-16 left-0 right-0" style={{ height: '3px', backgroundColor: '#6F8F80', width: 'calc(100% - 8rem)', left: '4rem' }}></div>
               
               <div className="relative bg-white rounded-lg p-10" style={{ border: '1px solid #AFC1B7' }}>
                 <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center mb-8 text-2xl font-bold relative z-10" style={{ border: '2px solid #1F3F35', color: '#1F3F35' }}>
@@ -186,7 +191,7 @@ export default function Home() {
                 <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center mb-8 text-2xl font-bold relative z-10" style={{ border: '2px solid #1F3F35', color: '#1F3F35' }}>
                   03
                 </div>
-                <h3 className="text-2xl font-bold mb-4" style={{ color: '#1F3F35' }}>Impact</h3>
+                <h3 className="text-2xl font-bold mb-4" style={{ color: '#1F3F35' }}>Resultaat</h3>
                 <p className="leading-relaxed" style={{ color: '#2E2E2E' }}>Rust en scherpte in besluitvorming.
 
                 </p>
@@ -249,13 +254,13 @@ export default function Home() {
       <section className="py-24" style={{ backgroundColor: '#DCE5E0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#1F3F35' }}>Klaar om de volgende stap te zetten?</h2>
-          <p className="text-xl mb-10" style={{ color: '#2E2E2E' }}>Wij verkennen graag welke ondersteuning aansluit bij jullie organisatie.
+          <p className="text-xl mb-10" style={{ color: '#2E2E2E' }}>In gesprek over wat passend is? Wij verkennen graag welke ondersteuning aansluit bij jullie organisatie.
 
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/Contact" className="px-8 py-4 text-white rounded-lg transition-colors font-medium text-lg" style={{ background: 'linear-gradient(90deg, #2F5B4C 0%, #1C3A30 100%)' }}>
 
-              Plan kennismaking
+              Plan een gesprek
             </Link>
             <Link to="/Contact" className="px-8 py-4 bg-white rounded-lg transition-colors font-medium text-lg" style={{ color: '#2E2E2E', border: '2px solid #6F8F80' }}>Ontvang informatie
 

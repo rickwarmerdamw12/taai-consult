@@ -55,13 +55,13 @@ import Masterclasses from './pages/Masterclasses';
 import MedezeggenschapAmbtelijk from './pages/MedezeggenschapAmbtelijk';
 import MedezeggenschapHoldings from './pages/MedezeggenschapHoldings';
 import ORondersteuning from './pages/ORondersteuning';
-import OverOns from './pages/OverOns';
 import TrainingenVoorCommissies from './pages/TrainingenVoorCommissies';
 import TrainingenVoorDeOr from './pages/TrainingenVoorDeOr';
 import VaardighedenVoorDeOr from './pages/VaardighedenVoorDeOr';
 import VernieuwendMedezeggenschap from './pages/VernieuwendMedezeggenschap';
 import Vertrouwenspersoon from './pages/Vertrouwenspersoon';
 import Workshops from './pages/Workshops';
+import OverOns from './pages/OverOns';
 import __Layout from './Layout.jsx';
 
 
@@ -74,13 +74,13 @@ export const PAGES = {
     "MedezeggenschapAmbtelijk": MedezeggenschapAmbtelijk,
     "MedezeggenschapHoldings": MedezeggenschapHoldings,
     "ORondersteuning": ORondersteuning,
-    "OverOns": OverOns,
     "TrainingenVoorCommissies": TrainingenVoorCommissies,
     "TrainingenVoorDeOr": TrainingenVoorDeOr,
     "VaardighedenVoorDeOr": VaardighedenVoorDeOr,
     "VernieuwendMedezeggenschap": VernieuwendMedezeggenschap,
     "Vertrouwenspersoon": Vertrouwenspersoon,
     "Workshops": Workshops,
+    "OverOns": OverOns,
 }
 
 export const pagesConfig = {
