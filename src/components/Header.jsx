@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dienstenOpen, setDienstenOpen] = useState(false);
   const [themasOpen, setThemasOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location]);
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-sm border-b shadow-sm" style={{ backgroundColor: '#6F8F80', borderColor: '#1F3F35' }}>
