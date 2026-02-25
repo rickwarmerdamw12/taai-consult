@@ -18,10 +18,10 @@ export default function Home() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
           <div className="max-w-4xl">
-            <h1 className="mb-8 text-base font-medium leading-tight sm:text-6xl lg:text-7xl">Medezeggenschap professioneel ondersteund.
+            <h1 className="mb-8 text-3xl font-bold leading-tight sm:text-5xl lg:text-6xl">Medezeggenschap professioneel ondersteund.
 
             </h1>
-            <p className="text-xl sm:text-2xl mb-12 leading-relaxed" style={{ color: '#DCE5E0' }}>Wij begeleiden ondernemingsraden bij ontwikkeling, besluitvorming en complexe verandertrajecten. Zorgvuldig, onafhankelijk en met oog voor verhoudingen.
+            <p className="text-lg sm:text-xl lg:text-2xl mb-12 leading-relaxed" style={{ color: '#DCE5E0' }}>Wij begeleiden ondernemingsraden bij ontwikkeling, besluitvorming en complexe verandertrajecten. Zorgvuldig, onafhankelijk en met oog voor verhoudingen.
 
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
