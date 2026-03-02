@@ -1,12 +1,58 @@
 import React, { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
-import { Plus, Pencil, Trash2, Eye, EyeOff, Upload, X } from 'lucide-react';
+import { Plus, Pencil, Trash2, Upload, X, Lock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
+
+function PasswordGate({ onUnlock }) {
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError('');
+    const response = await base44.functions.invoke('checkBlogPassword', { password });
+    if (response.data?.ok) {
+      onUnlock();
+    } else {
+      setError('Onjuist wachtwoord. Probeer opnieuw.');
+    }
+    setLoading(false);
+  };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-[#F4F4F4]">
+      <div className="bg-white rounded-2xl shadow-md p-10 w-full max-w-sm text-center">
+        <div className="flex justify-center mb-4">
+          <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#DCE5E0' }}>
+            <Lock className="w-6 h-6" style={{ color: '#1F3F35' }} />
+          </div>
+        </div>
+        <h1 className="text-xl font-bold mb-1" style={{ color: '#1F3F35' }}>Blog beheer</h1>
+        <p className="text-sm text-gray-500 mb-6">Voer het wachtwoord in om verder te gaan.</p>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <Input
+            type="password"
+            placeholder="Wachtwoord"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            autoFocus
+          />
+          {error && <p className="text-red-500 text-sm">{error}</p>}
+          <Button type="submit" disabled={loading} className="w-full" style={{ backgroundColor: '#1F3F35', color: 'white' }}>
+            {loading ? 'Controleren...' : 'Inloggen'}
+          </Button>
+        </form>
+      </div>
+    </div>
+  );
+}
 
 const emptyForm = {
   title: '',
