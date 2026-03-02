@@ -76,6 +76,32 @@ export default function BlogBeheer() {
   const [uploading, setUploading] = useState(false);
   const [uploadError, setUploadError] = useState('');
 
+  const { data: posts = [], isLoading } = useQuery({
+    queryKey: ['blogposts-beheer'],
+    queryFn: () => base44.entities.BlogPost.list('-publishedDate'),
+    enabled: unlocked,
+  });
+
+  const saveMutation = useMutation({
+    mutationFn: (data) => {
+      const payload = {
+        ...data,
+        tags: data.tags ? data.tags.split(',').map((t) => t.trim()).filter(Boolean) : [],
+      };
+      if (editing === 'new') return base44.entities.BlogPost.create(payload);
+      return base44.entities.BlogPost.update(editing.id, payload);
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['blogposts-beheer'] });
+      setEditing(null);
+    },
+  });
+
+  const deleteMutation = useMutation({
+    mutationFn: (id) => base44.entities.BlogPost.delete(id),
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['blogposts-beheer'] }),
+  });
+
   if (!unlocked) return <PasswordGate onUnlock={() => setUnlocked(true)} />;
 
   const { data: posts = [], isLoading } = useQuery({
