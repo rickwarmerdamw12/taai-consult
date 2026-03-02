@@ -76,6 +76,8 @@ export default function BlogBeheer() {
   const [uploading, setUploading] = useState(false);
   const [uploadError, setUploadError] = useState('');
 
+  if (!unlocked) return <PasswordGate onUnlock={() => setUnlocked(true)} />;
+
   const { data: posts = [], isLoading } = useQuery({
     queryKey: ['blogposts-beheer'],
     queryFn: () => base44.entities.BlogPost.list('-publishedDate'),
