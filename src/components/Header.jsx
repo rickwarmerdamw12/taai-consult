@@ -106,6 +106,10 @@ export default function Header() {
               Over ons
             </Link>
 
+            <Link to="/Blog" className="px-4 py-2 text-white hover:text-[#DCE5E0]">
+              Blog
+            </Link>
+
             <Link 
               to="/Contact" 
               className="ml-4 px-6 py-2 text-white rounded-lg transition-colors"
