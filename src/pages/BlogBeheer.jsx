@@ -69,6 +69,7 @@ const emptyForm = {
 };
 
 export default function BlogBeheer() {
+  const [unlocked, setUnlocked] = useState(false);
   const queryClient = useQueryClient();
   const [editing, setEditing] = useState(null); // null = lijst, object = formulier
   const [form, setForm] = useState(emptyForm);
