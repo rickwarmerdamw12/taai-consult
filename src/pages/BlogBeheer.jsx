@@ -104,8 +104,6 @@ export default function BlogBeheer() {
 
   if (!unlocked) return <PasswordGate onUnlock={() => setUnlocked(true)} />;
 
-
-
   const openNew = () => {
     setForm(emptyForm);
     setEditing('new');
