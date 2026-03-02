@@ -171,6 +171,9 @@ export default function Header() {
               <Link to="/OverOns" className="block px-4 py-2 text-white hover:bg-[#1F3F35] mt-4">
                 Over ons
               </Link>
+              <Link to="/Blog" className="block px-4 py-2 text-white hover:bg-[#1F3F35]">
+                Blog
+              </Link>
               <Link to="/Contact" className="block px-4 py-2 text-[#DCE5E0] font-medium hover:bg-[#1F3F35] mt-2">
                 Contact
               </Link>
