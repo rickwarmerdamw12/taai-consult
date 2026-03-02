@@ -47,6 +47,8 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 import Diensten from './pages/Diensten';
 import Home from './pages/Home';
@@ -62,12 +64,13 @@ import VaardighedenVoorDeOr from './pages/VaardighedenVoorDeOr';
 import VernieuwendMedezeggenschap from './pages/VernieuwendMedezeggenschap';
 import Vertrouwenspersoon from './pages/Vertrouwenspersoon';
 import Workshops from './pages/Workshops';
-import Blog from './pages/Blog';
-import BlogPost from './pages/BlogPost';
+import BlogBeheer from './pages/BlogBeheer';
 import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
+    "Blog": Blog,
+    "BlogPost": BlogPost,
     "Contact": Contact,
     "Diensten": Diensten,
     "Home": Home,
@@ -83,8 +86,7 @@ export const PAGES = {
     "VernieuwendMedezeggenschap": VernieuwendMedezeggenschap,
     "Vertrouwenspersoon": Vertrouwenspersoon,
     "Workshops": Workshops,
-    "Blog": Blog,
-    "BlogPost": BlogPost,
+    "BlogBeheer": BlogBeheer,
 }
 
 export const pagesConfig = {
