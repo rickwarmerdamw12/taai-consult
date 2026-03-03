@@ -68,6 +68,9 @@ const emptyForm = {
   seoTitle: '',
   seoDescription: '',
   published: false,
+  whitepaperUrl: '',
+  whitepaperFormTitle: 'Download de whitepaper',
+  whitepaperFormDescription: '',
 };
 
 export default function BlogBeheer() {

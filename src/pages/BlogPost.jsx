@@ -112,6 +112,9 @@ export default function BlogPost() {
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
+        {/* Whitepaper download */}
+        {post.whitepaperUrl && <WhitepaperDownloadForm post={post} />}
+
         {/* CTA onderaan */}
         <div className="mt-16 p-8 rounded-xl text-white text-center" style={{ background: 'linear-gradient(135deg, #1F3F35, #2F5B4C)' }}>
           <h2 className="text-2xl font-bold mb-3">Meer weten of een gesprek plannen?</h2>
