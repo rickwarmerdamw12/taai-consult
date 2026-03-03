@@ -17,11 +17,38 @@ Deno.serve(async (req) => {
             return Response.json({ error: 'Contact submission not found' }, { status: 404 });
         }
 
-        await base44.asServiceRole.integrations.Core.SendEmail({
-            to: 'rick@taai-consult.nl',
-            subject: `Nieuw contactformulier van ${contactSubmission.naam} (${contactSubmission.organisatie})`,
-            body: `Je hebt een nieuw bericht ontvangen via het contactformulier op taai-consult.nl.\n\nNaam: ${contactSubmission.naam}\nE-mail: ${contactSubmission.email}\nTelefoon: ${contactSubmission.telefoon || '-'}\nOrganisatie: ${contactSubmission.organisatie}\nRol: ${contactSubmission.rol}\nOnderwerp: ${contactSubmission.onderwerp}\n\nBericht:\n${contactSubmission.bericht}`
+        const resendApiKey = Deno.env.get('RESEND_API_KEY');
+
+        const emailBody = `
+Naam: ${contactSubmission.naam}
+E-mail: ${contactSubmission.email}
+Telefoon: ${contactSubmission.telefoon || '-'}
+Organisatie: ${contactSubmission.organisatie}
+Rol: ${contactSubmission.rol}
+Onderwerp: ${contactSubmission.onderwerp}
+
+Bericht:
+${contactSubmission.bericht}
+        `.trim();
+
+        const response = await fetch('https://api.resend.com/emails', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${resendApiKey}`,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                from: 'Taai-Consult <noreply@taai-consult.nl>',
+                to: ['rick@taai-consult.nl'],
+                subject: `Nieuw contactformulier van ${contactSubmission.naam} (${contactSubmission.organisatie})`,
+                text: emailBody,
+            }),
         });
+
+        if (!response.ok) {
+            const error = await response.json();
+            return Response.json({ error: error.message }, { status: 500 });
+        }
 
         return Response.json({ success: true });
 
