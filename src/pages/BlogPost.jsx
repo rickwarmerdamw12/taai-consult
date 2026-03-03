@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import { createPageUrl } from '@/utils';
 import SEO from '../components/SEO';
-import ReactMarkdown from 'react-markdown';
+
 import { Calendar, User, ArrowLeft, Tag } from 'lucide-react';
 
 export default function BlogPost() {
