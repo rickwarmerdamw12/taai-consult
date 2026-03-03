@@ -4,9 +4,9 @@ import { base44 } from '@/api/base44Client';
 import { Plus, Pencil, Trash2, Upload, X, Lock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
+import ReactQuill from 'react-quill';
 
 function PasswordGate({ onUnlock }) {
   const [password, setPassword] = useState('');
