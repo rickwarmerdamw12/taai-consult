@@ -70,10 +70,17 @@ Deno.serve(async (req) => {
             }, { status: 500 });
         }
 
-        console.log('SUCCESS: Contact submission sent to Zapier');
+        // Stuur ook een e-mail notificatie
+        await base44.asServiceRole.integrations.Core.SendEmail({
+            to: 'arjan@taai-consult.nl',
+            subject: `Nieuw contactformulier van ${contactSubmission.naam} (${contactSubmission.organisatie})`,
+            body: `Je hebt een nieuw bericht ontvangen via het contactformulier op taai-consult.nl.\n\nNaam: ${contactSubmission.naam}\nE-mail: ${contactSubmission.email}\nTelefoon: ${contactSubmission.telefoon || '-'}\nOrganisatie: ${contactSubmission.organisatie}\nRol: ${contactSubmission.rol}\nOnderwerp: ${contactSubmission.onderwerp}\n\nBericht:\n${contactSubmission.bericht}`
+        });
+
+        console.log('SUCCESS: Contact submission sent to Zapier and email sent');
         return Response.json({ 
             success: true,
-            message: 'Contact submission sent to Zapier',
+            message: 'Contact submission sent to Zapier and email sent',
             contactSubmissionId: contactSubmission.id
         });
 
