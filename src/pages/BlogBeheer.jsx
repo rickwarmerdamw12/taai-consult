@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
-import ReactQuill from 'react-quill';
+import ReactQuill from 'react-quill-new';
 
 function PasswordGate({ onUnlock }) {
   const [password, setPassword] = useState('');
