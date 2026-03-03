@@ -195,14 +195,24 @@ export default function BlogBeheer() {
 
           {/* Inhoud */}
           <div>
-            <Label>Inhoud (Markdown) *</Label>
-            <Textarea
-              value={form.content}
-              onChange={(e) => setForm((f) => ({ ...f, content: e.target.value }))}
-              rows={12}
-              className="font-mono text-sm"
-              required
-            />
+            <Label>Inhoud *</Label>
+            <div className="mt-1 rounded-lg border border-input overflow-hidden" style={{ minHeight: 300 }}>
+              <ReactQuill
+                theme="snow"
+                value={form.content}
+                onChange={(value) => setForm((f) => ({ ...f, content: value }))}
+                style={{ minHeight: 260 }}
+                modules={{
+                  toolbar: [
+                    [{ header: [2, 3, false] }],
+                    ['bold', 'italic', 'underline', 'strike'],
+                    [{ list: 'ordered' }, { list: 'bullet' }],
+                    ['link'],
+                    ['clean'],
+                  ],
+                }}
+              />
+            </div>
           </div>
 
           {/* Afbeelding upload */}
