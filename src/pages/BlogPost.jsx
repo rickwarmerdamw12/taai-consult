@@ -41,8 +41,34 @@ export default function BlogPost() {
     );
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.seoDescription || post.summary,
+    "image": post.imageUrl || undefined,
+    "author": {
+      "@type": "Person",
+      "name": post.author || "Taai-Consult"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Taai-Consult",
+      "url": "https://taai-consult.nl"
+    },
+    "datePublished": post.publishedDate,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://taai-consult.nl/BlogPost?slug=${post.slug}`
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <SEO
         title={post.seoTitle || post.title}
         description={post.seoDescription || post.summary}
