@@ -6,6 +6,7 @@ import { createPageUrl } from '@/utils';
 import SEO from '../components/SEO';
 
 import { Calendar, User, ArrowLeft, Tag } from 'lucide-react';
+import WhitepaperDownloadForm from '../components/blog/WhitepaperDownloadForm';
 
 export default function BlogPost() {
   const params = new URLSearchParams(window.location.search);
