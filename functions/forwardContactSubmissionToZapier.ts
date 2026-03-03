@@ -18,7 +18,7 @@ Deno.serve(async (req) => {
         }
 
         await base44.asServiceRole.integrations.Core.SendEmail({
-            to: 'arjan@taai-consult.nl',
+            to: 'rick@taai-consult.nl',
             subject: `Nieuw contactformulier van ${contactSubmission.naam} (${contactSubmission.organisatie})`,
             body: `Je hebt een nieuw bericht ontvangen via het contactformulier op taai-consult.nl.\n\nNaam: ${contactSubmission.naam}\nE-mail: ${contactSubmission.email}\nTelefoon: ${contactSubmission.telefoon || '-'}\nOrganisatie: ${contactSubmission.organisatie}\nRol: ${contactSubmission.rol}\nOnderwerp: ${contactSubmission.onderwerp}\n\nBericht:\n${contactSubmission.bericht}`
         });
