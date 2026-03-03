@@ -106,9 +106,10 @@ export default function BlogPost() {
         )}
 
         {/* Inhoud */}
-        <div className="prose prose-lg max-w-none prose-headings:text-[#1F3F35] prose-a:text-[#2F5B4C] prose-strong:text-[#2E2E2E]">
-          <ReactMarkdown>{post.content}</ReactMarkdown>
-        </div>
+        <div
+          className="prose prose-lg max-w-none prose-headings:text-[#1F3F35] prose-a:text-[#2F5B4C] prose-strong:text-[#2E2E2E]"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
 
         {/* CTA onderaan */}
         <div className="mt-16 p-8 rounded-xl text-white text-center" style={{ background: 'linear-gradient(135deg, #1F3F35, #2F5B4C)' }}>
