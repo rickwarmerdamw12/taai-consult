@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { base44 } from '@/api/base44Client';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import { Lock, LayoutDashboard, MessageSquare, Users, Building2, Target, CheckSquare, FileText } from 'lucide-react';
 
 import OverzichtTab from '../components/dashboard/OverzichtTab';
