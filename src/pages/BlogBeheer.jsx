@@ -281,6 +281,76 @@ export default function BlogBeheer() {
             />
           </div>
 
+          {/* Whitepaper */}
+          <div className="border rounded-xl p-5 space-y-4" style={{ borderColor: '#AFC1B7', backgroundColor: '#F4F4F4' }}>
+            <div className="flex items-center gap-2 mb-1">
+              <FileText className="w-4 h-4" style={{ color: '#1F3F35' }} />
+              <span className="font-semibold text-sm" style={{ color: '#1F3F35' }}>Whitepaper (optioneel)</span>
+            </div>
+            <div>
+              <Label>Whitepaper uploaden (PDF)</Label>
+              <div className="mt-2 flex items-center gap-3">
+                <label className="cursor-pointer flex items-center gap-2 px-4 py-2 rounded-lg border border-dashed border-gray-300 hover:border-gray-400 text-sm text-gray-600 transition-colors">
+                  <Upload className="w-4 h-4" />
+                  {uploading ? 'Uploaden...' : 'PDF kiezen'}
+                  <input
+                    type="file"
+                    accept="application/pdf"
+                    className="hidden"
+                    onChange={async (e) => {
+                      const file = e.target.files[0];
+                      if (!file) return;
+                      setUploading(true);
+                      setUploadError('');
+                      const result = await base44.integrations.Core.UploadFile({ file });
+                      if (result?.file_url) {
+                        setForm((f) => ({ ...f, whitepaperUrl: result.file_url }));
+                      } else {
+                        setUploadError('Upload mislukt. Probeer opnieuw.');
+                      }
+                      setUploading(false);
+                    }}
+                    disabled={uploading}
+                  />
+                </label>
+                {form.whitepaperUrl && (
+                  <div className="flex items-center gap-2 text-sm text-green-700">
+                    <FileText className="w-4 h-4" />
+                    <span>PDF gekoppeld</span>
+                    <button
+                      type="button"
+                      onClick={() => setForm((f) => ({ ...f, whitepaperUrl: '' }))}
+                      className="text-red-500 hover:text-red-700 ml-2"
+                    >
+                      Verwijderen
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+            {form.whitepaperUrl && (
+              <>
+                <div>
+                  <Label>Formulier titel</Label>
+                  <Input
+                    value={form.whitepaperFormTitle}
+                    onChange={(e) => setForm((f) => ({ ...f, whitepaperFormTitle: e.target.value }))}
+                    placeholder="Download de whitepaper"
+                  />
+                </div>
+                <div>
+                  <Label>Formulier beschrijving</Label>
+                  <Textarea
+                    value={form.whitepaperFormDescription}
+                    onChange={(e) => setForm((f) => ({ ...f, whitepaperFormDescription: e.target.value }))}
+                    rows={2}
+                    placeholder="Vul uw gegevens in om de whitepaper te downloaden."
+                  />
+                </div>
+              </>
+            )}
+          </div>
+
           {/* Gepubliceerd */}
           <div className="flex items-center gap-3">
             <Switch
