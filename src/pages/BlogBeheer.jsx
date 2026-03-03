@@ -124,11 +124,9 @@ export default function BlogBeheer() {
     if (!file) return;
     setUploading(true);
     setUploadError('');
-    const fd = new FormData();
-    fd.append('file', file);
-    const response = await base44.functions.invoke('uploadBlogImage', fd);
-    if (response.data?.file_url) {
-      setForm((f) => ({ ...f, imageUrl: response.data.file_url }));
+    const result = await base44.integrations.Core.UploadFile({ file });
+    if (result?.file_url) {
+      setForm((f) => ({ ...f, imageUrl: result.file_url }));
     } else {
       setUploadError('Upload mislukt. Probeer opnieuw.');
     }
