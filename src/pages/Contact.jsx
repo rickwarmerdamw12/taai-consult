@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { base44 } from '@/api/base44Client';
 import SEO from '../components/SEO';
+import { useSeoOverride } from '../components/useSeoOverride';
 import Hero from '../components/Hero';
 import PageSection from '../components/PageSection';
 import { Mail, Phone, MapPin } from 'lucide-react';

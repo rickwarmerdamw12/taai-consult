@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import { useSeoOverride } from '../components/useSeoOverride';
 import { Users, Target, GraduationCap, Briefcase, Building2, Lightbulb, BookOpen, CheckCircle, Award, Eye, Shield } from 'lucide-react';
 
 export default function Home() {

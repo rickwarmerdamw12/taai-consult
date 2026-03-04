@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
 import SEO from '../components/SEO';
+import { useSeoOverride } from '../components/useSeoOverride';
 import Hero from '../components/Hero';
 import PageSection from '../components/PageSection';
 

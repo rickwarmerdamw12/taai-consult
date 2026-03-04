@@ -51,6 +51,7 @@ import Blog from './pages/Blog';
 import BlogBeheer from './pages/BlogBeheer';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
+import Dashboard from './pages/Dashboard';
 import Diensten from './pages/Diensten';
 import Home from './pages/Home';
 import LandingORTraining from './pages/LandingORTraining';
@@ -65,7 +66,6 @@ import VaardighedenVoorDeOr from './pages/VaardighedenVoorDeOr';
 import VernieuwendMedezeggenschap from './pages/VernieuwendMedezeggenschap';
 import Vertrouwenspersoon from './pages/Vertrouwenspersoon';
 import Workshops from './pages/Workshops';
-import Dashboard from './pages/Dashboard';
 import __Layout from './Layout.jsx';
 
 
@@ -74,6 +74,7 @@ export const PAGES = {
     "BlogBeheer": BlogBeheer,
     "BlogPost": BlogPost,
     "Contact": Contact,
+    "Dashboard": Dashboard,
     "Diensten": Diensten,
     "Home": Home,
     "LandingORTraining": LandingORTraining,
@@ -88,7 +89,6 @@ export const PAGES = {
     "VernieuwendMedezeggenschap": VernieuwendMedezeggenschap,
     "Vertrouwenspersoon": Vertrouwenspersoon,
     "Workshops": Workshops,
-    "Dashboard": Dashboard,
 }
 
 export const pagesConfig = {
