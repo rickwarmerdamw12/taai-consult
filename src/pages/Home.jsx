@@ -5,12 +5,14 @@ import { useSeoOverride } from '../components/useSeoOverride';
 import { Users, Target, GraduationCap, Briefcase, Building2, Lightbulb, BookOpen, CheckCircle, Award, Eye, Shield } from 'lucide-react';
 
 export default function Home() {
+  const seoOverride = useSeoOverride('/');
   return (
     <>
       <SEO
         title="Training en ondersteuning voor ondernemingsraden | Taai-Consult"
         description="Medezeggenschap professioneel ondersteund. Wij begeleiden ondernemingsraden bij ontwikkeling, besluitvorming en complexe verandertrajecten."
-        canonical="/" />
+        canonical="/"
+        override={seoOverride} />
 
 
       {/* Hero */}

@@ -7,12 +7,14 @@ import Hero from '../components/Hero';
 import PageSection from '../components/PageSection';
 
 export default function TrainingenVoorDeOr() {
+  const seoOverride = useSeoOverride('/TrainingenVoorDeOr');
   return (
     <>
       <SEO
         title="Trainingen voor de OR"
         description="Trainingen voor OR'en die echt willen functioneren. Van startende OR tot strategisch sparringpartner."
-        canonical="/trainingen-voor-de-or" />
+        canonical="/trainingen-voor-de-or"
+        override={seoOverride} />
 
       {/* 1. HERO */}
       <Hero
