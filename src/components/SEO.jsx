@@ -4,18 +4,29 @@ export default function SEO({
   title, 
   description, 
   canonical, 
-  noindex = false 
+  noindex = false,
+  override = null
 }) {
-  const fullTitle = title ? `${title} | Taai-Consult` : 'Taai-Consult | Trainingen en ondersteuning voor OR en commissies';
+  // Apply override values if present, fallback to props
+  const resolvedTitle = (override?.title) || title;
+  const resolvedDescription = (override?.metaDescription) || description;
+  const resolvedCanonical = (override?.canonical) || canonical;
+  const resolvedNoindex = override?.noindex != null ? override.noindex : noindex;
+  const resolvedOgTitle = override?.ogTitle || null;
+  const resolvedOgDescription = override?.ogDescription || null;
+  const resolvedOgImage = override?.ogImage || null;
+
+  const fullTitle = resolvedTitle
+    ? `${resolvedTitle} | Taai-Consult`
+    : 'Taai-Consult | Trainingen en ondersteuning voor OR en commissies';
   const siteUrl = 'https://taai-consult.nl';
-  const canonicalUrl = canonical ? `${siteUrl}${canonical}` : siteUrl;
+  const canonicalUrl = resolvedCanonical ? `${siteUrl}${resolvedCanonical}` : siteUrl;
 
   useEffect(() => {
-    // Set title
     document.title = fullTitle;
 
-    // Set or update meta tags
     const setMetaTag = (name, content, isProperty = false) => {
+      if (!content) return;
       const attribute = isProperty ? 'property' : 'name';
       let element = document.querySelector(`meta[${attribute}="${name}"]`);
       if (!element) {
@@ -26,21 +37,18 @@ export default function SEO({
       element.setAttribute('content', content);
     };
 
-    // Set description
-    setMetaTag('description', description);
+    if (resolvedDescription) setMetaTag('description', resolvedDescription);
 
-    // Set robots if noindex
-    if (noindex) {
+    if (resolvedNoindex) {
       setMetaTag('robots', 'noindex, follow');
     }
 
-    // Set Open Graph tags
-    setMetaTag('og:title', fullTitle, true);
-    setMetaTag('og:description', description, true);
+    setMetaTag('og:title', resolvedOgTitle || fullTitle, true);
+    setMetaTag('og:description', resolvedOgDescription || resolvedDescription, true);
     setMetaTag('og:url', canonicalUrl, true);
     setMetaTag('og:type', 'website', true);
+    if (resolvedOgImage) setMetaTag('og:image', resolvedOgImage, true);
 
-    // Set canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -48,7 +56,7 @@ export default function SEO({
       document.head.appendChild(canonicalLink);
     }
     canonicalLink.setAttribute('href', canonicalUrl);
-  }, [fullTitle, description, canonicalUrl, noindex]);
+  }, [fullTitle, resolvedDescription, canonicalUrl, resolvedNoindex, resolvedOgTitle, resolvedOgDescription, resolvedOgImage]);
 
   return null;
 }
