@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { base44 } from '@/api/base44Client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Lock, LayoutDashboard, MessageSquare, Users, Building2, Target, CheckSquare, FileText } from 'lucide-react';
+import { Lock, LayoutDashboard, MessageSquare, Users, Building2, Target, CheckSquare, FileText, Search } from 'lucide-react';
 
 import OverzichtTab from '../components/dashboard/OverzichtTab';
 import ContactAanvragenTab from '../components/dashboard/ContactAanvragenTab';
@@ -11,6 +11,7 @@ import BedrijvenTab from '../components/dashboard/BedrijvenTab';
 import PijplijnTab from '../components/dashboard/PijplijnTab';
 import TakenTab from '../components/dashboard/TakenTab';
 import BlogTab from '../components/dashboard/BlogTab';
+import SeoManagerTab from '../components/dashboard/SeoManagerTab';
 
 const TABS = [
   { key: 'overzicht', label: 'Overzicht', icon: LayoutDashboard },
@@ -20,6 +21,7 @@ const TABS = [
   { key: 'pijplijn', label: 'Pijplijn', icon: Target },
   { key: 'taken', label: 'Taken', icon: CheckSquare },
   { key: 'blog', label: 'Blog', icon: FileText },
+  { key: 'seo', label: 'SEO Manager', icon: Search },
 ];
 
 function PasswordGate({ onUnlock }) {
