@@ -64,7 +64,8 @@ export default function Contact() {
       <SEO
         title="Contact"
         description="Neem contact op met Taai-Consult voor trainingen, workshops of OR-ondersteuning. Plan een kennismaking of vraag onze brochure aan."
-        canonical="/contact" />
+        canonical="/contact"
+        override={seoOverride} />
 
 
       <Hero
