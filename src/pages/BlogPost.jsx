@@ -5,7 +5,7 @@ import { base44 } from '@/api/base44Client';
 import { createPageUrl } from '@/utils';
 import SEO from '../components/SEO';
 
-import { Calendar, User, ArrowLeft, Tag } from 'lucide-react';
+import { Calendar, User, ArrowLeft } from 'lucide-react';
 import WhitepaperDownloadForm from '../components/blog/WhitepaperDownloadForm';
 
 export default function BlogPost() {
@@ -20,6 +20,25 @@ export default function BlogPost() {
 
   const post = posts[0];
 
+  if (!slug) {
+    return (
+      <>
+        <SEO
+          title="Blogpost"
+          description="Blogpost details"
+          canonical="/BlogPost"
+          noindex={true}
+        />
+        <div className="max-w-3xl mx-auto px-4 py-20 text-center">
+          <h1 className="text-2xl font-bold text-gray-700 mb-4">Blogpost niet gevonden</h1>
+          <Link to={createPageUrl('Blog')} className="inline-flex items-center gap-2" style={{ color: '#2F5B4C' }}>
+            <ArrowLeft className="w-4 h-4" /> Terug naar blog
+          </Link>
+        </div>
+      </>
+    );
+  }
+
   if (isLoading) {
     return (
       <div className="max-w-3xl mx-auto px-4 py-20 animate-pulse space-y-4">
@@ -32,12 +51,20 @@ export default function BlogPost() {
 
   if (!post) {
     return (
-      <div className="max-w-3xl mx-auto px-4 py-20 text-center">
+      <>
+        <SEO
+          title="Blogpost niet gevonden"
+          description="Deze blogpost is niet (meer) beschikbaar."
+          canonical="/BlogPost"
+          noindex={true}
+        />
+        <div className="max-w-3xl mx-auto px-4 py-20 text-center">
         <h1 className="text-2xl font-bold text-gray-700 mb-4">Blogpost niet gevonden</h1>
         <Link to={createPageUrl('Blog')} className="inline-flex items-center gap-2" style={{ color: '#2F5B4C' }}>
           <ArrowLeft className="w-4 h-4" /> Terug naar blog
         </Link>
       </div>
+      </>
     );
   }
 
