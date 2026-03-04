@@ -11,15 +11,15 @@ export default function TrainingenVoorDeOr() {
   return (
     <>
       <SEO
-        title="Trainingen voor de OR"
-        description="Trainingen voor OR'en die echt willen functioneren. Van startende OR tot strategisch sparringpartner."
-        canonical="/trainingen-voor-de-or"
+        title="OR trainingen (incompany)"
+        description="Incompany OR trainingen die direct aansluiten op jullie praktijk. Praktisch, interactief en op maat — voor OR'en die strategischer willen opereren."
+        canonical="/TrainingenVoorDeOr"
         override={seoOverride} />
 
       {/* 1. HERO */}
       <Hero
-        title="Trainingen voor OR'en die echt willen functioneren"
-        subtitle="Van startende OR tot strategisch sparringpartner van de bestuurder. Wij verzorgen trainingen die direct aansluiten op jullie praktijk – met ruimte voor maatwerk en echte vraagstukken.">
+        title="OR trainingen (incompany) die écht werken in de praktijk"
+        subtitle="Voor OR'en die verder willen dan kennis alleen: meer structuur, betere samenwerking en meer invloed in het overleg. Praktisch, interactief en incompany — met ruimte voor maatwerk.">
         
         <div className="flex flex-col sm:flex-row gap-4">
           <Link
@@ -45,7 +45,7 @@ export default function TrainingenVoorDeOr() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold mb-6" style={{ color: '#1F3F35' }}>
-                Geen standaard lesdagen. Wel trainingen die werken in jullie praktijk.
+                OR training zonder standaard lesdagen — wél resultaat in jullie praktijk.
               </h2>
               
               <div className="space-y-4 text-lg leading-relaxed" style={{ color: '#2E2E2E' }}>
@@ -91,7 +91,7 @@ export default function TrainingenVoorDeOr() {
       <PageSection background="gray">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1F3F35' }}>
-            Veel OR'en kloppen bij ons aan met vragen als:
+            Herkenbaar? Dit zijn de vragen waarmee OR'en bij ons aankloppen:
           </h2>
           
           <div className="space-y-4">
@@ -240,7 +240,32 @@ export default function TrainingenVoorDeOr() {
         </div>
       </PageSection>
 
-      {/* 6. AANPAK */}
+      
+
+      {/* 7. FAQ (SEO) */}
+      <PageSection background="gray">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#1F3F35' }}>
+            Veelgestelde vragen over OR trainingen
+          </h2>
+          <div className="space-y-4">
+            {/* TODO: Rick schrijft deze Q&A's zelf. */}
+            {[ 
+              { q: 'Voor wie is deze OR training bedoeld?', a: '—' },
+              { q: 'Wat is het verschil tussen OR training en WOR training?', a: '—' },
+              { q: 'Doen jullie dit altijd incompany en op maat?', a: '—' },
+              { q: 'Wat levert het concreet op voor de OR-voorzitter?', a: '—' },
+              { q: 'Hoe ziet het programma eruit (duur, werkvormen, voorbereiding)?', a: '—' },
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white rounded-lg p-6" style={{ border: '1px solid #AFC1B7' }}>
+                <h3 className="text-lg font-semibold mb-2" style={{ color: '#1F3F35' }}>{item.q}</h3>
+                <p className="text-base" style={{ color: '#2E2E2E' }}>{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </PageSection>
+{/* 6. AANPAK */}
       <PageSection>
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center" style={{ color: '#1F3F35' }}>
