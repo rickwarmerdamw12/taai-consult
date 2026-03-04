@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { base44 } from '@/api/base44Client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Lock, LayoutDashboard, MessageSquare, Users, Building2, Target, CheckSquare, FileText, Globe } from 'lucide-react';
+import { Lock, LayoutDashboard, MessageSquare, Users, Building2, Target, CheckSquare, FileText } from 'lucide-react';
 
 import OverzichtTab from '../components/dashboard/OverzichtTab';
 import ContactAanvragenTab from '../components/dashboard/ContactAanvragenTab';
@@ -11,7 +11,6 @@ import BedrijvenTab from '../components/dashboard/BedrijvenTab';
 import PijplijnTab from '../components/dashboard/PijplijnTab';
 import TakenTab from '../components/dashboard/TakenTab';
 import BlogTab from '../components/dashboard/BlogTab';
-import PagesTab from '../components/dashboard/PagesTab';
 
 const TABS = [
   { key: 'overzicht', label: 'Overzicht', icon: LayoutDashboard },
@@ -21,7 +20,6 @@ const TABS = [
   { key: 'pijplijn', label: 'Pijplijn', icon: Target },
   { key: 'taken', label: 'Taken', icon: CheckSquare },
   { key: 'blog', label: 'Blog', icon: FileText },
-  { key: 'paginas', label: "Pagina's", icon: Globe },
 ];
 
 function PasswordGate({ onUnlock }) {
@@ -86,7 +84,6 @@ export default function Dashboard() {
     pijplijn: PijplijnTab,
     taken: TakenTab,
     blog: BlogTab,
-    paginas: PagesTab,
   }[activeTab];
 
   const currentTab = TABS.find(t => t.key === activeTab);
