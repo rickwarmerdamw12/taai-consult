@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import SEO from '../components/SEO';
 import { ArrowLeft } from 'lucide-react';
 
 export default function DynamicPage() {
-  const { slug } = useParams();
+  const urlParams = new URLSearchParams(window.location.search);
+  const slug = urlParams.get('slug') || window.location.pathname.split('/pagina/')[1]?.split('/')[0] || '';
 
   const { data: pages = [], isLoading } = useQuery({
     queryKey: ['dynamic-page', slug],
