@@ -86,6 +86,7 @@ export default function Dashboard() {
     pijplijn: PijplijnTab,
     taken: TakenTab,
     blog: BlogTab,
+    seo: SeoManagerTab,
   }[activeTab];
 
   const currentTab = TABS.find(t => t.key === activeTab);
