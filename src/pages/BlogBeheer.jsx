@@ -9,6 +9,7 @@ import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import ReactQuill from 'react-quill-new';
 import 'react-quill-new/dist/quill.snow.css';
+import SEO from '../components/SEO';
 
 function PasswordGate({ onUnlock }) {
   const [password, setPassword] = useState('');
@@ -153,6 +154,13 @@ export default function BlogBeheer() {
 
   if (editing) {
     return (
+      <>
+      <SEO
+        title="Blog beheer"
+        description="Beheeromgeving voor blogposts (niet indexeren)."
+        canonical="/BlogBeheer"
+        noindex={true}
+      />
       <div className="max-w-3xl mx-auto px-4 py-10">
         <div className="flex items-center justify-between mb-6">
           <h1 className="text-2xl font-bold" style={{ color: '#1F3F35' }}>
@@ -375,10 +383,18 @@ export default function BlogBeheer() {
           </div>
         </form>
       </div>
+      </>
     );
   }
 
   return (
+    <>
+      <SEO
+        title="Blog beheer"
+        description="Beheeromgeving voor blogposts (niet indexeren)."
+        canonical="/BlogBeheer"
+        noindex={true}
+      />
     <div className="max-w-5xl mx-auto px-4 py-10">
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-2xl font-bold" style={{ color: '#1F3F35' }}>Blog beheer</h1>
@@ -429,5 +445,6 @@ export default function BlogBeheer() {
         </div>
       )}
     </div>
+    </>
   );
 }

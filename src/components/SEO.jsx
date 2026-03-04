@@ -20,7 +20,9 @@ export default function SEO({
     ? `${resolvedTitle} | Taai-Consult`
     : 'Taai-Consult | Trainingen en ondersteuning voor OR en commissies';
   const siteUrl = 'https://taai-consult.nl';
-  const canonicalUrl = resolvedCanonical ? `${siteUrl}${resolvedCanonical}` : siteUrl;
+  const canonicalUrl = resolvedCanonical
+    ? (resolvedCanonical.startsWith('http') ? resolvedCanonical : `${siteUrl}${resolvedCanonical}`)
+    : siteUrl;
 
   useEffect(() => {
     document.title = fullTitle;
@@ -39,15 +41,20 @@ export default function SEO({
 
     if (resolvedDescription) setMetaTag('description', resolvedDescription);
 
-    if (resolvedNoindex) {
-      setMetaTag('robots', 'noindex, follow');
-    }
+    // Always set robots to avoid SPA navigation leaving stale values
+    setMetaTag('robots', resolvedNoindex ? 'noindex, follow' : 'index, follow');
 
     setMetaTag('og:title', resolvedOgTitle || fullTitle, true);
     setMetaTag('og:description', resolvedOgDescription || resolvedDescription, true);
     setMetaTag('og:url', canonicalUrl, true);
     setMetaTag('og:type', 'website', true);
     if (resolvedOgImage) setMetaTag('og:image', resolvedOgImage, true);
+
+    // Twitter Card
+    setMetaTag('twitter:card', 'summary_large_image');
+    setMetaTag('twitter:title', resolvedOgTitle || fullTitle);
+    setMetaTag('twitter:description', resolvedOgDescription || resolvedDescription);
+    if (resolvedOgImage) setMetaTag('twitter:image', resolvedOgImage);
 
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
