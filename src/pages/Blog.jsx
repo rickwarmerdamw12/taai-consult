@@ -27,6 +27,12 @@ export default function Blog() {
         subtitle="Inzichten, tips en nieuws over medezeggenschap en ondernemingsraden."
       />
 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6">
+        <div className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-2 shadow-sm" style={{ border: '1px solid #AFC1B7' }}>
+          <Link to="/TrainingenVoorDeOr" className="font-semibold" style={{ color: '#2F5B4C' }}>Bekijk OR trainingen →</Link>
+        </div>
+      </div>
+
       <PageSection>
         {isLoading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

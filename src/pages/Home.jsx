@@ -36,11 +36,11 @@ export default function Home() {
                 Plan een vrijblijvend gesprek
               </Link>
               <Link
-                to="/Diensten"
+                to="/TrainingenVoorDeOr"
                 className="inline-block px-8 py-4 rounded-lg transition-colors font-medium text-center text-lg"
                 style={{ backgroundColor: 'white', color: '#2E2E2E' }}>
 
-                Bekijk onze diensten
+                Bekijk OR trainingen
               </Link>
             </div>
           </div>

@@ -15,6 +15,13 @@ export default function Diensten() {
         canonical="/diensten"
       />
 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="rounded-xl p-6" style={{ border: '1px solid #AFC1B7', backgroundColor: '#DCE5E0' }}>
+          <p className="text-lg font-medium" style={{ color: '#1F3F35' }}>Op zoek naar een praktische incompany OR training?</p>
+          <Link to="/TrainingenVoorDeOr" className="inline-flex items-center gap-2 mt-2 font-semibold" style={{ color: '#2F5B4C' }}>Bekijk OR trainingen →</Link>
+        </div>
+      </div>
+
       <Hero 
         title="Alles om jullie medezeggenschap sterker te maken"
         subtitle="Van praktische trainingen en workshops tot begeleiding als het spannend wordt. Altijd toepasbaar, altijd met oog voor mensen en verhoudingen."
