@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
+import TrainingenVoorDeOr from './pages/TrainingenVoorDeOr';
 
 const { Pages, Layout, mainPage } = pagesConfig;
 const mainPageKey = mainPage ?? Object.keys(Pages)[0];
@@ -47,6 +48,12 @@ const AuthenticatedApp = () => {
           <MainPage />
         </LayoutWrapper>
       } />
+      <Route path="/or-training" element={
+        <LayoutWrapper currentPageName={"TrainingenVoorDeOr"}>
+          <TrainingenVoorDeOr />
+        </LayoutWrapper>
+      } />
+
       {Object.entries(Pages).map(([path, Page]) => (
         <Route
           key={path}
