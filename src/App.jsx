@@ -53,6 +53,7 @@ const AuthenticatedApp = () => {
           <TrainingenVoorDeOr />
         </LayoutWrapper>
       } />
+      <Route path="/or-training/" element={<Navigate to="/or-training" replace />} />
 
       <Route path="/TrainingenVoorDeOr" element={<Navigate to="/or-training" replace />} />
       {Object.entries(Pages).map(([path, Page]) => (
