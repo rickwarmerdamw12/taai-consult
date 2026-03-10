@@ -28,6 +28,10 @@ export default function OverOns() {
                 <p>
                   TAAI-Consult ondersteunt ondernemingsraden en commissies bij medezeggenschapsvraagstukken die ertoe doen. Dat kan gaan om het dagelijkse overleg en reguliere adviestrajecten, maar ook om situaties waarin belangen groot zijn, de druk toeneemt en zorgvuldigheid bepalend is. Wij brengen overzicht, rust en richting wanneer het proces daarom vraagt.
                 </p>
+
+                <p className="leading-relaxed">
+                  Op zoek naar een <Link to="/or-training" style={{ color: '#2F5B4C', fontWeight: 600 }}>OR-training op maat</Link>? Bekijk onze aanpak en mogelijkheden.
+                </p>
                 <p>
                   Onze kracht ligt in de combinatie van inhoudelijke scherpte en gevoel voor de organisatorische en bestuurlijke context. Juridische kennis is daarbij geen doel op zich, maar een middel om tot werkbare oplossingen te komen die recht doen aan wet- en regelgeving én aan de verhoudingen binnen de organisatie.
                 </p>
