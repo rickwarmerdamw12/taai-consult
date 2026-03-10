@@ -5,8 +5,68 @@ import Hero from '../components/Hero';
 import PageSection from '../components/PageSection';
 
 export default function TrainingenVoorDeOr() {
+
+  const faqItems = [
+    {
+      question: 'Hoeveel kost een OR-training?',
+      answer: 'Dat hangt af van de duur, het aantal deelnemers en de inhoud. Neem contact op voor een vrijblijvende offerte.',
+    },
+    {
+      question: 'Mogen OR-leden scholing volgen onder werktijd?',
+      answer: 'Ja. Artikel 18 van de WOR geeft OR-leden recht op scholing. De kosten komen voor rekening van de werkgever.',
+    },
+    {
+      question: 'Kan de training ook online?',
+      answer: 'Zeker. We bieden zowel fysieke als online trainingen aan, en hybride vormen zijn ook mogelijk.',
+    },
+    {
+      question: 'Voor hoeveel deelnemers is een training geschikt?',
+      answer: 'Onze incompany-trainingen zijn geschikt voor groepen van 3 tot circa 25 personen.',
+    },
+    {
+      question: 'Is TAAI-consult CRKBO-geregistreerd?',
+      answer: 'Ja. Dat betekent dat onze trainingen voldoen aan de kwaliteitsnormen voor beroepsonderwijs en dat de kosten btw-vrijgesteld kunnen zijn.',
+    },
+  ];
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map((f) => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": f.answer,
+      },
+    })),
+  };
+
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "OR-training op maat (incompany)",
+    "provider": {
+      "@type": "Organization",
+      "name": "TAAI-consult",
+      "url": "https://taai-consult.nl",
+    },
+    "serviceType": "OR-training / training ondernemingsraad",
+    "areaServed": "NL",
+    "url": "https://taai-consult.nl/or-training",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+
       <SEO
         title="OR-training op maat | Incompany & maatwerk"
         description="Praktijkgerichte OR-training door ervaren trainers. Van WOR-basiskennis tot onderhandelen en teambuilding. Maatwerk voor jouw ondernemingsraad. Vraag vrijblijvend een programma aan."

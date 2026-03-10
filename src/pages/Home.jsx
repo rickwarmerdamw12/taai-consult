@@ -99,7 +99,7 @@ export default function Home() {
               <ul className="space-y-3 list-none">
                 <li className="flex items-start gap-2">
                   <span className="text-lg" style={{ color: '#2F5B4C' }}>·</span>
-                  <Link to="/TrainingenVoorDeOr" className="font-medium text-lg" style={{ color: '#2F5B4C' }}>Trainingen voor ondernemingsraden</Link>
+                  <Link to="/or-training" className="font-medium text-lg" style={{ color: '#2F5B4C' }}>Trainingen voor ondernemingsraden</Link>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-lg" style={{ color: '#2F5B4C' }}>·</span>
